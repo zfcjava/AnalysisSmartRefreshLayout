@@ -1,0 +1,38 @@
+class AniController
+!!!152046.java!!!	start() : void
+            mRunning = true;
+            mTick = 0;
+
+            mInterval = mLoadingAniDuration / mItemList.size();
+            mCountPerSeg = mLoadingAniSegDuration / mInterval;
+            mSegCount = mItemList.size() / mCountPerSeg + 1;
+            run();
+!!!152174.java!!!	run() : void
+
+            int pos = mTick % mCountPerSeg;
+            for (int i = 0; i < mSegCount; i++) {
+
+                int index = i * mCountPerSeg + pos;
+                if (index > mTick) {
+                    continue;
+                }
+
+                index = index % mItemList.size();
+                StoreHouseBarItem item = mItemList.get(index);
+
+                item.setFillAfter(false);
+                item.setFillEnabled(true);
+                item.setFillBefore(false);
+                item.setDuration(mLoadingAniItemDuration);
+                item.start(mFromAlpha, mToAlpha);
+            }
+
+            mTick++;
+            if (mRunning && mRefreshKernel != null) {
+                final View refreshView = mRefreshKernel.getRefreshLayout().getLayout();
+                refreshView.postDelayed(this, mInterval);
+            }
+!!!152302.java!!!	stop() : void
+            mRunning = false;
+            final View thisView = StoreHouseHeader.this;
+            thisView.removeCallbacks(this);

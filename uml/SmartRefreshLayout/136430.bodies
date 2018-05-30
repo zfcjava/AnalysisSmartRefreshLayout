@@ -1,0 +1,31 @@
+class ProgressAnimationImageView
+!!!157678.java!!!	setAnimationListener(inout listener : Animation.AnimationListener) : void
+            mListener = listener;
+!!!157806.java!!!	onAnimationStart() : void
+            super.onAnimationStart();
+            if (mListener != null) {
+                mListener.onAnimationStart(getAnimation());
+            }
+!!!157934.java!!!	onAnimationEnd() : void
+            super.onAnimationEnd();
+            if (mListener != null) {
+                mListener.onAnimationEnd(getAnimation());
+            }
+!!!158062.java!!!	ProgressAnimationImageView(inout context : Context)
+            super(context);
+            mProgress = new MaterialProgressDrawable(WaveSwipeHeader.this);
+            mProgress.setBackgroundColor(Color.TRANSPARENT);
+            if (isOver600dp()) { // Make the progress be big
+                mProgress.updateSizes(MaterialProgressDrawable.LARGE);
+            }
+            super.setImageDrawable(mProgress);
+!!!158190.java!!!	setProgressColorSchemeColorsFromResource(inout  : int...resources) : void
+            final View thisView = this;
+            final Resources res = thisView.getResources();
+            final int[] colorRes = new int[resources.length];
+
+            for (int i = 0; i < resources.length; i++) {
+                colorRes[i] = res.getColor(resources[i]);
+            }
+
+            setColorSchemeColors(colorRes);

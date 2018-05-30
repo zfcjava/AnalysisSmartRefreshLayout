@@ -1,0 +1,33 @@
+class BounceRunnable
+!!!186478.java!!!	BounceRunnable(in velocity : float, in smoothDistance : int)
+            mVelocity = velocity;
+            mSmoothDistance = smoothDistance;
+            mLastTime = AnimationUtils.currentAnimationTimeMillis();
+            postDelayed(this, mFrameDelay);
+!!!186606.java!!!	run() : void
+            if (animationRunnable == this && !mState.isFinishing) {
+                if (Math.abs(mSpinner) >= Math.abs(mSmoothDistance)) {
+                    if (mSmoothDistance != 0) {
+                        mVelocity *= Math.pow(0.45f, ++mFrame);//刷新、加载时回弹滚动数度衰减
+                    } else {
+                        mVelocity *= Math.pow(0.85f, ++mFrame);//回弹滚动数度衰减
+                    }
+                } else {
+                    mVelocity *= Math.pow(0.95f, ++mFrame);//平滑滚动数度衰减
+                }
+                long now = AnimationUtils.currentAnimationTimeMillis();
+                float t = 1f * (now - mLastTime) / 1000;
+                float velocity = mVelocity * t;
+                if (Math.abs(velocity) >= 1) {
+                    mLastTime = now;
+                    mOffset += velocity;
+                    moveSpinnerInfinitely(mOffset);
+                    postDelayed(this, mFrameDelay);
+                } else {
+                    animationRunnable = null;
+                    if (Math.abs(mSpinner) >= Math.abs(mSmoothDistance)) {
+                        int duration = 10 * Math.min(Math.max((int) DensityUtil.px2dp(Math.abs(mSpinner-mSmoothDistance)), 30), 100);
+                        animSpinner(mSmoothDistance, 0, mReboundInterpolator, duration);
+                    }
+                }
+            }

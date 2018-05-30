@@ -1,0 +1,49 @@
+class ProgressDrawable
+!!!220654.java!!!	ProgressDrawable()
+        mValueAnimator = ValueAnimator.ofInt(30, 3600);
+        mValueAnimator.setDuration(10000);
+        mValueAnimator.setInterpolator(new LinearInterpolator());
+        mValueAnimator.setRepeatCount(ValueAnimator.INFINITE);
+        mValueAnimator.setRepeatMode(ValueAnimator.RESTART);
+!!!220782.java!!!	onAnimationUpdate(inout animation : ValueAnimator) : void
+        int value = (int) animation.getAnimatedValue();
+        mProgressDegree = 30 * (value / 30);
+        final Drawable drawable = ProgressDrawable.this;
+        drawable.invalidateSelf();
+!!!220910.java!!!	draw(inout canvas : Canvas) : void
+        final Drawable drawable = ProgressDrawable.this;
+        final Rect bounds = drawable.getBounds();
+        final int width = bounds.width();
+        final int height = bounds.height();
+        final int r = Math.max(1, width / 20);
+
+        if (mWidth != width || mHeight != height) {
+            mPath.reset();
+            mPath.addCircle(width - r, height / 2, r, Path.Direction.CW);
+            mPath.addRect(width - 5 * r, height / 2 - r, width - r, height / 2 + r, Path.Direction.CW);
+            mPath.addCircle(width - 5 * r, height / 2, r, Path.Direction.CW);
+            mWidth = width;
+            mHeight = height;
+        }
+
+        canvas.save();
+        canvas.rotate(mProgressDegree, (width) / 2, (height) / 2);
+        for (int i = 0; i < 12; i++) {
+            mPaint.setAlpha((i+5) * 0x11);
+            canvas.rotate(30, (width) / 2, (height) / 2);
+            canvas.drawPath(mPath, mPaint);
+        }
+        canvas.restore();
+!!!221038.java!!!	start() : void
+        if (!mValueAnimator.isRunning()) {
+            mValueAnimator.addUpdateListener(this);
+            mValueAnimator.start();
+        }
+!!!221166.java!!!	stop() : void
+        if (mValueAnimator.isRunning()) {
+            mValueAnimator.removeAllListeners();
+            mValueAnimator.removeAllUpdateListeners();
+            mValueAnimator.cancel();
+        }
+!!!221294.java!!!	isRunning() : boolean
+        return mValueAnimator.isRunning();

@@ -1,0 +1,179 @@
+class WaveSwipeHeader
+!!!156142.java!!!	WaveSwipeHeader(inout context : Context)
+        this(context, null);
+!!!156270.java!!!	WaveSwipeHeader(inout context : Context, inout attrs : AttributeSet)
+        this(context, attrs, 0);
+!!!156398.java!!!	WaveSwipeHeader(inout context : Context, inout attrs : AttributeSet, in defStyleAttr : int)
+        super(context, attrs, defStyleAttr);
+
+        mSpinnerStyle = SpinnerStyle.MatchLayout;
+
+        final ViewGroup thisGroup = this;
+        thisGroup.addView(mWaveView = new WaveView(context));
+        thisGroup.addView(mCircleView = new ProgressAnimationImageView(context));
+
+        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.WaveSwipeHeader);
+
+        int primaryColor = ta.getColor(R.styleable.WaveSwipeHeader_wshPrimaryColor, 0);
+        int accentColor = ta.getColor(R.styleable.WaveSwipeHeader_wshAccentColor, 0);
+        if (primaryColor != 0) {
+            mWaveView.setWaveColor(primaryColor);
+        }
+        if (accentColor != 0) {
+            mProgress.setColorSchemeColors(accentColor);
+        } else {
+            mProgress.setColorSchemeColors(0xffffffff);
+        }
+        if (ta.hasValue(R.styleable.WaveSwipeHeader_wshShadowRadius)) {
+            int radius = ta.getDimensionPixelOffset(R.styleable.WaveSwipeHeader_wshShadowRadius, 0);
+            int color = ta.getColor(R.styleable.WaveSwipeHeader_wshShadowColor, 0xff000000);
+            mWaveView.setShadow(radius, color);
+        }
+
+        ta.recycle();
+!!!156526.java!!!	onMeasure(in widthMeasureSpec : int, in heightMeasureSpec : int) : void
+        super.setMeasuredDimension(getSize(widthMeasureSpec), getSize(heightMeasureSpec));
+        final View waveView = mWaveView;
+        final View cricleView = mCircleView;
+        final Drawable progress = mProgress;
+        final int circleDiameter = progress.getIntrinsicWidth();
+        final int spec = MeasureSpec.makeMeasureSpec(circleDiameter, MeasureSpec.EXACTLY);
+        cricleView.measure(spec, spec);
+        waveView.measure(makeMeasureSpec(getSize(widthMeasureSpec), EXACTLY),makeMeasureSpec(getSize(heightMeasureSpec), EXACTLY));
+!!!156654.java!!!	onLayout(inout changed : boolean, in l : int, in t : int, in r : int, in b : int) : void
+        final View thisView = this;
+        final View waveView = mWaveView;
+        final View cricleView = mCircleView;
+        waveView.layout(0, 0, thisView.getMeasuredWidth(), thisView.getMeasuredHeight());
+
+        final int thisWidth = thisView.getMeasuredWidth();
+        final int circleWidth = cricleView.getMeasuredWidth();
+        final int circleHeight = cricleView.getMeasuredHeight();
+        cricleView.layout((thisWidth - circleWidth) / 2, -circleHeight , (thisWidth + circleWidth) / 2, 0);
+
+        if (thisView.isInEditMode()) {
+            onMoving(true, 0.99f, DensityUtil.dp2px(99), DensityUtil.dp2px(100), DensityUtil.dp2px(100));
+//            onPulling(0.99f, DensityUtil.dp2px(99), DensityUtil.dp2px(100), DensityUtil.dp2px(100));
+        }
+!!!156782.java!!!	setColorSchemeColors(inout  : int...colors) : void
+        mProgress.setColorSchemeColors(colors);
+!!!156910.java!!!	onMoving(inout isDragging : boolean, in percent : float, in offset : int, in height : int, in maxDragHeight : int) : void
+        if (isDragging) {
+            if (mState == RefreshState.Refreshing) {
+                return;
+            }
+            final View cricleView = mCircleView;
+
+            float dragPercent = Math.min(1f, percent);
+            float adjustedPercent = (float) Math.max(dragPercent - .4, 0) * 5 / 3;
+
+            // 0f...2f
+            float tensionSlingshotPercent =
+                    (percent > 3f) ? 2f : (percent > 1f) ? percent - 1f : 0;
+            float tensionPercent = (4f - tensionSlingshotPercent) * tensionSlingshotPercent / 8f;
+
+            if (percent < 1f) {
+                float strokeStart = adjustedPercent * .8f;
+                mProgress.setStartEndTrim(0f, Math.min(MAX_PROGRESS_ROTATION_RATE, strokeStart));
+                mProgress.setArrowScale(Math.min(1f, adjustedPercent));
+            }
+
+            float rotation = (-0.25f + .4f * adjustedPercent + tensionPercent * 2) * .5f;
+            mProgress.setProgressRotation(rotation);
+            cricleView.setTranslationY(mWaveView.getCurrentCircleCenterY());
+
+            final View thisView = this;
+            float seed = 1f * offset / Math.min(thisView.getMeasuredWidth(), thisView.getMeasuredHeight());
+            float firstBounds = seed * (5f - 2 * seed) / 3.5f;
+            float secondBounds = firstBounds - VERTICAL_DRAG_THRESHOLD.FIRST.val;
+            float finalBounds = (firstBounds - VERTICAL_DRAG_THRESHOLD.SECOND.val) / 5;
+            mLastFirstBounds = firstBounds;
+
+            if (firstBounds < VERTICAL_DRAG_THRESHOLD.FIRST.val) {
+                // draw a wave and not draw a circle
+                mWaveView.beginPhase(firstBounds);
+            } else if (firstBounds < VERTICAL_DRAG_THRESHOLD.SECOND.val) {
+                // draw a circle with a wave
+                mWaveView.appearPhase(firstBounds, secondBounds);
+            } else /*if (firstBounds < VERTICAL_DRAG_THRESHOLD.THIRD.val)*/ {
+                // draw a circle with expanding a wave
+                mWaveView.expandPhase(firstBounds, secondBounds, finalBounds);
+//        } else {
+//            // stop to draw a wave and drop a circle
+//            onDropPhase();
+            }
+        }
+!!!157038.java!!!	onReleased(inout layout : RefreshLayout, in height : int, in maxDragHeight : int) : void
+        mLastFirstBounds = 0;
+        mWaveView.animationDropCircle();
+        mProgress.setAlpha(0xff);
+        mProgress.start();
+        ValueAnimator animator = ValueAnimator.ofFloat(0, 0);
+        animator.setDuration(500);
+        animator.setInterpolator(new AccelerateDecelerateInterpolator());
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                final View cricleView = mCircleView;
+                cricleView.setTranslationY(
+                        mWaveView.getCurrentCircleCenterY() + cricleView.getHeight() / 2.f);
+            }
+        });
+        animator.start();
+!!!157166.java!!!	onStateChanged(inout refreshLayout : RefreshLayout, inout oldState : RefreshState, inout newState : RefreshState) : void
+        final View cricleView = mCircleView;
+        mState = newState;
+        switch (newState) {
+            case None:
+                break;
+            case PullDownToRefresh:
+                mProgress.showArrow(true);
+                cricleView.setScaleX(1f);
+                cricleView.setScaleY(1f);
+                mProgress.setAlpha(0xff);
+                break;
+            case PullDownCanceled:
+                mProgress.showArrow(false);
+                mProgress.setProgressRotation(0);
+                mProgress.setStartEndTrim(0f, 0f);
+                mWaveView.startWaveAnimation(mLastFirstBounds);
+                mLastFirstBounds = 0;
+                break;
+            case ReleaseToRefresh:
+                break;
+            case Refreshing:
+                break;
+        }
+!!!157294.java!!!	onFinish(inout layout : RefreshLayout, inout success : boolean) : int
+        final View cricleView = mCircleView;
+        Animation scaleDownAnimation = new Animation() {
+            @Override
+            public void applyTransformation(float interpolatedTime, Transformation t) {
+                cricleView.setScaleX(1 - interpolatedTime);
+                cricleView.setScaleY(1 - interpolatedTime);
+            }
+        };
+        scaleDownAnimation.setDuration(200);
+        mCircleView.setAnimationListener(new Animation.AnimationListener() {
+            public void onAnimationStart(Animation animation) {}
+            public void onAnimationRepeat(Animation animation) {}
+            public void onAnimationEnd(Animation animation) {
+                mProgress.stop();
+                mProgress.setAlpha(0xff);
+                mWaveView.startDisappearCircleAnimation();
+            }
+        });
+        cricleView.clearAnimation();
+        cricleView.startAnimation(scaleDownAnimation);
+        return 0;
+!!!157422.java!!!	setPrimaryColors(in colors : int) : void
+        if (colors.length > 0) {
+            mWaveView.setWaveColor(colors[0]);
+            if (colors.length > 1) {
+                mProgress.setColorSchemeColors(colors[1]);
+            }
+        }
+!!!157550.java!!!	isOver600dp() : boolean
+//        Resources resources = context.getResources();
+        DisplayMetrics displayMetrics = Resources.getSystem().getDisplayMetrics();
+        return displayMetrics.widthPixels / displayMetrics.density >= 600;

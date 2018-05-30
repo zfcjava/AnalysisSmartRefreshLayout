@@ -1,0 +1,39 @@
+class CircleImageView
+!!!169198.java!!!	CircleImageView(inout context : Context, in color : int)
+        super(context);
+        final View thisView = this;
+        final float density = thisView.getResources().getDisplayMetrics().density;
+        final int shadowYOffset = (int) (density * Y_OFFSET);
+        final int shadowXOffset = (int) (density * X_OFFSET);
+
+        mShadowRadius = (int) (density * SHADOW_RADIUS);
+
+        ShapeDrawable circle;
+        if (android.os.Build.VERSION.SDK_INT >= 21) {
+            circle = new ShapeDrawable(new OvalShape());
+            thisView.setElevation(SHADOW_ELEVATION * density);
+        } else {
+            OvalShape oval = new OvalShadow(mShadowRadius);
+            circle = new ShapeDrawable(oval);
+            thisView.setLayerType(LAYER_TYPE_SOFTWARE, circle.getPaint());
+            circle.getPaint().setShadowLayer(mShadowRadius, shadowXOffset, shadowYOffset,
+                    KEY_SHADOW_COLOR);
+            final int padding = mShadowRadius;
+            // set padding so the inner image sits correctly within the shadow.
+            thisView.setPadding(padding, padding, padding, padding);
+        }
+        circle.getPaint().setColor(color);
+        if (Build.VERSION.SDK_INT >= 16) {
+            thisView.setBackground(circle);
+        } else {
+            //noinspection deprecation
+            thisView.setBackgroundDrawable(circle);
+        }
+!!!169326.java!!!	onMeasure(in widthMeasureSpec : int, in heightMeasureSpec : int) : void
+        final View thisView = this;
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        if (Build.VERSION.SDK_INT < 21) {
+            super.setMeasuredDimension(
+                    thisView.getMeasuredWidth() + mShadowRadius * 2,
+                    thisView.getMeasuredHeight() + mShadowRadius * 2);
+        }

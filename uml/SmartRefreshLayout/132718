@@ -1,0 +1,1259 @@
+format 76
+"internal" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::header::internal
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-header/src/main/java/com/scwang/smartrefresh/header/internal/"
+  java_package "com.scwang.smartrefresh.header.internal"
+  classview 130542 "internal"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 134638 "MaterialProgressDrawable"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings({\"WeakerAccess\"})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Fancy progress indicator for Material theme."
+      classrelation 136046 // <generalisation>
+	relation 136046 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 136046 // <generalisation>
+	  b parent class_ref 137198 // Drawable
+      end
+
+      classrelation 136174 // <realization>
+	relation 136174 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 136174 // <realization>
+	  b parent class_ref 137326 // Animatable
+      end
+
+      attribute 188654 "LINEAR_INTERPOLATOR"
+	class_attribute const_attribute private explicit_type "Interpolator"
+	init_value " new LinearInterpolator()"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 188782 "MATERIAL_INTERPOLATOR"
+	class_attribute const_attribute package explicit_type "Interpolator"
+	init_value " new FastOutSlowInInterpolator()"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 188910 "FULL_ROTATION"
+	class_attribute const_attribute private explicit_type "float"
+	init_value " 1080.0f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 189038 "DEFAULT"
+	class_attribute const_attribute public explicit_type "byte"
+	init_value " 1"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " Maps to ProgressBar default style"
+      end
+
+      attribute 189166 "CIRCLE_DIAMETER"
+	class_attribute const_attribute private explicit_type "byte"
+	init_value " 40"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " Maps to ProgressBar default style"
+      end
+
+      attribute 189294 "CENTER_RADIUS"
+	class_attribute const_attribute private explicit_type "float"
+	init_value " 8.75f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "should add up to 10 when + stroke_width"
+      end
+
+      attribute 189422 "STROKE_WIDTH"
+	class_attribute const_attribute private explicit_type "float"
+	init_value " 2.5f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 189550 "CIRCLE_DIAMETER_LARGE"
+	class_attribute const_attribute private explicit_type "byte"
+	init_value " 56"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " Maps to ProgressBar.Large style"
+      end
+
+      attribute 189678 "CENTER_RADIUS_LARGE"
+	class_attribute const_attribute private explicit_type "float"
+	init_value " 12.5f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 189806 "STROKE_WIDTH_LARGE"
+	class_attribute const_attribute private explicit_type "float"
+	init_value " 3f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 189934 "COLORS"
+	class_attribute const_attribute private explicit_type "int"
+	multiplicity "[]"
+	init_value " new int[] {
+        Color.BLACK
+    }"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 190062 "COLOR_START_DELAY_OFFSET"
+	class_attribute const_attribute private explicit_type "float"
+	init_value " 0.75f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "The value in the linear interpolator for animating the drawable at which
+the color transition should start
+"
+      end
+
+      attribute 190190 "END_TRIM_START_DELAY_OFFSET"
+	class_attribute const_attribute private explicit_type "float"
+	init_value " 0.5f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 190318 "START_TRIM_DURATION_OFFSET"
+	class_attribute const_attribute private explicit_type "float"
+	init_value " 0.5f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 190446 "ANIMATION_DURATION"
+	class_attribute const_attribute private explicit_type "int"
+	init_value " 1332"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " The duration of a single progress spin in milliseconds. "
+      end
+
+      attribute 190574 "NUM_POINTS"
+	class_attribute const_attribute private explicit_type "byte"
+	init_value " 5"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " The number of points in the progress \"star\". "
+      end
+
+      attribute 190702 "mAnimators"
+	const_attribute private explicit_type "Animation"
+	init_value " new ArrayList<>()"
+	stereotype "List"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " The list of animators operating on this drawable. "
+      end
+
+      class 137454 "Ring"
+	visibility private 
+	cpp_decl ""
+	java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 192494 "mTempBounds"
+	  const_attribute package explicit_type "RectF"
+	  init_value " new RectF()"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 192622 "mPaint"
+	  const_attribute package explicit_type "Paint"
+	  init_value " new Paint()"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 192750 "mArrowPaint"
+	  const_attribute package explicit_type "Paint"
+	  init_value " new Paint()"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 192878 "mStartTrim"
+	  package explicit_type "float"
+	  init_value " 0.0f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 193006 "mEndTrim"
+	  package explicit_type "float"
+	  init_value " 0.0f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 193134 "mRotation"
+	  package explicit_type "float"
+	  init_value " 0.0f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 193262 "mStrokeWidth"
+	  package explicit_type "float"
+	  init_value " 5.0f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 193390 "mStrokeInset"
+	  package explicit_type "float"
+	  init_value " 2.5f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 193518 "mColors"
+	  package explicit_type "int"
+	  multiplicity "[]"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 193646 "mColorIndex"
+	  package explicit_type "int"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " mColorIndex represents the offset into the available mColors that the
+ progress circle should currently display. As the progress circle is
+ animating, the mColorIndex moves by one to the next available color."
+	end
+
+	attribute 193774 "mStartingStartTrim"
+	  package explicit_type "float"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 193902 "mStartingEndTrim"
+	  package explicit_type "float"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 194030 "mStartingRotation"
+	  package explicit_type "float"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 194158 "mShowArrow"
+	  package explicit_type "boolean"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 194286 "mArrow"
+	  package explicit_type "Path"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 194414 "mArrowScale"
+	  package explicit_type "float"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 194542 "mRingCenterRadius"
+	  package explicit_type "double"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 194670 "mArrowWidth"
+	  package explicit_type "int"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 194798 "mArrowHeight"
+	  package explicit_type "int"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 194926 "mAlpha"
+	  package explicit_type "int"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 195054 "mCirclePaint"
+	  const_attribute package explicit_type "Paint"
+	  init_value " new Paint(Paint.ANTI_ALIAS_FLAG)"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 195182 "mBackgroundColor"
+	  package explicit_type "int"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 195310 "mCurrentColor"
+	  package explicit_type "int"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	operation 163950 "Ring"
+	  package explicit_return_type ""
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 164078 "draw"
+	  public explicit_return_type "void"
+	  nparams 2
+	    param inout name "c" explicit_type "Canvas"
+	    param inout name "bounds" explicit_type "Rect"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "Draw the progress spinner"
+	end
+
+	operation 164206 "drawTriangle"
+	  private explicit_return_type "void"
+	  nparams 4
+	    param inout name "c" explicit_type "Canvas"
+	    param in name "startAngle" explicit_type "float"
+	    param in name "sweepAngle" explicit_type "float"
+	    param inout name "bounds" explicit_type "Rect"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 164334 "setColorIndex"
+	  public explicit_return_type "void"
+	  nparams 1
+	    param in name "index" explicit_type "int"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "@param index Index into the color array of the color to display in
+           the progress spinner."
+	end
+
+	operation 164462 "getNextColor"
+	  public explicit_return_type "int"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "@return int describing the next color the progress spinner should use when drawing."
+	end
+
+	operation 164590 "getNextColorIndex"
+	  private explicit_return_type "int"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 164718 "goToNextColor"
+	  public explicit_return_type "void"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "Proceed to the next available ring color. This will automatically
+wrap back to the beginning of colors."
+	end
+
+	operation 164846 "getStartingColor"
+	  public explicit_return_type "int"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 164974 "setInsets"
+	  public explicit_return_type "void"
+	  nparams 2
+	    param in name "width" explicit_type "int"
+	    param in name "height" explicit_type "int"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 165102 "storeOriginals"
+	  public explicit_return_type "void"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "If the start / end trim are offset to begin with, store them so that
+animation starts from that offset."
+	end
+
+	operation 165230 "resetOriginals"
+	  public explicit_return_type "void"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "Reset the progress spinner to default rotation, start and end angles."
+	end
+      end
+
+      classrelation 136302 // mRing (<unidirectional association>)
+	relation 136302 --->
+	  a role_name "mRing" init_value " new Ring()" const_relation private
+	    comment " The indicator ring, used to manage animation state. 
+"
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 136302 // mRing (<unidirectional association>)
+	  b parent class_ref 137454 // Ring
+      end
+
+      attribute 190830 "mRotation"
+	private explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " Canvas rotation in degrees. "
+      end
+
+      attribute 190958 "ARROW_WIDTH"
+	class_attribute const_attribute private explicit_type "byte"
+	init_value " 10"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " Layout info for the arrowhead in dp "
+      end
+
+      attribute 191086 "ARROW_HEIGHT"
+	class_attribute const_attribute private explicit_type "byte"
+	init_value " 5"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 191214 "ARROW_OFFSET_ANGLE"
+	class_attribute const_attribute private explicit_type "float"
+	init_value " 5"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 191342 "ARROW_WIDTH_LARGE"
+	class_attribute const_attribute private explicit_type "byte"
+	init_value " 12"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " Layout info for the arrowhead for the large spinner in dp "
+      end
+
+      attribute 191470 "ARROW_HEIGHT_LARGE"
+	class_attribute const_attribute private explicit_type "byte"
+	init_value " 6"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 191598 "MAX_PROGRESS_ARC"
+	class_attribute const_attribute private explicit_type "float"
+	init_value " .8f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 191726 "mParent"
+	private explicit_type "View"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 191854 "mAnimation"
+	private explicit_type "Animation"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 191982 "mRotationCount"
+	package explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 192110 "mWidth"
+	private explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 192238 "mHeight"
+	private explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 192366 "mFinishing"
+	package explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 160750 "MaterialProgressDrawable"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "parent" explicit_type "View"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 160878 "setSizeParameters"
+	private explicit_return_type "void"
+	nparams 6
+	  param in name "progressCircleWidth" explicit_type "int"
+	  param in name "progressCircleHeight" explicit_type "int"
+	  param in name "centerRadius" explicit_type "float"
+	  param in name "strokeWidth" explicit_type "float"
+	  param in name "arrowWidth" explicit_type "float"
+	  param in name "arrowHeight" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}, ${t5} ${p5}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 161006 "updateSizes"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "size" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ProgressDrawableSize ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Set the overall size for the progress spinner. This updates the radius
+and stroke width of the ring."
+      end
+
+      operation 161134 "showArrow"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "show" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@param show Set to true to display the arrowhead on the progress spinner."
+      end
+
+      operation 161262 "setArrowScale"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "scale" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@param scale Set the scale of the arrowhead for the spinner."
+      end
+
+      operation 161390 "setStartEndTrim"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "startAngle" explicit_type "float"
+	  param in name "endAngle" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Set the start and end trim for the progress spinner arc.
+
+@param startAngle start angle
+@param endAngle end angle"
+      end
+
+      operation 161518 "setProgressRotation"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "rotation" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Set the amount of rotation to apply to the progress spinner.
+
+@param rotation Rotation is from [0..1]"
+      end
+
+      operation 161646 "setBackgroundColor"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "color" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Update the background color of the circle image view."
+      end
+
+      operation 161774 "setColorSchemeColors"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "" explicit_type "int...colors"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Set the colors used in the progress animation from color resources.
+The first color will also be the color of the bar that grows in response
+to a user swipe gesture.
+
+@param colors"
+      end
+
+      operation 161902 "getIntrinsicHeight"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 162030 "getIntrinsicWidth"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 162158 "draw"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "c" explicit_type "Canvas"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 162286 "setAlpha"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "alpha" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 162414 "getAlpha"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 162542 "setColorFilter"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "colorFilter" explicit_type "ColorFilter"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 162670 "setRotation"
+	package explicit_return_type "void"
+	nparams 1
+	  param in name "rotation" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 162798 "getOpacity"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 162926 "isRunning"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 163054 "start"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 163182 "stop"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 163310 "getMinProgressArc"
+	package explicit_return_type "float"
+	nparams 1
+	  param inout name "ring" type class_ref 137454 // Ring
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 163438 "evaluateColorChange"
+	private explicit_return_type "int"
+	nparams 3
+	  param in name "fraction" explicit_type "float"
+	  param in name "startValue" explicit_type "int"
+	  param in name "endValue" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@SuppressWarnings(\"RedundantCast\")
+"
+	
+	
+	
+	comment " Adapted from ArgbEvaluator.java"
+      end
+
+      operation 163566 "updateRingColor"
+	package explicit_return_type "void"
+	nparams 2
+	  param in name "interpolatedTime" explicit_type "float"
+	  param inout name "ring" type class_ref 137454 // Ring
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Update the ring color if this is within the last 25% of the animation.
+The new ring color will be a translation from the starting ring color to
+the next color."
+      end
+
+      operation 163694 "applyFinishTranslation"
+	package explicit_return_type "void"
+	nparams 2
+	  param in name "interpolatedTime" explicit_type "float"
+	  param inout name "ring" type class_ref 137454 // Ring
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 163822 "setupAnimators"
+	private explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+  end
+
+  package_ref 133230 // pathview
+
+  deploymentview 130414 "internal"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 133102 "MaterialProgressDrawable"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.content.res.Resources;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.graphics.Paint;
+import android.graphics.Paint.Style;
+import android.graphics.Path;
+import android.graphics.PixelFormat;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.graphics.drawable.Animatable;
+import android.graphics.drawable.Drawable;
+import android.support.annotation.ColorInt;
+import android.support.annotation.IntDef;
+import android.support.annotation.NonNull;
+import android.support.v4.view.animation.FastOutSlowInInterpolator;
+import android.util.DisplayMetrics;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.Interpolator;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.Transformation;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.util.ArrayList;
+import java.util.List;
+${definition}"
+      associated_classes
+	class_ref 134638 // MaterialProgressDrawable
+      end
+      comment "Copyright (C) 2014 The Android Open Source Project
+
+Licensed under the Apache License, Version 2.0 (the \"License\");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an \"AS IS\" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License."
+    end
+  end
+end

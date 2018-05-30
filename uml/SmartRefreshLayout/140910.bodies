@@ -1,0 +1,6 @@
+class ExampleInstrumentedTest
+!!!175726.java!!!	useAppContext() : void
+        // Context of the app under test.
+        Context appContext = InstrumentationRegistry.getTargetContext();
+
+        assertEquals("com.scwang.smartrefresh.layout.test", appContext.getPackageName());

@@ -1,0 +1,5 @@
+class RefreshFooterWrapper
+!!!219886.java!!!	RefreshFooterWrapper(inout wrapper : View)
+        super(wrapper);
+!!!220014.java!!!	setNoMoreData(inout noMoreData : boolean) : boolean
+        return mWrapperView instanceof RefreshFooter && ((RefreshFooter) mWrapperView).setNoMoreData(noMoreData);

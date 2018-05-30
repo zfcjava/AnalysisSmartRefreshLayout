@@ -1,0 +1,3542 @@
+format 76
+"test" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::layout::test
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-layout/build/generated/source/buildConfig/androidTest/debug/com/scwang/smartrefresh/layout/test/"
+  java_package "com.scwang.smartrefresh.layout.test"
+  classview 131438 "test"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 139374 "BuildConfig"
+      visibility public 
+      cpp_decl ""
+      final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 205422 "DEBUG"
+	class_attribute const_attribute public explicit_type "boolean"
+	init_value " Boolean.parseBoolean(\"true\")"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 205550 "APPLICATION_ID"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"com.scwang.smartrefresh.layout.test\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 205678 "BUILD_TYPE"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"debug\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 205806 "FLAVOR"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 205934 "VERSION_CODE"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 1"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 206062 "VERSION_NAME"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"1.0\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+    end
+
+    class 140270 "R"
+      visibility public 
+      cpp_decl ""
+      final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      class 140398 "attr"
+	visibility public 
+	cpp_decl ""
+	final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 227310 "layout_srlBackgroundColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010032"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 227438 "layout_srlSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010000"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " 填满布局
+<p>Must be one of the following constant values.</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>Translate</code></td><td>0</td><td></td></tr>
+<tr><td><code>Scale</code></td><td>1</td><td>平行移动</td></tr>
+<tr><td><code>FixedBehind</code></td><td>2</td><td>拉伸形变</td></tr>
+<tr><td><code>FixedFront</code></td><td>3</td><td>固定在背后</td></tr>
+<tr><td><code>MatchLayout</code></td><td>4</td><td>固定在前面</td></tr>
+</table>
+"
+	end
+
+	attribute 227566 "srlAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010001"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 227694 "srlAnimatingColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000e"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 227822 "srlClassicsSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010002"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " 固定在背后
+<p>Must be one of the following constant values.</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>Translate</code></td><td>0</td><td></td></tr>
+<tr><td><code>Scale</code></td><td>1</td><td>平行移动</td></tr>
+<tr><td><code>FixedBehind</code></td><td>2</td><td>拉伸形变</td></tr>
+</table>
+"
+	end
+
+	attribute 227950 "srlDisableContentWhenLoading"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01002f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 228078 "srlDisableContentWhenRefresh"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01002e"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 228206 "srlDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010017"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 228334 "srlDrawableArrow"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010003"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+"
+	end
+
+	attribute 228462 "srlDrawableArrowSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010004"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 228590 "srlDrawableMarginRight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010005"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 228718 "srlDrawableProgress"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010006"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+"
+	end
+
+	attribute 228846 "srlDrawableProgressSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010007"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 228974 "srlDrawableSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010008"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 229102 "srlEnableAutoLoadMore"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010023"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 229230 "srlEnableClipFooterWhenFixedBehind"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01002c"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 229358 "srlEnableClipHeaderWhenFixedBehind"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01002b"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 229486 "srlEnableFooterFollowWhenLoadFinished"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01002a"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 229614 "srlEnableFooterTranslationContent"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 229742 "srlEnableHeaderTranslationContent"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001e"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 229870 "srlEnableHorizontalDrag"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010009"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 229998 "srlEnableLastTime"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010011"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 230126 "srlEnableLoadMore"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001d"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 230254 "srlEnableLoadMoreWhenContentNotFull"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010029"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 230382 "srlEnableNestedScrolling"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010026"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 230510 "srlEnableOverScrollBounce"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010024"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 230638 "srlEnableOverScrollDrag"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01002d"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 230766 "srlEnablePreviewInEditMode"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010022"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 230894 "srlEnablePullToCloseTwoLevel"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010038"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 231022 "srlEnablePureScrollMode"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010025"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 231150 "srlEnableRefresh"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001c"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 231278 "srlEnableScrollContentWhenLoaded"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010027"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 231406 "srlEnableScrollContentWhenRefreshed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010028"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 231534 "srlEnableTwoLevel"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010037"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 231662 "srlFinishDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000a"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be an integer value, such as \"<code>100</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 231790 "srlFixedFooterViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010031"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+"
+	end
+
+	attribute 231918 "srlFixedHeaderViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010030"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+"
+	end
+
+	attribute 232046 "srlFloorDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010036"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be an integer value, such as \"<code>100</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 232174 "srlFloorRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010034"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 232302 "srlFooterHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010014"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 232430 "srlFooterInsetStart"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010016"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 232558 "srlFooterMaxDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010019"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 232686 "srlFooterTranslationViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010021"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+"
+	end
+
+	attribute 232814 "srlFooterTriggerRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001b"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 232942 "srlHeaderHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010013"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 233070 "srlHeaderInsetStart"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010015"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 233198 "srlHeaderMaxDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010018"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 233326 "srlHeaderTranslationViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010020"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+"
+	end
+
+	attribute 233454 "srlHeaderTriggerRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001a"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 233582 "srlMaxRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010033"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 233710 "srlNormalColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 233838 "srlPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000b"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 233966 "srlReboundDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010012"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be an integer value, such as \"<code>100</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 234094 "srlRefreshRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010035"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 234222 "srlTextSizeTime"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000c"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 234350 "srlTextSizeTitle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000d"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 234478 "srlTextTimeMarginTop"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010010"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+      end
+
+      class 140526 "id"
+	visibility public 
+	cpp_decl ""
+	final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 234606 "FixedBehind"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f030000"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 234734 "FixedFront"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f030001"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 234862 "MatchLayout"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f030002"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 234990 "Scale"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f030003"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 235118 "Translate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f030004"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+      end
+
+      class 140654 "string"
+	visibility public 
+	cpp_decl ""
+	final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 235246 "app_name"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020011"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 235374 "srl_component_falsify"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020000"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 235502 "srl_content_empty"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020001"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 235630 "srl_footer_failed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020002"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 235758 "srl_footer_finish"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020003"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 235886 "srl_footer_loading"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020004"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 236014 "srl_footer_nothing"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020005"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 236142 "srl_footer_pulling"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020006"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 236270 "srl_footer_refreshing"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020007"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 236398 "srl_footer_release"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020008"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 236526 "srl_header_failed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020009"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 236654 "srl_header_finish"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f02000a"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 236782 "srl_header_loading"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f02000b"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 236910 "srl_header_pulling"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f02000c"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 237038 "srl_header_refreshing"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f02000d"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 237166 "srl_header_release"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f02000e"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 237294 "srl_header_secondary"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f02000f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 237422 "srl_header_update"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020010"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+      end
+
+      class 140782 "styleable"
+	visibility public 
+	cpp_decl ""
+	final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 237550 "BallPulseFooter"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010002, 0x7f01000e, 0x7f01000f
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a BallPulseFooter.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #BallPulseFooter_srlAnimatingColor com.scwang.smartrefresh.layout.test:srlAnimatingColor}</code></td><td></td></tr>
+<tr><td><code>{@link #BallPulseFooter_srlClassicsSpinnerStyle com.scwang.smartrefresh.layout.test:srlClassicsSpinnerStyle}</code></td><td>固定在背后</td></tr>
+<tr><td><code>{@link #BallPulseFooter_srlNormalColor com.scwang.smartrefresh.layout.test:srlNormalColor}</code></td><td></td></tr>
+</table>
+@see #BallPulseFooter_srlAnimatingColor
+@see #BallPulseFooter_srlClassicsSpinnerStyle
+@see #BallPulseFooter_srlNormalColor
+"
+	end
+
+	attribute 237678 "BallPulseFooter_srlAnimatingColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlAnimatingColor}
+attribute's value can be found in the {@link #BallPulseFooter} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlAnimatingColor
+"
+	end
+
+	attribute 237806 "BallPulseFooter_srlClassicsSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>
+@attr description
+固定在背后
+
+
+<p>Must be one of the following constant values.</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>Translate</code></td><td>0</td><td></td></tr>
+<tr><td><code>Scale</code></td><td>1</td><td>平行移动</td></tr>
+<tr><td><code>FixedBehind</code></td><td>2</td><td>拉伸形变</td></tr>
+</table>
+<p>This is a private symbol.
+@attr name com.scwang.smartrefresh.layout.test:srlClassicsSpinnerStyle
+"
+	end
+
+	attribute 237934 "BallPulseFooter_srlNormalColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlNormalColor}
+attribute's value can be found in the {@link #BallPulseFooter} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlNormalColor
+"
+	end
+
+	attribute 238062 "BezierRadarHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010001, 0x7f010009, 0x7f01000b
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a BezierRadarHeader.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #BezierRadarHeader_srlAccentColor com.scwang.smartrefresh.layout.test:srlAccentColor}</code></td><td></td></tr>
+<tr><td><code>{@link #BezierRadarHeader_srlEnableHorizontalDrag com.scwang.smartrefresh.layout.test:srlEnableHorizontalDrag}</code></td><td></td></tr>
+<tr><td><code>{@link #BezierRadarHeader_srlPrimaryColor com.scwang.smartrefresh.layout.test:srlPrimaryColor}</code></td><td></td></tr>
+</table>
+@see #BezierRadarHeader_srlAccentColor
+@see #BezierRadarHeader_srlEnableHorizontalDrag
+@see #BezierRadarHeader_srlPrimaryColor
+"
+	end
+
+	attribute 238190 "BezierRadarHeader_srlAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlAccentColor}
+attribute's value can be found in the {@link #BezierRadarHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlAccentColor
+"
+	end
+
+	attribute 238318 "BezierRadarHeader_srlEnableHorizontalDrag"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableHorizontalDrag}
+attribute's value can be found in the {@link #BezierRadarHeader} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableHorizontalDrag
+"
+	end
+
+	attribute 238446 "BezierRadarHeader_srlPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlPrimaryColor}
+attribute's value can be found in the {@link #BezierRadarHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlPrimaryColor
+"
+	end
+
+	attribute 238574 "ClassicsFooter"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004,
+            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
+            0x7f01000a, 0x7f01000b, 0x7f01000d
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a ClassicsFooter.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #ClassicsFooter_srlAccentColor com.scwang.smartrefresh.layout.test:srlAccentColor}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsFooter_srlClassicsSpinnerStyle com.scwang.smartrefresh.layout.test:srlClassicsSpinnerStyle}</code></td><td>固定在背后</td></tr>
+<tr><td><code>{@link #ClassicsFooter_srlDrawableArrow com.scwang.smartrefresh.layout.test:srlDrawableArrow}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsFooter_srlDrawableArrowSize com.scwang.smartrefresh.layout.test:srlDrawableArrowSize}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsFooter_srlDrawableMarginRight com.scwang.smartrefresh.layout.test:srlDrawableMarginRight}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsFooter_srlDrawableProgress com.scwang.smartrefresh.layout.test:srlDrawableProgress}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsFooter_srlDrawableProgressSize com.scwang.smartrefresh.layout.test:srlDrawableProgressSize}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsFooter_srlDrawableSize com.scwang.smartrefresh.layout.test:srlDrawableSize}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsFooter_srlFinishDuration com.scwang.smartrefresh.layout.test:srlFinishDuration}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsFooter_srlPrimaryColor com.scwang.smartrefresh.layout.test:srlPrimaryColor}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsFooter_srlTextSizeTitle com.scwang.smartrefresh.layout.test:srlTextSizeTitle}</code></td><td></td></tr>
+</table>
+@see #ClassicsFooter_srlAccentColor
+@see #ClassicsFooter_srlClassicsSpinnerStyle
+@see #ClassicsFooter_srlDrawableArrow
+@see #ClassicsFooter_srlDrawableArrowSize
+@see #ClassicsFooter_srlDrawableMarginRight
+@see #ClassicsFooter_srlDrawableProgress
+@see #ClassicsFooter_srlDrawableProgressSize
+@see #ClassicsFooter_srlDrawableSize
+@see #ClassicsFooter_srlFinishDuration
+@see #ClassicsFooter_srlPrimaryColor
+@see #ClassicsFooter_srlTextSizeTitle
+"
+	end
+
+	attribute 238702 "ClassicsFooter_srlAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlAccentColor}
+attribute's value can be found in the {@link #ClassicsFooter} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlAccentColor
+"
+	end
+
+	attribute 238830 "ClassicsFooter_srlClassicsSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>
+@attr description
+固定在背后
+
+
+<p>Must be one of the following constant values.</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>Translate</code></td><td>0</td><td></td></tr>
+<tr><td><code>Scale</code></td><td>1</td><td>平行移动</td></tr>
+<tr><td><code>FixedBehind</code></td><td>2</td><td>拉伸形变</td></tr>
+</table>
+<p>This is a private symbol.
+@attr name com.scwang.smartrefresh.layout.test:srlClassicsSpinnerStyle
+"
+	end
+
+	attribute 238958 "ClassicsFooter_srlDrawableArrow"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableArrow}
+attribute's value can be found in the {@link #ClassicsFooter} array.
+
+
+<p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableArrow
+"
+	end
+
+	attribute 239086 "ClassicsFooter_srlDrawableArrowSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableArrowSize}
+attribute's value can be found in the {@link #ClassicsFooter} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableArrowSize
+"
+	end
+
+	attribute 239214 "ClassicsFooter_srlDrawableMarginRight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 4"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableMarginRight}
+attribute's value can be found in the {@link #ClassicsFooter} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableMarginRight
+"
+	end
+
+	attribute 239342 "ClassicsFooter_srlDrawableProgress"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 5"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableProgress}
+attribute's value can be found in the {@link #ClassicsFooter} array.
+
+
+<p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableProgress
+"
+	end
+
+	attribute 239470 "ClassicsFooter_srlDrawableProgressSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 6"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableProgressSize}
+attribute's value can be found in the {@link #ClassicsFooter} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableProgressSize
+"
+	end
+
+	attribute 239598 "ClassicsFooter_srlDrawableSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 7"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableSize}
+attribute's value can be found in the {@link #ClassicsFooter} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableSize
+"
+	end
+
+	attribute 239726 "ClassicsFooter_srlFinishDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 8"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlFinishDuration}
+attribute's value can be found in the {@link #ClassicsFooter} array.
+
+
+<p>Must be an integer value, such as \"<code>100</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlFinishDuration
+"
+	end
+
+	attribute 239854 "ClassicsFooter_srlPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 9"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlPrimaryColor}
+attribute's value can be found in the {@link #ClassicsFooter} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlPrimaryColor
+"
+	end
+
+	attribute 239982 "ClassicsFooter_srlTextSizeTitle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 10"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlTextSizeTitle}
+attribute's value can be found in the {@link #ClassicsFooter} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlTextSizeTitle
+"
+	end
+
+	attribute 240110 "ClassicsHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004,
+            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
+            0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d,
+            0x7f010010, 0x7f010011
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a ClassicsHeader.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #ClassicsHeader_srlAccentColor com.scwang.smartrefresh.layout.test:srlAccentColor}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlClassicsSpinnerStyle com.scwang.smartrefresh.layout.test:srlClassicsSpinnerStyle}</code></td><td>固定在背后</td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlDrawableArrow com.scwang.smartrefresh.layout.test:srlDrawableArrow}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlDrawableArrowSize com.scwang.smartrefresh.layout.test:srlDrawableArrowSize}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlDrawableMarginRight com.scwang.smartrefresh.layout.test:srlDrawableMarginRight}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlDrawableProgress com.scwang.smartrefresh.layout.test:srlDrawableProgress}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlDrawableProgressSize com.scwang.smartrefresh.layout.test:srlDrawableProgressSize}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlDrawableSize com.scwang.smartrefresh.layout.test:srlDrawableSize}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlEnableLastTime com.scwang.smartrefresh.layout.test:srlEnableLastTime}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlFinishDuration com.scwang.smartrefresh.layout.test:srlFinishDuration}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlPrimaryColor com.scwang.smartrefresh.layout.test:srlPrimaryColor}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlTextSizeTime com.scwang.smartrefresh.layout.test:srlTextSizeTime}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlTextSizeTitle com.scwang.smartrefresh.layout.test:srlTextSizeTitle}</code></td><td></td></tr>
+<tr><td><code>{@link #ClassicsHeader_srlTextTimeMarginTop com.scwang.smartrefresh.layout.test:srlTextTimeMarginTop}</code></td><td></td></tr>
+</table>
+@see #ClassicsHeader_srlAccentColor
+@see #ClassicsHeader_srlClassicsSpinnerStyle
+@see #ClassicsHeader_srlDrawableArrow
+@see #ClassicsHeader_srlDrawableArrowSize
+@see #ClassicsHeader_srlDrawableMarginRight
+@see #ClassicsHeader_srlDrawableProgress
+@see #ClassicsHeader_srlDrawableProgressSize
+@see #ClassicsHeader_srlDrawableSize
+@see #ClassicsHeader_srlEnableLastTime
+@see #ClassicsHeader_srlFinishDuration
+@see #ClassicsHeader_srlPrimaryColor
+@see #ClassicsHeader_srlTextSizeTime
+@see #ClassicsHeader_srlTextSizeTitle
+@see #ClassicsHeader_srlTextTimeMarginTop
+"
+	end
+
+	attribute 240238 "ClassicsHeader_srlAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlAccentColor}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlAccentColor
+"
+	end
+
+	attribute 240366 "ClassicsHeader_srlClassicsSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>
+@attr description
+固定在背后
+
+
+<p>Must be one of the following constant values.</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>Translate</code></td><td>0</td><td></td></tr>
+<tr><td><code>Scale</code></td><td>1</td><td>平行移动</td></tr>
+<tr><td><code>FixedBehind</code></td><td>2</td><td>拉伸形变</td></tr>
+</table>
+<p>This is a private symbol.
+@attr name com.scwang.smartrefresh.layout.test:srlClassicsSpinnerStyle
+"
+	end
+
+	attribute 240494 "ClassicsHeader_srlDrawableArrow"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableArrow}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableArrow
+"
+	end
+
+	attribute 240622 "ClassicsHeader_srlDrawableArrowSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableArrowSize}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableArrowSize
+"
+	end
+
+	attribute 240750 "ClassicsHeader_srlDrawableMarginRight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 4"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableMarginRight}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableMarginRight
+"
+	end
+
+	attribute 240878 "ClassicsHeader_srlDrawableProgress"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 5"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableProgress}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableProgress
+"
+	end
+
+	attribute 241006 "ClassicsHeader_srlDrawableProgressSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 6"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableProgressSize}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableProgressSize
+"
+	end
+
+	attribute 241134 "ClassicsHeader_srlDrawableSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 7"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDrawableSize}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlDrawableSize
+"
+	end
+
+	attribute 241262 "ClassicsHeader_srlEnableLastTime"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 13"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableLastTime}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableLastTime
+"
+	end
+
+	attribute 241390 "ClassicsHeader_srlFinishDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 8"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlFinishDuration}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be an integer value, such as \"<code>100</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlFinishDuration
+"
+	end
+
+	attribute 241518 "ClassicsHeader_srlPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 9"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlPrimaryColor}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlPrimaryColor
+"
+	end
+
+	attribute 241646 "ClassicsHeader_srlTextSizeTime"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 10"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlTextSizeTime}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlTextSizeTime
+"
+	end
+
+	attribute 241774 "ClassicsHeader_srlTextSizeTitle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 11"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlTextSizeTitle}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlTextSizeTitle
+"
+	end
+
+	attribute 241902 "ClassicsHeader_srlTextTimeMarginTop"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 12"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlTextTimeMarginTop}
+attribute's value can be found in the {@link #ClassicsHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlTextTimeMarginTop
+"
+	end
+
+	attribute 242030 "SmartRefreshLayout"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010001, 0x7f01000b, 0x7f010012, 0x7f010013,
+            0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017,
+            0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b,
+            0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f,
+            0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023,
+            0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027,
+            0x7f010028, 0x7f010029, 0x7f01002a, 0x7f01002b,
+            0x7f01002c, 0x7f01002d, 0x7f01002e, 0x7f01002f,
+            0x7f010030, 0x7f010031
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a SmartRefreshLayout.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlAccentColor com.scwang.smartrefresh.layout.test:srlAccentColor}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlDisableContentWhenLoading com.scwang.smartrefresh.layout.test:srlDisableContentWhenLoading}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlDisableContentWhenRefresh com.scwang.smartrefresh.layout.test:srlDisableContentWhenRefresh}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlDragRate com.scwang.smartrefresh.layout.test:srlDragRate}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableAutoLoadMore com.scwang.smartrefresh.layout.test:srlEnableAutoLoadMore}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableClipFooterWhenFixedBehind com.scwang.smartrefresh.layout.test:srlEnableClipFooterWhenFixedBehind}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableClipHeaderWhenFixedBehind com.scwang.smartrefresh.layout.test:srlEnableClipHeaderWhenFixedBehind}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableFooterFollowWhenLoadFinished com.scwang.smartrefresh.layout.test:srlEnableFooterFollowWhenLoadFinished}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableFooterTranslationContent com.scwang.smartrefresh.layout.test:srlEnableFooterTranslationContent}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableHeaderTranslationContent com.scwang.smartrefresh.layout.test:srlEnableHeaderTranslationContent}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableLoadMore com.scwang.smartrefresh.layout.test:srlEnableLoadMore}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableLoadMoreWhenContentNotFull com.scwang.smartrefresh.layout.test:srlEnableLoadMoreWhenContentNotFull}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableNestedScrolling com.scwang.smartrefresh.layout.test:srlEnableNestedScrolling}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableOverScrollBounce com.scwang.smartrefresh.layout.test:srlEnableOverScrollBounce}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableOverScrollDrag com.scwang.smartrefresh.layout.test:srlEnableOverScrollDrag}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnablePreviewInEditMode com.scwang.smartrefresh.layout.test:srlEnablePreviewInEditMode}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnablePureScrollMode com.scwang.smartrefresh.layout.test:srlEnablePureScrollMode}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableRefresh com.scwang.smartrefresh.layout.test:srlEnableRefresh}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableScrollContentWhenLoaded com.scwang.smartrefresh.layout.test:srlEnableScrollContentWhenLoaded}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlEnableScrollContentWhenRefreshed com.scwang.smartrefresh.layout.test:srlEnableScrollContentWhenRefreshed}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlFixedFooterViewId com.scwang.smartrefresh.layout.test:srlFixedFooterViewId}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlFixedHeaderViewId com.scwang.smartrefresh.layout.test:srlFixedHeaderViewId}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlFooterHeight com.scwang.smartrefresh.layout.test:srlFooterHeight}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlFooterInsetStart com.scwang.smartrefresh.layout.test:srlFooterInsetStart}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlFooterMaxDragRate com.scwang.smartrefresh.layout.test:srlFooterMaxDragRate}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlFooterTranslationViewId com.scwang.smartrefresh.layout.test:srlFooterTranslationViewId}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlFooterTriggerRate com.scwang.smartrefresh.layout.test:srlFooterTriggerRate}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlHeaderHeight com.scwang.smartrefresh.layout.test:srlHeaderHeight}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlHeaderInsetStart com.scwang.smartrefresh.layout.test:srlHeaderInsetStart}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlHeaderMaxDragRate com.scwang.smartrefresh.layout.test:srlHeaderMaxDragRate}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlHeaderTranslationViewId com.scwang.smartrefresh.layout.test:srlHeaderTranslationViewId}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlHeaderTriggerRate com.scwang.smartrefresh.layout.test:srlHeaderTriggerRate}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlPrimaryColor com.scwang.smartrefresh.layout.test:srlPrimaryColor}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_srlReboundDuration com.scwang.smartrefresh.layout.test:srlReboundDuration}</code></td><td></td></tr>
+</table>
+@see #SmartRefreshLayout_srlAccentColor
+@see #SmartRefreshLayout_srlDisableContentWhenLoading
+@see #SmartRefreshLayout_srlDisableContentWhenRefresh
+@see #SmartRefreshLayout_srlDragRate
+@see #SmartRefreshLayout_srlEnableAutoLoadMore
+@see #SmartRefreshLayout_srlEnableClipFooterWhenFixedBehind
+@see #SmartRefreshLayout_srlEnableClipHeaderWhenFixedBehind
+@see #SmartRefreshLayout_srlEnableFooterFollowWhenLoadFinished
+@see #SmartRefreshLayout_srlEnableFooterTranslationContent
+@see #SmartRefreshLayout_srlEnableHeaderTranslationContent
+@see #SmartRefreshLayout_srlEnableLoadMore
+@see #SmartRefreshLayout_srlEnableLoadMoreWhenContentNotFull
+@see #SmartRefreshLayout_srlEnableNestedScrolling
+@see #SmartRefreshLayout_srlEnableOverScrollBounce
+@see #SmartRefreshLayout_srlEnableOverScrollDrag
+@see #SmartRefreshLayout_srlEnablePreviewInEditMode
+@see #SmartRefreshLayout_srlEnablePureScrollMode
+@see #SmartRefreshLayout_srlEnableRefresh
+@see #SmartRefreshLayout_srlEnableScrollContentWhenLoaded
+@see #SmartRefreshLayout_srlEnableScrollContentWhenRefreshed
+@see #SmartRefreshLayout_srlFixedFooterViewId
+@see #SmartRefreshLayout_srlFixedHeaderViewId
+@see #SmartRefreshLayout_srlFooterHeight
+@see #SmartRefreshLayout_srlFooterInsetStart
+@see #SmartRefreshLayout_srlFooterMaxDragRate
+@see #SmartRefreshLayout_srlFooterTranslationViewId
+@see #SmartRefreshLayout_srlFooterTriggerRate
+@see #SmartRefreshLayout_srlHeaderHeight
+@see #SmartRefreshLayout_srlHeaderInsetStart
+@see #SmartRefreshLayout_srlHeaderMaxDragRate
+@see #SmartRefreshLayout_srlHeaderTranslationViewId
+@see #SmartRefreshLayout_srlHeaderTriggerRate
+@see #SmartRefreshLayout_srlPrimaryColor
+@see #SmartRefreshLayout_srlReboundDuration
+"
+	end
+
+	attribute 242158 "SmartRefreshLayout_srlAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlAccentColor}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlAccentColor
+"
+	end
+
+	attribute 242286 "SmartRefreshLayout_srlDisableContentWhenLoading"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 31"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDisableContentWhenLoading}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlDisableContentWhenLoading
+"
+	end
+
+	attribute 242414 "SmartRefreshLayout_srlDisableContentWhenRefresh"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 30"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDisableContentWhenRefresh}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlDisableContentWhenRefresh
+"
+	end
+
+	attribute 242542 "SmartRefreshLayout_srlDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 7"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlDragRate}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlDragRate
+"
+	end
+
+	attribute 242670 "SmartRefreshLayout_srlEnableAutoLoadMore"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 19"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableAutoLoadMore}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableAutoLoadMore
+"
+	end
+
+	attribute 242798 "SmartRefreshLayout_srlEnableClipFooterWhenFixedBehind"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 28"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableClipFooterWhenFixedBehind}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableClipFooterWhenFixedBehind
+"
+	end
+
+	attribute 242926 "SmartRefreshLayout_srlEnableClipHeaderWhenFixedBehind"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 27"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableClipHeaderWhenFixedBehind}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableClipHeaderWhenFixedBehind
+"
+	end
+
+	attribute 243054 "SmartRefreshLayout_srlEnableFooterFollowWhenLoadFinished"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 26"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableFooterFollowWhenLoadFinished}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableFooterFollowWhenLoadFinished
+"
+	end
+
+	attribute 243182 "SmartRefreshLayout_srlEnableFooterTranslationContent"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 15"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableFooterTranslationContent}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableFooterTranslationContent
+"
+	end
+
+	attribute 243310 "SmartRefreshLayout_srlEnableHeaderTranslationContent"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 14"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableHeaderTranslationContent}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableHeaderTranslationContent
+"
+	end
+
+	attribute 243438 "SmartRefreshLayout_srlEnableLoadMore"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 13"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableLoadMore}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableLoadMore
+"
+	end
+
+	attribute 243566 "SmartRefreshLayout_srlEnableLoadMoreWhenContentNotFull"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 25"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableLoadMoreWhenContentNotFull}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableLoadMoreWhenContentNotFull
+"
+	end
+
+	attribute 243694 "SmartRefreshLayout_srlEnableNestedScrolling"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 22"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableNestedScrolling}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableNestedScrolling
+"
+	end
+
+	attribute 243822 "SmartRefreshLayout_srlEnableOverScrollBounce"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 20"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableOverScrollBounce}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableOverScrollBounce
+"
+	end
+
+	attribute 243950 "SmartRefreshLayout_srlEnableOverScrollDrag"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 29"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableOverScrollDrag}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableOverScrollDrag
+"
+	end
+
+	attribute 244078 "SmartRefreshLayout_srlEnablePreviewInEditMode"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 18"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnablePreviewInEditMode}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnablePreviewInEditMode
+"
+	end
+
+	attribute 244206 "SmartRefreshLayout_srlEnablePureScrollMode"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 21"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnablePureScrollMode}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnablePureScrollMode
+"
+	end
+
+	attribute 244334 "SmartRefreshLayout_srlEnableRefresh"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 12"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableRefresh}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableRefresh
+"
+	end
+
+	attribute 244462 "SmartRefreshLayout_srlEnableScrollContentWhenLoaded"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 23"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableScrollContentWhenLoaded}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableScrollContentWhenLoaded
+"
+	end
+
+	attribute 244590 "SmartRefreshLayout_srlEnableScrollContentWhenRefreshed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 24"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableScrollContentWhenRefreshed}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableScrollContentWhenRefreshed
+"
+	end
+
+	attribute 244718 "SmartRefreshLayout_srlFixedFooterViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 33"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlFixedFooterViewId}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+@attr name com.scwang.smartrefresh.layout.test:srlFixedFooterViewId
+"
+	end
+
+	attribute 244846 "SmartRefreshLayout_srlFixedHeaderViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 32"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlFixedHeaderViewId}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+@attr name com.scwang.smartrefresh.layout.test:srlFixedHeaderViewId
+"
+	end
+
+	attribute 244974 "SmartRefreshLayout_srlFooterHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 4"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlFooterHeight}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlFooterHeight
+"
+	end
+
+	attribute 245102 "SmartRefreshLayout_srlFooterInsetStart"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 6"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlFooterInsetStart}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlFooterInsetStart
+"
+	end
+
+	attribute 245230 "SmartRefreshLayout_srlFooterMaxDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 9"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlFooterMaxDragRate}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlFooterMaxDragRate
+"
+	end
+
+	attribute 245358 "SmartRefreshLayout_srlFooterTranslationViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 17"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlFooterTranslationViewId}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+@attr name com.scwang.smartrefresh.layout.test:srlFooterTranslationViewId
+"
+	end
+
+	attribute 245486 "SmartRefreshLayout_srlFooterTriggerRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 11"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlFooterTriggerRate}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlFooterTriggerRate
+"
+	end
+
+	attribute 245614 "SmartRefreshLayout_srlHeaderHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlHeaderHeight}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlHeaderHeight
+"
+	end
+
+	attribute 245742 "SmartRefreshLayout_srlHeaderInsetStart"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 5"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlHeaderInsetStart}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlHeaderInsetStart
+"
+	end
+
+	attribute 245870 "SmartRefreshLayout_srlHeaderMaxDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 8"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlHeaderMaxDragRate}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlHeaderMaxDragRate
+"
+	end
+
+	attribute 245998 "SmartRefreshLayout_srlHeaderTranslationViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 16"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlHeaderTranslationViewId}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+@attr name com.scwang.smartrefresh.layout.test:srlHeaderTranslationViewId
+"
+	end
+
+	attribute 246126 "SmartRefreshLayout_srlHeaderTriggerRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 10"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlHeaderTriggerRate}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlHeaderTriggerRate
+"
+	end
+
+	attribute 246254 "SmartRefreshLayout_srlPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlPrimaryColor}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlPrimaryColor
+"
+	end
+
+	attribute 246382 "SmartRefreshLayout_srlReboundDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlReboundDuration}
+attribute's value can be found in the {@link #SmartRefreshLayout} array.
+
+
+<p>Must be an integer value, such as \"<code>100</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlReboundDuration
+"
+	end
+
+	attribute 246510 "SmartRefreshLayout_Layout"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010000, 0x7f010032
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a SmartRefreshLayout_Layout.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #SmartRefreshLayout_Layout_layout_srlBackgroundColor com.scwang.smartrefresh.layout.test:layout_srlBackgroundColor}</code></td><td></td></tr>
+<tr><td><code>{@link #SmartRefreshLayout_Layout_layout_srlSpinnerStyle com.scwang.smartrefresh.layout.test:layout_srlSpinnerStyle}</code></td><td>填满布局</td></tr>
+</table>
+@see #SmartRefreshLayout_Layout_layout_srlBackgroundColor
+@see #SmartRefreshLayout_Layout_layout_srlSpinnerStyle
+"
+	end
+
+	attribute 246638 "SmartRefreshLayout_Layout_layout_srlBackgroundColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#layout_srlBackgroundColor}
+attribute's value can be found in the {@link #SmartRefreshLayout_Layout} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:layout_srlBackgroundColor
+"
+	end
+
+	attribute 246766 "SmartRefreshLayout_Layout_layout_srlSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>
+@attr description
+填满布局
+
+
+<p>Must be one of the following constant values.</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>Translate</code></td><td>0</td><td></td></tr>
+<tr><td><code>Scale</code></td><td>1</td><td>平行移动</td></tr>
+<tr><td><code>FixedBehind</code></td><td>2</td><td>拉伸形变</td></tr>
+<tr><td><code>FixedFront</code></td><td>3</td><td>固定在背后</td></tr>
+<tr><td><code>MatchLayout</code></td><td>4</td><td>固定在前面</td></tr>
+</table>
+<p>This is a private symbol.
+@attr name com.scwang.smartrefresh.layout.test:layout_srlSpinnerStyle
+"
+	end
+
+	attribute 246894 "TwoLevelHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010033, 0x7f010034, 0x7f010035, 0x7f010036,
+            0x7f010037, 0x7f010038
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a TwoLevelHeader.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #TwoLevelHeader_srlEnablePullToCloseTwoLevel com.scwang.smartrefresh.layout.test:srlEnablePullToCloseTwoLevel}</code></td><td></td></tr>
+<tr><td><code>{@link #TwoLevelHeader_srlEnableTwoLevel com.scwang.smartrefresh.layout.test:srlEnableTwoLevel}</code></td><td></td></tr>
+<tr><td><code>{@link #TwoLevelHeader_srlFloorDuration com.scwang.smartrefresh.layout.test:srlFloorDuration}</code></td><td></td></tr>
+<tr><td><code>{@link #TwoLevelHeader_srlFloorRage com.scwang.smartrefresh.layout.test:srlFloorRage}</code></td><td></td></tr>
+<tr><td><code>{@link #TwoLevelHeader_srlMaxRage com.scwang.smartrefresh.layout.test:srlMaxRage}</code></td><td></td></tr>
+<tr><td><code>{@link #TwoLevelHeader_srlRefreshRage com.scwang.smartrefresh.layout.test:srlRefreshRage}</code></td><td></td></tr>
+</table>
+@see #TwoLevelHeader_srlEnablePullToCloseTwoLevel
+@see #TwoLevelHeader_srlEnableTwoLevel
+@see #TwoLevelHeader_srlFloorDuration
+@see #TwoLevelHeader_srlFloorRage
+@see #TwoLevelHeader_srlMaxRage
+@see #TwoLevelHeader_srlRefreshRage
+"
+	end
+
+	attribute 247022 "TwoLevelHeader_srlEnablePullToCloseTwoLevel"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 5"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnablePullToCloseTwoLevel}
+attribute's value can be found in the {@link #TwoLevelHeader} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnablePullToCloseTwoLevel
+"
+	end
+
+	attribute 247150 "TwoLevelHeader_srlEnableTwoLevel"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 4"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlEnableTwoLevel}
+attribute's value can be found in the {@link #TwoLevelHeader} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlEnableTwoLevel
+"
+	end
+
+	attribute 247278 "TwoLevelHeader_srlFloorDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlFloorDuration}
+attribute's value can be found in the {@link #TwoLevelHeader} array.
+
+
+<p>Must be an integer value, such as \"<code>100</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlFloorDuration
+"
+	end
+
+	attribute 247406 "TwoLevelHeader_srlFloorRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlFloorRage}
+attribute's value can be found in the {@link #TwoLevelHeader} array.
+
+
+<p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlFloorRage
+"
+	end
+
+	attribute 247534 "TwoLevelHeader_srlMaxRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlMaxRage}
+attribute's value can be found in the {@link #TwoLevelHeader} array.
+
+
+<p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlMaxRage
+"
+	end
+
+	attribute 247662 "TwoLevelHeader_srlRefreshRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.layout.test.R.attr#srlRefreshRage}
+attribute's value can be found in the {@link #TwoLevelHeader} array.
+
+
+<p>Must be a floating point value, such as \"<code>1.2</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.layout.test:srlRefreshRage
+"
+	end
+      end
+    end
+  end
+
+  deploymentview 131054 "test"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 134638 "BuildConfig"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_classes
+	class_ref 139374 // BuildConfig
+      end
+      comment "Automatically generated file. DO NOT MODIFY"
+    end
+
+    artifact 135022 "R"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_classes
+	class_ref 140270 // R
+      end
+      comment " AUTO-GENERATED FILE.  DO NOT MODIFY.
+
+This class was automatically generated by the
+aapt tool from the resource data it found.  It
+should not be modified by hand."
+    end
+  end
+end

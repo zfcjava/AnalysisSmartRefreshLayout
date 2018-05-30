@@ -1,0 +1,902 @@
+format 76
+"footer" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::layout::footer
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-layout/src/main/java/com/scwang/smartrefresh/layout/footer/"
+  java_package "com.scwang.smartrefresh.layout.footer"
+  classview 131822 "footer"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 143598 "BallPulseFooter"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings({\"unused\", \"UnusedReturnValue\"})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "球脉冲底部加载组件
+Created by SCWANG on 2017/5/30."
+      classrelation 141038 // <generalisation>
+	relation 141038 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 141038 // <generalisation>
+	  b parent class_ref 131950 // InternalAbstract
+      end
+
+      classrelation 141166 // <realization>
+	relation 141166 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 141166 // <realization>
+	  b parent class_ref 141294 // RefreshFooter
+      end
+
+      attribute 264174 "DEFAULT_SIZE"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 50"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "<editor-fold desc=\"属性变量\">
+dp"
+      end
+
+      attribute 264302 "mManualNormalColor"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 264430 "mManualAnimationColor"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 264558 "mPaint"
+	protected explicit_type "Paint"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "    protected SpinnerStyle mSpinnerStyle = SpinnerStyle.Translate;"
+      end
+
+      attribute 264686 "mNormalColor"
+	protected explicit_type "int"
+	init_value " 0xffeeeeee"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 264814 "mAnimatingColor"
+	protected explicit_type "int"
+	init_value " 0xffe75946"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 264942 "mCircleSpacing"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 265070 "mScaleFloats"
+	protected explicit_type "float"
+	multiplicity "[]"
+	init_value " new float[]{1f, 1f, 1f}"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 265198 "mIsStarted"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 265326 "mAnimators"
+	protected explicit_type "ValueAnimator"
+	stereotype "ArrayList"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 265454 "mUpdateListeners"
+	protected explicit_type "ValueAnimator, ValueAnimator.AnimatorUpdateListener"
+	init_value " new HashMap<>()"
+	stereotype "Map"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 203886 "BallPulseFooter"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "context" explicit_type "Context"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"构造方法\">"
+      end
+
+      operation 204014 "BallPulseFooter"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}@NonNull ${t0} ${p0}, @Nullable ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 204142 "BallPulseFooter"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	  param in name "defStyleAttr" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}@NonNull ${t0} ${p0}, @Nullable ${t1} ${p1}, @AttrRes ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 204270 "onDetachedFromWindow"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 204398 "dispatchDraw"
+	protected explicit_return_type "void"
+	nparams 1
+	  param inout name "canvas" explicit_type "Canvas"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>"
+      end
+
+      operation 204526 "onStartAnimator"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "<editor-fold desc=\"刷新方法 - RefreshFooter\">"
+      end
+
+      operation 204654 "onFinish"
+	public explicit_return_type "int"
+	nparams 2
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	  param inout name "success" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 204782 "setNoMoreData"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "noMoreData" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 204910 "setPrimaryColors"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "" explicit_type "int...colors"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override@Deprecated
+"
+	
+	
+	
+      end
+
+      operation 205038 "setSpinnerStyle"
+	public return_type class_ref 143598 // BallPulseFooter
+	nparams 1
+	  param inout name "mSpinnerStyle" type class_ref 132718 // SpinnerStyle
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    @NonNull
+    @Override
+    public SpinnerStyle getSpinnerStyle() {
+        return mSpinnerStyle;
+    }
+</editor-fold>
+<editor-fold desc=\"开放接口 - API\">"
+      end
+
+      operation 205166 "setNormalColor"
+	public return_type class_ref 143598 // BallPulseFooter
+	nparams 1
+	  param in name "color" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 205294 "setAnimatingColor"
+	public return_type class_ref 143598 // BallPulseFooter
+	nparams 1
+	  param in name "color" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 143726 "ClassicsFooter"
+      visibility public 
+      nactuals 5
+      actual class class_ref 143854 // InternalClassics
+        rank 0 explicit_value ""
+      actual class class_ref 143854 // InternalClassics
+        rank 1 explicit_value ""
+      actual class class_ref 143854 // InternalClassics
+        rank 2 explicit_value ""
+      actual class class_ref 143854 // InternalClassics
+        rank 3 explicit_value ""
+      actual class class_ref 143854 // InternalClassics
+        rank 4 explicit_value ""
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings({\"unused\", \"UnusedReturnValue\", \"deprecation\"})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "经典上拉底部组件
+Created by SCWANG on 2017/5/28."
+      classrelation 141934 // <realization>
+	relation 141934 -_-|>
+	  stereotype "bind"
+	  a public
+	    java "${type}"
+	    classrelation_ref 141934 // <realization>
+	  b parent class_ref 143854 // InternalClassics
+      end
+
+      classrelation 142062 // <realization>
+	relation 142062 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 142062 // <realization>
+	  b parent class_ref 141294 // RefreshFooter
+      end
+
+      attribute 267246 "REFRESH_FOOTER_PULLING"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"上拉加载更多\";"
+      end
+
+      attribute 267374 "REFRESH_FOOTER_RELEASE"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"释放立即加载\";"
+      end
+
+      attribute 267502 "REFRESH_FOOTER_LOADING"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"正在加载...\";"
+      end
+
+      attribute 267630 "REFRESH_FOOTER_REFRESHING"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"正在刷新...\";"
+      end
+
+      attribute 267758 "REFRESH_FOOTER_FINISH"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"加载完成\";"
+      end
+
+      attribute 267886 "REFRESH_FOOTER_FAILED"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"加载失败\";"
+      end
+
+      attribute 268014 "REFRESH_FOOTER_NOTHING"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"没有更多数据了\";"
+      end
+
+      attribute 268142 "mNoMoreData"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 208494 "ClassicsFooter"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "context" explicit_type "Context"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "<editor-fold desc=\"LinearLayout\">"
+      end
+
+      operation 208622 "ClassicsFooter"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 208750 "ClassicsFooter"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	  param in name "defStyleAttr" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 208878 "onStartAnimator"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    protected ClassicsFooter self() {
+        return this;
+    }
+</editor-fold>
+<editor-fold desc=\"RefreshFooter\">"
+      end
+
+      operation 209006 "onFinish"
+	public explicit_return_type "int"
+	nparams 2
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	  param inout name "success" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 209134 "setPrimaryColors"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "colors" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ... ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override@Deprecated
+"
+	
+	
+	
+	comment "ClassicsFooter 在(SpinnerStyle.FixedBehind)时才有主题色"
+      end
+
+      operation 209262 "setNoMoreData"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "noMoreData" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置数据全部加载完成，将不能再次触发加载功能"
+      end
+
+      operation 209390 "onStateChanged"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param inout name "oldState" type class_ref 132590 // RefreshState
+	  param inout name "newState" type class_ref 132590 // RefreshState
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}, @NonNull ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+
+    class 144110 "FalsifyFooter"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings(\"unused\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "虚假的 Footer
+用于 正真的 Footer 在 RefreshLayout 外部时，
+Created by SCWANG on 2017/6/14."
+      classrelation 142190 // <generalisation>
+	relation 142190 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 142190 // <generalisation>
+	  b parent class_ref 131950 // InternalAbstract
+      end
+
+      classrelation 142318 // <realization>
+	relation 142318 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 142318 // <realization>
+	  b parent class_ref 141294 // RefreshFooter
+      end
+
+      classrelation 142446 // mRefreshKernel (<unidirectional association>)
+	relation 142446 --->
+	  a role_name "mRefreshKernel" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 142446 // mRefreshKernel (<unidirectional association>)
+	  b parent class_ref 132846 // RefreshKernel
+      end
+
+      operation 209518 "FalsifyFooter"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "context" explicit_type "Context"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "<editor-fold desc=\"FalsifyHeader\">"
+      end
+
+      operation 209646 "FalsifyFooter"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 209774 "FalsifyFooter"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	  param in name "defStyleAttr" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 209902 "dispatchDraw"
+	protected explicit_return_type "void"
+	nparams 1
+	  param inout name "canvas" explicit_type "Canvas"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 210030 "onInitialized"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "kernel" type class_ref 132846 // RefreshKernel
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"RefreshFooter\">"
+      end
+
+      operation 210158 "onReleased"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 210286 "setNoMoreData"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "noMoreData" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+  end
+
+  deploymentview 131438 "footer"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 136814 "BallPulseFooter"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.animation.ValueAnimator;
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.support.annotation.AttrRes;
+import android.support.annotation.ColorInt;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.graphics.ColorUtils;
+import android.util.AttributeSet;
+import android.view.View;
+import com.scwang.smartrefresh.layout.R;
+import com.scwang.smartrefresh.layout.api.RefreshFooter;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
+import com.scwang.smartrefresh.layout.internal.InternalAbstract;
+import com.scwang.smartrefresh.layout.util.DensityUtil;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+${definition}"
+      associated_classes
+	class_ref 143598 // BallPulseFooter
+      end
+    end
+
+    artifact 137070 "ClassicsFooter"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.support.annotation.ColorInt;
+import android.support.annotation.NonNull;
+import android.util.AttributeSet;
+import android.util.TypedValue;
+import android.view.View;
+import com.scwang.smartrefresh.layout.R;
+import com.scwang.smartrefresh.layout.api.RefreshFooter;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
+import com.scwang.smartrefresh.layout.internal.ArrowDrawable;
+import com.scwang.smartrefresh.layout.internal.InternalClassics;
+import com.scwang.smartrefresh.layout.internal.ProgressDrawable;
+import com.scwang.smartrefresh.layout.util.DensityUtil;
+import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
+import static com.scwang.smartrefresh.layout.util.SmartUtil.getColor;
+${definition}"
+      associated_classes
+	class_ref 143726 // ClassicsFooter
+      end
+    end
+
+    artifact 137198 "FalsifyFooter"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.DashPathEffect;
+import android.graphics.Paint;
+import android.support.annotation.NonNull;
+import android.util.AttributeSet;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.TextView;
+import com.scwang.smartrefresh.layout.R;
+import com.scwang.smartrefresh.layout.api.RefreshFooter;
+import com.scwang.smartrefresh.layout.api.RefreshKernel;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.internal.InternalAbstract;
+import com.scwang.smartrefresh.layout.util.DensityUtil;
+import static android.view.View.MeasureSpec.EXACTLY;
+import static android.view.View.MeasureSpec.makeMeasureSpec;
+${definition}"
+      associated_classes
+	class_ref 144110 // FalsifyFooter
+      end
+    end
+  end
+end

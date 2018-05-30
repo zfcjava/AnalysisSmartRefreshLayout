@@ -1,0 +1,748 @@
+format 76
+"impl" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::layout::impl
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-layout/src/main/java/com/scwang/smartrefresh/layout/impl/"
+  java_package "com.scwang.smartrefresh.layout.impl"
+  classview 132078 "impl"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 144878 "RefreshContentWrapper"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings(\"WeakerAccess\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新内容包装
+Created by SCWANG on 2017/5/26."
+      classrelation 143854 // <realization>
+	relation 143854 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 143854 // <realization>
+	  b parent class_ref 134254 // RefreshContent
+      end
+
+      classrelation 143982 // <realization>
+	relation 143982 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 143982 // <realization>
+	  b parent class_ref 145006 // CoordinatorLayoutListener
+      end
+
+      classrelation 144110 // <realization>
+	relation 144110 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 144110 // <realization>
+	  b parent class_ref 145134 // AnimatorUpdateListener
+      end
+
+      attribute 274798 "mContentView"
+	protected explicit_type "View"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "    protected int mHeaderHeight = Integer.MAX_VALUE;
+    protected int mFooterHeight = mHeaderHeight - 1;
+直接内容视图"
+      end
+
+      attribute 274926 "mRealContentView"
+	protected explicit_type "View"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "被包裹的原真实视图"
+      end
+
+      attribute 275054 "mScrollableView"
+	protected explicit_type "View"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 275182 "mFixedHeader"
+	protected explicit_type "View"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 275310 "mFixedFooter"
+	protected explicit_type "View"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 275438 "mLastSpinner"
+	protected explicit_type "int"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 275566 "mEnableRefresh"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 275694 "mEnableLoadMore"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 144238 // mBoundaryAdapter (<unidirectional association>)
+	relation 144238 --->
+	  a role_name "mBoundaryAdapter" init_value " new ScrollBoundaryDeciderAdapter()" protected
+	    comment "    protected MotionEvent mMotionEvent;
+"
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 144238 // mBoundaryAdapter (<unidirectional association>)
+	  b parent class_ref 145262 // ScrollBoundaryDeciderAdapter
+      end
+
+      operation 217838 "RefreshContentWrapper"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "view" explicit_type "View"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 217966 "findScrollableView"
+	protected explicit_return_type "void"
+	nparams 2
+	  param inout name "content" explicit_type "View"
+	  param inout name "kernel" type class_ref 132846 // RefreshKernel
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "<editor-fold desc=\"findScrollableView\">"
+      end
+
+      operation 218094 "onCoordinatorUpdate"
+	public explicit_return_type "void"
+	nparams 2
+	  param inout name "enableRefresh" explicit_type "boolean"
+	  param inout name "enableLoadMore" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 218222 "findScrollableViewInternal"
+	protected explicit_return_type "View"
+	nparams 2
+	  param inout name "content" explicit_type "View"
+	  param inout name "selfable" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 218350 "findScrollableViewByPoint"
+	protected explicit_return_type "View"
+	nparams 3
+	  param inout name "content" explicit_type "View"
+	  param inout name "event" explicit_type "PointF"
+	  param inout name "orgScrollableView" explicit_type "View"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 218478 "getView"
+	public explicit_return_type "View"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@NonNull
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"implements\">"
+      end
+
+      operation 218606 "getScrollableView"
+	public explicit_return_type "View"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+    @NonNull
+"
+	
+	
+	
+      end
+
+      operation 218734 "moveSpinner"
+	public explicit_return_type "void"
+	nparams 3
+	  param in name "spinner" explicit_type "int"
+	  param in name "headerTranslationViewId" explicit_type "int"
+	  param in name "footerTranslationViewId" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 218862 "canRefresh"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 218990 "canLoadMore"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 219118 "onActionDown"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "e" explicit_type "MotionEvent"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 219246 "setUpComponent"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "kernel" type class_ref 132846 // RefreshKernel
+	  param inout name "fixedHeader" explicit_type "View"
+	  param inout name "fixedFooter" explicit_type "View"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public void onActionUpOrCancel() {
+        mMotionEvent = null;
+    }"
+      end
+
+      operation 219374 "setScrollBoundaryDecider"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "boundary" type class_ref 141934 // ScrollBoundaryDecider
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public void onInitialHeaderAndFooter(int headerHeight, int footerHeight) {
+        mHeaderHeight = headerHeight;
+        mFooterHeight = footerHeight;
+    }"
+      end
+
+      operation 219502 "setEnableLoadMoreWhenContentNotFull"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "enable" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 219630 "scrollContentWhenFinished"
+	public explicit_return_type "AnimatorUpdateListener"
+	nparams 1
+	  param in name "spinner" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}final ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 219758 "onAnimationUpdate"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "animation" explicit_type "ValueAnimator"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+
+    class 145262 "ScrollBoundaryDeciderAdapter"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings(\"WeakerAccess\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "滚动边界
+Created by SCWANG on 2017/7/8."
+      classrelation 144878 // <realization>
+	relation 144878 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 144878 // <realization>
+	  b parent class_ref 141934 // ScrollBoundaryDecider
+      end
+
+      attribute 275822 "mActionEvent"
+	public explicit_type "PointF"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "<editor-fold desc=\"Internal\">"
+      end
+
+      classrelation 145006 // boundary (<unidirectional association>)
+	relation 145006 --->
+	  a role_name "boundary" public
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 145006 // boundary (<unidirectional association>)
+	  b parent class_ref 141934 // ScrollBoundaryDecider
+      end
+
+      attribute 275950 "mEnableLoadMoreWhenContentNotFull"
+	public explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 220270 "canRefresh"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "content" explicit_type "View"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    void setScrollBoundaryDecider(ScrollBoundaryDecider boundary){
+        this.boundary = boundary;
+    }
+    void setActionEvent(MotionEvent event) {
+        //event 在没有必要时候会被设置为 null
+        mActionEvent = event;
+    }
+
+    public void setEnableLoadMoreWhenContentNotFull(boolean enable) {
+        mEnableLoadMoreWhenContentNotFull = enable;
+    }
+</editor-fold>
+<editor-fold desc=\"ScrollBoundaryDecider\">"
+      end
+
+      operation 220398 "canLoadMore"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "content" explicit_type "View"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+
+    class 145390 "RefreshFooterWrapper"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressLint(\"ViewConstructor\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新底部包装
+Created by SCWANG on 2017/5/26."
+      classrelation 144366 // <generalisation>
+	relation 144366 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 144366 // <generalisation>
+	  b parent class_ref 131950 // InternalAbstract
+      end
+
+      classrelation 144494 // <realization>
+	relation 144494 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 144494 // <realization>
+	  b parent class_ref 141294 // RefreshFooter
+      end
+
+      operation 219886 "RefreshFooterWrapper"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "wrapper" explicit_type "View"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment ", InvocationHandler 
+    private RefreshKernel mRefreshKernel;
+    private Method mRequestDrawBackgroundForHeaderMethod;
+    private Method mRequestRemeasureHeightForHeaderMethod;
+    private Method mRequestNeedTouchEventWhenRefreshingMethod;"
+      end
+
+      operation 220014 "setNoMoreData"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "noMoreData" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public void onInitialized(@NonNull RefreshKernel kernel, int height, int maxDragHeight) {
+        if (mWrapperView instanceof RefreshInternal) {
+            RefreshKernel proxy = (RefreshKernel) Proxy.newProxyInstance(RefreshKernel.class.getClassLoader(), new Class[]{RefreshKernel.class}, this);
+            proxy.requestDrawBackgroundForHeader(0);
+            proxy.requestRemeasureHeightForHeader();
+            proxy.requestNeedTouchEventWhenRefreshing(false);
+            mRefreshKernel = kernel;
+            ((RefreshInternal) mWrapperView).onInitialized(proxy, height, maxDragHeight);
+        } else {
+            ViewGroup.LayoutParams params = mWrapperView.getLayoutParams();
+            if (params instanceof SmartRefreshLayout.LayoutParams) {
+                kernel.requestDrawBackgroundForFooter(((SmartRefreshLayout.LayoutParams) params).backgroundColor);
+            }
+        }
+    }"
+      end
+    end
+
+    class 145518 "RefreshHeaderWrapper"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressLint(\"ViewConstructor\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新头部包装
+Created by SCWANG on 2017/5/26."
+      classrelation 144622 // <generalisation>
+	relation 144622 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 144622 // <generalisation>
+	  b parent class_ref 131950 // InternalAbstract
+      end
+
+      classrelation 144750 // <realization>
+	relation 144750 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 144750 // <realization>
+	  b parent class_ref 132974 // RefreshHeader
+      end
+
+      operation 220142 "RefreshHeaderWrapper"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "wrapper" explicit_type "View"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment ", InvocationHandler
+    private RefreshKernel mRefreshKernel;
+    private Method mRequestDrawBackgroundForFooterMethod;
+    private Method mRequestRemeasureHeightForFooterMethod;
+    private Method mRequestNeedTouchEventWhenLoadingMethod;"
+      end
+    end
+  end
+
+  deploymentview 131566 "impl"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 137838 "RefreshContentWrapper"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.animation.ValueAnimator;
+import android.animation.ValueAnimator.AnimatorUpdateListener;
+import android.graphics.PointF;
+import android.support.annotation.NonNull;
+import android.support.v4.view.NestedScrollingChild;
+import android.support.v4.view.NestedScrollingParent;
+import android.support.v4.view.ViewPager;
+import android.support.v4.widget.Space;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AbsListView;
+import android.widget.FrameLayout;
+import com.scwang.smartrefresh.layout.api.RefreshContent;
+import com.scwang.smartrefresh.layout.api.RefreshKernel;
+import com.scwang.smartrefresh.layout.api.ScrollBoundaryDecider;
+import com.scwang.smartrefresh.layout.listener.CoordinatorLayoutListener;
+import com.scwang.smartrefresh.layout.util.DesignUtil;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.Queue;
+${definition}"
+      associated_classes
+	class_ref 144878 // RefreshContentWrapper
+      end
+    end
+
+    artifact 137966 "RefreshFooterWrapper"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.annotation.SuppressLint;
+import android.view.View;
+import com.scwang.smartrefresh.layout.api.RefreshFooter;
+import com.scwang.smartrefresh.layout.internal.InternalAbstract;
+${definition}"
+      associated_classes
+	class_ref 145390 // RefreshFooterWrapper
+      end
+    end
+
+    artifact 138094 "RefreshHeaderWrapper"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.annotation.SuppressLint;
+import android.view.View;
+import com.scwang.smartrefresh.layout.api.RefreshHeader;
+import com.scwang.smartrefresh.layout.internal.InternalAbstract;
+${definition}"
+      associated_classes
+	class_ref 145518 // RefreshHeaderWrapper
+      end
+    end
+
+    artifact 138222 "ScrollBoundaryDeciderAdapter"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.graphics.PointF;
+import android.view.MotionEvent;
+import android.view.View;
+import com.scwang.smartrefresh.layout.api.ScrollBoundaryDecider;
+import com.scwang.smartrefresh.layout.util.ScrollBoundaryUtil;
+${definition}"
+      associated_classes
+	class_ref 145262 // ScrollBoundaryDeciderAdapter
+      end
+    end
+  end
+end

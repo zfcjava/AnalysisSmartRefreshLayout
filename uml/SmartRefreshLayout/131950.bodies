@@ -1,0 +1,70 @@
+class InternalAbstract
+!!!130030.java!!!	InternalAbstract(inout wrapper : View)
+        super(wrapper.getContext(), null, 0);
+        this.mWrapperView = wrapper;
+!!!130158.java!!!	InternalAbstract(inout context : Context, inout attrs : AttributeSet, in defStyleAttr : int)
+        super(context, attrs, defStyleAttr);
+!!!130286.java!!!	getView() : View
+        return mWrapperView == null ? this : mWrapperView;
+!!!130414.java!!!	onFinish(inout refreshLayout : RefreshLayout, inout success : boolean) : int
+        if (mWrapperView instanceof RefreshInternal) {
+            return ((RefreshInternal) mWrapperView).onFinish(refreshLayout, success);
+        }
+        return 0;
+!!!130542.java!!!	setPrimaryColors(in colors : int) : void
+        if (mWrapperView instanceof RefreshInternal) {
+            ((RefreshInternal) mWrapperView).setPrimaryColors(colors);
+        }
+!!!130670.java!!!	getSpinnerStyle() : SpinnerStyle
+        if (mSpinnerStyle != null) {
+            return mSpinnerStyle;
+        }
+        if (mWrapperView instanceof RefreshInternal) {
+            return ((RefreshInternal) mWrapperView).getSpinnerStyle();
+        }
+        if (mWrapperView != null) {
+            ViewGroup.LayoutParams params = mWrapperView.getLayoutParams();
+            if (params instanceof SmartRefreshLayout.LayoutParams) {
+                mSpinnerStyle = ((SmartRefreshLayout.LayoutParams) params).spinnerStyle;
+                if (mSpinnerStyle != null) {
+                    return mSpinnerStyle;
+                }
+            }
+            if (params != null) {
+                if (params.height == 0 || params.height == MATCH_PARENT) {
+                    return mSpinnerStyle = SpinnerStyle.Scale;
+                }
+            }
+        }
+        return mSpinnerStyle = SpinnerStyle.Translate;
+!!!130798.java!!!	onInitialized(inout kernel : RefreshKernel, in height : int, in maxDragHeight : int) : void
+        if (mWrapperView instanceof RefreshInternal) {
+            ((RefreshInternal) mWrapperView).onInitialized(kernel, height, maxDragHeight);
+        } else if (mWrapperView != null) {
+            ViewGroup.LayoutParams params = mWrapperView.getLayoutParams();
+            if (params instanceof SmartRefreshLayout.LayoutParams) {
+                kernel.requestDrawBackgroundFor(this, ((SmartRefreshLayout.LayoutParams) params).backgroundColor);
+            }
+        }
+!!!130926.java!!!	isSupportHorizontalDrag() : boolean
+        return mWrapperView instanceof RefreshInternal && ((RefreshInternal) mWrapperView).isSupportHorizontalDrag();
+!!!131054.java!!!	onHorizontalDrag(in percentX : float, in offsetX : int, in offsetMax : int) : void
+        if (mWrapperView instanceof RefreshInternal) {
+            ((RefreshInternal) mWrapperView).onHorizontalDrag(percentX, offsetX, offsetMax);
+        }
+!!!131182.java!!!	onMoving(inout isDragging : boolean, in percent : float, in offset : int, in height : int, in maxDragHeight : int) : void
+        if (mWrapperView instanceof RefreshInternal) {
+            ((RefreshInternal) mWrapperView).onMoving(isDragging, percent, offset, height, maxDragHeight);
+        }
+!!!131310.java!!!	onReleased(inout refreshLayout : RefreshLayout, in height : int, in maxDragHeight : int) : void
+        if (mWrapperView instanceof RefreshInternal) {
+            ((RefreshInternal) mWrapperView).onReleased(refreshLayout, height, maxDragHeight);
+        }
+!!!131438.java!!!	onStartAnimator(inout refreshLayout : RefreshLayout, in height : int, in maxDragHeight : int) : void
+        if (mWrapperView instanceof RefreshInternal) {
+            ((RefreshInternal) mWrapperView).onStartAnimator(refreshLayout, height, maxDragHeight);
+        }
+!!!131566.java!!!	onStateChanged(inout refreshLayout : RefreshLayout, inout oldState : RefreshState, inout newState : RefreshState) : void
+        if (mWrapperView instanceof RefreshInternal) {
+            ((RefreshInternal) mWrapperView).onStateChanged(refreshLayout, oldState, newState);
+        }

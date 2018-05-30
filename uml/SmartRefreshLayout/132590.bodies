@@ -1,0 +1,7 @@
+class RefreshState
+!!!203758.java!!!	RefreshState(in role : int, inout dragging : boolean, inout opening : boolean, inout finishing : boolean)
+        this.isHeader = role == 1;
+        this.isFooter = role == 2;
+        this.isDragging = dragging;
+        this.isOpening = opening;
+        this.isFinishing = finishing;

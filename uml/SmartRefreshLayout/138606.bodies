@@ -1,0 +1,31 @@
+class StoreHousePath
+!!!170990.java!!!	getPath(in str : String, in scale : float, in gapBetweenLetter : int) : List<float[]>
+        List<float[]> list = new ArrayList<>();
+        float offsetForWidth = 0;
+        for (int i = 0; i < str.length(); i++) {
+            int pos = str.charAt(i);
+            int key = sPointList.indexOfKey(pos);
+            if (key == -1) {
+                continue;
+            }
+            float[] points = sPointList.get(pos);
+            int pointCount = points.length / 4;
+
+            for (int j = 0; j < pointCount; j++) {
+                float[] line = new float[4];
+                for (int k = 0; k < 4; k++) {
+                    float l = points[j * 4 + k];
+                    // x
+                    if (k % 2 == 0) {
+                        line[k] = (l + offsetForWidth) * scale;
+                    }
+                    // y
+                    else {
+                        line[k] = l * scale;
+                    }
+                }
+                list.add(line);
+            }
+            offsetForWidth += 57 + gapBetweenLetter;
+        }
+        return list;

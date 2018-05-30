@@ -1,0 +1,32 @@
+class StoreHouseBarItem
+!!!169966.java!!!	StoreHouseBarItem(in index : int, inout start : PointF, inout end : PointF, in color : int, in lineWidth : int)
+        this.index = index;
+
+        midPoint = new PointF((start.x + end.x) / 2, (start.y + end.y) / 2);
+
+        mCStartPoint = new PointF(start.x - midPoint.x, start.y - midPoint.y);
+        mCEndPoint = new PointF(end.x - midPoint.x, end.y - midPoint.y);
+
+        setColor(color);
+        setLineWidth(lineWidth);
+        mPaint.setAntiAlias(true);
+        mPaint.setStyle(Paint.Style.STROKE);
+!!!170094.java!!!	setLineWidth(in width : int) : void
+        mPaint.setStrokeWidth(width);
+!!!170222.java!!!	setColor(in color : int) : void
+        mPaint.setColor(color);
+!!!170350.java!!!	resetPosition(in horizontalRandomness : int) : void
+        Random random = new Random();
+        translationX = -random.nextInt(horizontalRandomness) + horizontalRandomness;
+!!!170478.java!!!	applyTransformation(in interpolatedTime : float, inout t : Transformation) : void
+        float alpha = mFromAlpha;
+        alpha = alpha + ((mToAlpha - alpha) * interpolatedTime);
+        setAlpha(alpha);
+!!!170606.java!!!	start(in fromAlpha : float, in toAlpha : float) : void
+        mFromAlpha = fromAlpha;
+        mToAlpha = toAlpha;
+        super.start();
+!!!170734.java!!!	setAlpha(in alpha : float) : void
+        mPaint.setAlpha((int) (alpha * 255));
+!!!170862.java!!!	draw(inout canvas : Canvas) : void
+        canvas.drawLine(mCStartPoint.x, mCStartPoint.y, mCEndPoint.x, mCEndPoint.y, mPaint);

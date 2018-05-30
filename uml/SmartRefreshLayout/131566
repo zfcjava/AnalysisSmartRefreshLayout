@@ -1,0 +1,5659 @@
+format 76
+"layout" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::layout
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-layout/src/main/java/com/scwang/smartrefresh/layout/"
+  java_package "com.scwang.smartrefresh.layout"
+  package_ref 131694 // internal
+
+  package_ref 131950 // api
+
+  package_ref 132078 // listener
+
+  package_ref 132206 // constant
+
+  package_ref 132334 // header
+
+  package_ref 133614 // test
+
+  classview 131566 "layout"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 139502 "BuildConfig"
+      visibility public 
+      cpp_decl ""
+      final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 206190 "DEBUG"
+	class_attribute const_attribute public explicit_type "boolean"
+	init_value " Boolean.parseBoolean(\"true\")"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 206318 "APPLICATION_ID"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"com.scwang.smartrefresh.layout\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 206446 "BUILD_TYPE"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"debug\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 206574 "FLAVOR"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 206702 "VERSION_CODE"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 1"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 206830 "VERSION_NAME"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"1.0\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+    end
+
+    class 139630 "R"
+      visibility public 
+      cpp_decl ""
+      final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      class 139758 "attr"
+	visibility public 
+	cpp_decl ""
+	final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 206958 "layout_srlBackgroundColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010032"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 207086 "layout_srlSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010000"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 207214 "srlAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010001"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 207342 "srlAnimatingColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01000e"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 207470 "srlClassicsSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010002"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 207598 "srlDisableContentWhenLoading"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01002f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 207726 "srlDisableContentWhenRefresh"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01002e"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 207854 "srlDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010017"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 207982 "srlDrawableArrow"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010003"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 208110 "srlDrawableArrowSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010004"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 208238 "srlDrawableMarginRight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010005"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 208366 "srlDrawableProgress"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010006"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 208494 "srlDrawableProgressSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010007"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 208622 "srlDrawableSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010008"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 208750 "srlEnableAutoLoadMore"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010023"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 208878 "srlEnableClipFooterWhenFixedBehind"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01002c"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 209006 "srlEnableClipHeaderWhenFixedBehind"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01002b"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 209134 "srlEnableFooterFollowWhenLoadFinished"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01002a"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 209262 "srlEnableFooterTranslationContent"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01001f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 209390 "srlEnableHeaderTranslationContent"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01001e"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 209518 "srlEnableHorizontalDrag"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010009"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 209646 "srlEnableLastTime"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010011"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 209774 "srlEnableLoadMore"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01001d"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 209902 "srlEnableLoadMoreWhenContentNotFull"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010029"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 210030 "srlEnableNestedScrolling"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010026"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 210158 "srlEnableOverScrollBounce"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010024"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 210286 "srlEnableOverScrollDrag"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01002d"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 210414 "srlEnablePreviewInEditMode"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010022"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 210542 "srlEnablePullToCloseTwoLevel"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010038"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 210670 "srlEnablePureScrollMode"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010025"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 210798 "srlEnableRefresh"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01001c"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 210926 "srlEnableScrollContentWhenLoaded"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010027"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 211054 "srlEnableScrollContentWhenRefreshed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010028"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 211182 "srlEnableTwoLevel"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010037"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 211310 "srlFinishDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01000a"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 211438 "srlFixedFooterViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010031"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 211566 "srlFixedHeaderViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010030"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 211694 "srlFloorDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010036"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 211822 "srlFloorRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010034"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 211950 "srlFooterHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010014"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 212078 "srlFooterInsetStart"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010016"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 212206 "srlFooterMaxDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010019"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 212334 "srlFooterTranslationViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010021"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 212462 "srlFooterTriggerRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01001b"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 212590 "srlHeaderHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010013"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 212718 "srlHeaderInsetStart"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010015"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 212846 "srlHeaderMaxDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010018"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 212974 "srlHeaderTranslationViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010020"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 213102 "srlHeaderTriggerRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01001a"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 213230 "srlMaxRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010033"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 213358 "srlNormalColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01000f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 213486 "srlPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01000b"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 213614 "srlReboundDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010012"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 213742 "srlRefreshRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010035"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 213870 "srlTextSizeTime"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01000c"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 213998 "srlTextSizeTitle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f01000d"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 214126 "srlTextTimeMarginTop"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f010010"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+      end
+
+      class 139886 "id"
+	visibility public 
+	cpp_decl ""
+	final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 214254 "FixedBehind"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f030000"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 214382 "FixedFront"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f030001"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 214510 "MatchLayout"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f030002"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 214638 "Scale"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f030003"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 214766 "Translate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f030004"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+      end
+
+      class 140014 "string"
+	visibility public 
+	cpp_decl ""
+	final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 214894 "srl_component_falsify"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f020000"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 215022 "srl_content_empty"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f020001"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 215150 "srl_footer_failed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f020002"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 215278 "srl_footer_finish"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f020003"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 215406 "srl_footer_loading"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f020004"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 215534 "srl_footer_nothing"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f020005"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 215662 "srl_footer_pulling"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f020006"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 215790 "srl_footer_refreshing"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f020007"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 215918 "srl_footer_release"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f020008"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 216046 "srl_header_failed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f020009"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 216174 "srl_header_finish"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f02000a"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 216302 "srl_header_loading"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f02000b"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 216430 "srl_header_pulling"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f02000c"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 216558 "srl_header_refreshing"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f02000d"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 216686 "srl_header_release"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f02000e"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 216814 "srl_header_secondary"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f02000f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 216942 "srl_header_update"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0x7f020010"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+      end
+
+      class 140142 "styleable"
+	visibility public 
+	cpp_decl ""
+	final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 217070 "BallPulseFooter"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " { 0x7f010002, 0x7f01000e, 0x7f01000f }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 217198 "BallPulseFooter_srlAnimatingColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 217326 "BallPulseFooter_srlClassicsSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 217454 "BallPulseFooter_srlNormalColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 217582 "BezierRadarHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " { 0x7f010001, 0x7f010009, 0x7f01000b }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 217710 "BezierRadarHeader_srlAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 217838 "BezierRadarHeader_srlEnableHorizontalDrag"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 217966 "BezierRadarHeader_srlPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 218094 "ClassicsFooter"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " { 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f01000a, 0x7f01000b, 0x7f01000d }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 218222 "ClassicsFooter_srlAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 218350 "ClassicsFooter_srlClassicsSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 218478 "ClassicsFooter_srlDrawableArrow"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 218606 "ClassicsFooter_srlDrawableArrowSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 218734 "ClassicsFooter_srlDrawableMarginRight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 4"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 218862 "ClassicsFooter_srlDrawableProgress"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 5"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 218990 "ClassicsFooter_srlDrawableProgressSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 6"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 219118 "ClassicsFooter_srlDrawableSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 7"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 219246 "ClassicsFooter_srlFinishDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 8"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 219374 "ClassicsFooter_srlPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 9"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 219502 "ClassicsFooter_srlTextSizeTitle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 10"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 219630 "ClassicsHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " { 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f010010, 0x7f010011 }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 219758 "ClassicsHeader_srlAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 219886 "ClassicsHeader_srlClassicsSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 220014 "ClassicsHeader_srlDrawableArrow"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 220142 "ClassicsHeader_srlDrawableArrowSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 220270 "ClassicsHeader_srlDrawableMarginRight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 4"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 220398 "ClassicsHeader_srlDrawableProgress"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 5"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 220526 "ClassicsHeader_srlDrawableProgressSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 6"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 220654 "ClassicsHeader_srlDrawableSize"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 7"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 220782 "ClassicsHeader_srlEnableLastTime"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 13"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 220910 "ClassicsHeader_srlFinishDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 8"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 221038 "ClassicsHeader_srlPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 9"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 221166 "ClassicsHeader_srlTextSizeTime"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 10"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 221294 "ClassicsHeader_srlTextSizeTitle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 11"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 221422 "ClassicsHeader_srlTextTimeMarginTop"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 12"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 221550 "SmartRefreshLayout"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " { 0x7f010001, 0x7f01000b, 0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031 }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 221678 "SmartRefreshLayout_Layout"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " { 0x7f010000, 0x7f010032 }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 221806 "SmartRefreshLayout_Layout_layout_srlBackgroundColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 221934 "SmartRefreshLayout_Layout_layout_srlSpinnerStyle"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 222062 "SmartRefreshLayout_srlAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 222190 "SmartRefreshLayout_srlDisableContentWhenLoading"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 31"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 222318 "SmartRefreshLayout_srlDisableContentWhenRefresh"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 30"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 222446 "SmartRefreshLayout_srlDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 7"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 222574 "SmartRefreshLayout_srlEnableAutoLoadMore"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 19"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 222702 "SmartRefreshLayout_srlEnableClipFooterWhenFixedBehind"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 28"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 222830 "SmartRefreshLayout_srlEnableClipHeaderWhenFixedBehind"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 27"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 222958 "SmartRefreshLayout_srlEnableFooterFollowWhenLoadFinished"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 26"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 223086 "SmartRefreshLayout_srlEnableFooterTranslationContent"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 15"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 223214 "SmartRefreshLayout_srlEnableHeaderTranslationContent"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 14"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 223342 "SmartRefreshLayout_srlEnableLoadMore"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 13"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 223470 "SmartRefreshLayout_srlEnableLoadMoreWhenContentNotFull"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 25"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 223598 "SmartRefreshLayout_srlEnableNestedScrolling"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 22"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 223726 "SmartRefreshLayout_srlEnableOverScrollBounce"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 20"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 223854 "SmartRefreshLayout_srlEnableOverScrollDrag"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 29"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 223982 "SmartRefreshLayout_srlEnablePreviewInEditMode"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 18"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 224110 "SmartRefreshLayout_srlEnablePureScrollMode"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 21"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 224238 "SmartRefreshLayout_srlEnableRefresh"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 12"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 224366 "SmartRefreshLayout_srlEnableScrollContentWhenLoaded"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 23"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 224494 "SmartRefreshLayout_srlEnableScrollContentWhenRefreshed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 24"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 224622 "SmartRefreshLayout_srlFixedFooterViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 33"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 224750 "SmartRefreshLayout_srlFixedHeaderViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 32"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 224878 "SmartRefreshLayout_srlFooterHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 4"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 225006 "SmartRefreshLayout_srlFooterInsetStart"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 6"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 225134 "SmartRefreshLayout_srlFooterMaxDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 9"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 225262 "SmartRefreshLayout_srlFooterTranslationViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 17"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 225390 "SmartRefreshLayout_srlFooterTriggerRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 11"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 225518 "SmartRefreshLayout_srlHeaderHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 225646 "SmartRefreshLayout_srlHeaderInsetStart"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 5"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 225774 "SmartRefreshLayout_srlHeaderMaxDragRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 8"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 225902 "SmartRefreshLayout_srlHeaderTranslationViewId"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 16"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 226030 "SmartRefreshLayout_srlHeaderTriggerRate"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 10"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 226158 "SmartRefreshLayout_srlPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 226286 "SmartRefreshLayout_srlReboundDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 226414 "TwoLevelHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " { 0x7f010033, 0x7f010034, 0x7f010035, 0x7f010036, 0x7f010037, 0x7f010038 }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 226542 "TwoLevelHeader_srlEnablePullToCloseTwoLevel"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 5"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 226670 "TwoLevelHeader_srlEnableTwoLevel"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 4"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 226798 "TwoLevelHeader_srlFloorDuration"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 226926 "TwoLevelHeader_srlFloorRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 227054 "TwoLevelHeader_srlMaxRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 227182 "TwoLevelHeader_srlRefreshRage"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+      end
+    end
+
+    class 140910 "ExampleInstrumentedTest"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@RunWith(AndroidJUnit4.class)
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Instrumentation test, which will execute on an Android device.
+
+@see <a href=\"http://d.android.com/tools/testing\">Testing documentation</a>"
+      operation 175726 "useAppContext"
+	public explicit_return_type "void"
+	nparams 0
+	nexceptions 1
+	  explicit_exception "Exception"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Test
+"
+	
+	
+	
+      end
+    end
+
+    class 141038 "SmartRefreshLayout"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressLint(\"RestrictedApi\")
+@SuppressWarnings({\"unused\", \"WeakerAccess\"})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "智能刷新布局
+Intelligent RefreshLayout
+Created by SCWANG on 2017/5/26."
+      classrelation 137838 // <generalisation>
+	relation 137838 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 137838 // <generalisation>
+	  b parent class_ref 141166 // ViewGroup
+      end
+
+      classrelation 137966 // <realization>
+	relation 137966 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 137966 // <realization>
+	  b parent class_ref 132462 // RefreshLayout
+      end
+
+      classrelation 138094 // <realization>
+	relation 138094 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 138094 // <realization>
+	  b parent class_ref 142062 // NestedScrollingParent
+      end
+
+      classrelation 138222 // <realization>
+	relation 138222 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 138222 // <realization>
+	  b parent class_ref 142190 // NestedScrollingChild
+      end
+
+      attribute 247790 "mTouchSlop"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "<editor-fold desc=\"属性变量 property and variable\">
+<editor-fold desc=\"滑动属性\">"
+      end
+
+      attribute 247918 "mSpinner"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "当前的 Spinner"
+      end
+
+      attribute 248046 "mLastSpinner"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "最后的，的Spinner"
+      end
+
+      attribute 248174 "mTouchSpinner"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "触摸时候，的Spinner"
+      end
+
+      attribute 248302 "mFloorDuration"
+	protected explicit_type "int"
+	init_value " 250"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "二楼展开时长"
+      end
+
+      attribute 248430 "mReboundDuration"
+	protected explicit_type "int"
+	init_value " 250"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "回弹动画时长"
+      end
+
+      attribute 248558 "mScreenHeightPixels"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "屏幕高度"
+      end
+
+      attribute 248686 "mTouchX"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 248814 "mTouchY"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 248942 "mLastTouchX"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "用于实现Header的左右拖动效果"
+      end
+
+      attribute 249070 "mLastTouchY"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "用于实现多点触摸"
+      end
+
+      attribute 249198 "mDragRate"
+	protected explicit_type "float"
+	init_value " .5f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 249326 "mDragDirection"
+	protected explicit_type "char"
+	init_value " 'n'"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "拖动的方向 none-n horizontal-h vertical-v"
+      end
+
+      attribute 249454 "mIsBeingDragged"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否正在拖动"
+      end
+
+      attribute 249582 "mSuperDispatchTouchEvent"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "父类是否处理触摸事件"
+      end
+
+      attribute 249710 "mFixedHeaderViewId"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "固定在头部的视图Id"
+      end
+
+      attribute 249838 "mFixedFooterViewId"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "固定在底部的视图Id"
+      end
+
+      attribute 249966 "mHeaderTranslationViewId"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "下拉Header偏移的视图Id"
+      end
+
+      attribute 250094 "mFooterTranslationViewId"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "下拉Footer偏移的视图Id"
+      end
+
+      attribute 250222 "mMinimumVelocity"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 250350 "mMaximumVelocity"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 250478 "mCurrentVelocity"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 250606 "mScroller"
+	protected explicit_type "Scroller"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 250734 "mVelocityTracker"
+	protected explicit_type "VelocityTracker"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 250862 "mReboundInterpolator"
+	protected explicit_type "Interpolator"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 250990 "mPrimaryColors"
+	protected explicit_type "int"
+	multiplicity "[]"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "</editor-fold>
+<editor-fold desc=\"功能属性\">"
+      end
+
+      attribute 251118 "mEnableRefresh"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 251246 "mEnableLoadMore"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 251374 "mEnableClipHeaderWhenFixedBehind"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "当 Header FixedBehind 时候是否剪裁遮挡 Header"
+      end
+
+      attribute 251502 "mEnableClipFooterWhenFixedBehind"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "当 Footer FixedBehind 时候是否剪裁遮挡 Footer"
+      end
+
+      attribute 251630 "mEnableHeaderTranslationContent"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否启用内容视图拖动效果"
+      end
+
+      attribute 251758 "mEnableFooterTranslationContent"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否启用内容视图拖动效果"
+      end
+
+      attribute 251886 "mEnableFooterFollowWhenLoadFinished"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否在全部加载结束之后Footer跟随内容 1.0.4-6"
+      end
+
+      attribute 252014 "mEnablePreviewInEditMode"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否在编辑模式下开启预览功能"
+      end
+
+      attribute 252142 "mEnableOverScrollBounce"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否启用越界回弹"
+      end
+
+      attribute 252270 "mEnableOverScrollDrag"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否启用越界拖动（仿苹果效果）1.0.4-6"
+      end
+
+      attribute 252398 "mEnableAutoLoadMore"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否在列表滚动到底部时自动加载更多"
+      end
+
+      attribute 252526 "mEnablePureScrollMode"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否开启纯滚动模式"
+      end
+
+      attribute 252654 "mEnableScrollContentWhenLoaded"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否在加载更多完成之后滚动内容显示新数据"
+      end
+
+      attribute 252782 "mEnableScrollContentWhenRefreshed"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否在刷新完成之后滚动内容显示新数据"
+      end
+
+      attribute 252910 "mEnableLoadMoreWhenContentNotFull"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "在内容不满一页的时候，是否可以上拉加载更多"
+      end
+
+      attribute 253038 "mDisableContentWhenRefresh"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否开启在刷新时候禁止操作内容视图"
+      end
+
+      attribute 253166 "mDisableContentWhenLoading"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否开启在刷新时候禁止操作内容视图"
+      end
+
+      attribute 253294 "mFooterNoMoreData"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "数据是否全部加载完成，如果完成就不能在触发加载事件"
+      end
+
+      attribute 253422 "mManualLoadMore"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否手动设置过LoadMore，用于智能开启"
+      end
+
+      attribute 253550 "mManualNestedScrolling"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否手动设置过 NestedScrolling，用于智能开启"
+      end
+
+      attribute 253678 "mManualHeaderTranslationContent"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否手动设置过内容视图拖动效果"
+      end
+
+      attribute 253806 "mManualFooterTranslationContent"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "是否手动设置过内容视图拖动效果"
+      end
+
+      classrelation 138350 // mRefreshListener (<unidirectional association>)
+	relation 138350 --->
+	  a role_name "mRefreshListener" protected
+	    comment "</editor-fold>
+<editor-fold desc=\"监听属性\">
+"
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 138350 // mRefreshListener (<unidirectional association>)
+	  b parent class_ref 141422 // OnRefreshListener
+      end
+
+      classrelation 138478 // mLoadMoreListener (<unidirectional association>)
+	relation 138478 --->
+	  a role_name "mLoadMoreListener" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 138478 // mLoadMoreListener (<unidirectional association>)
+	  b parent class_ref 141550 // OnLoadMoreListener
+      end
+
+      classrelation 138606 // mOnMultiPurposeListener (<unidirectional association>)
+	relation 138606 --->
+	  a role_name "mOnMultiPurposeListener" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 138606 // mOnMultiPurposeListener (<unidirectional association>)
+	  b parent class_ref 141806 // OnMultiPurposeListener
+      end
+
+      classrelation 138734 // mScrollBoundaryDecider (<unidirectional association>)
+	relation 138734 --->
+	  a role_name "mScrollBoundaryDecider" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 138734 // mScrollBoundaryDecider (<unidirectional association>)
+	  b parent class_ref 141934 // ScrollBoundaryDecider
+      end
+
+      attribute 253934 "mTotalUnconsumed"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "</editor-fold>
+<editor-fold desc=\"嵌套滚动\">"
+      end
+
+      attribute 254062 "mNestedInProgress"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 254190 "mParentOffsetInWindow"
+	protected explicit_type "int"
+	multiplicity "[]"
+	init_value " new int[2]"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 254318 "mNestedChild"
+	protected explicit_type "NestedScrollingChildHelper"
+	init_value " new NestedScrollingChildHelper(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 254446 "mNestedParent"
+	protected explicit_type "NestedScrollingParentHelper"
+	init_value " new NestedScrollingParentHelper(this)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 254574 "mHeaderHeight"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "</editor-fold>
+<editor-fold desc=\"内部视图\">
+头部高度 和 头部高度状态"
+      end
+
+      classrelation 138862 // mHeaderHeightStatus (<unidirectional association>)
+	relation 138862 --->
+	  a role_name "mHeaderHeightStatus" init_value " DimensionStatus.DefaultUnNotify" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 138862 // mHeaderHeightStatus (<unidirectional association>)
+	  b parent class_ref 142318 // DimensionStatus
+      end
+
+      attribute 254702 "mFooterHeight"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "底部高度 和 底部高度状态"
+      end
+
+      classrelation 138990 // mFooterHeightStatus (<unidirectional association>)
+	relation 138990 --->
+	  a role_name "mFooterHeightStatus" init_value " DimensionStatus.DefaultUnNotify" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 138990 // mFooterHeightStatus (<unidirectional association>)
+	  b parent class_ref 142318 // DimensionStatus
+      end
+
+      attribute 254830 "mHeaderInsetStart"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " Header 起始位置便宜"
+      end
+
+      attribute 254958 "mFooterInsetStart"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " Footer 起始位置便宜"
+      end
+
+      attribute 255086 "mHeaderMaxDragRate"
+	protected explicit_type "float"
+	init_value " 2.5f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "    protected int mHeaderExtendHeight;  //扩展高度
+    protected int mFooterExtendHeight;  //扩展高度
+最大拖动比率(最大高度/Header高度)"
+      end
+
+      attribute 255214 "mFooterMaxDragRate"
+	protected explicit_type "float"
+	init_value " 2.5f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "最大拖动比率(最大高度/Footer高度)"
+      end
+
+      attribute 255342 "mHeaderTriggerRate"
+	protected explicit_type "float"
+	init_value " 1.0f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "触发刷新距离 与 HeaderHeight 的比率"
+      end
+
+      attribute 255470 "mFooterTriggerRate"
+	protected explicit_type "float"
+	init_value " 1.0f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "触发加载距离 与 FooterHeight 的比率"
+      end
+
+      classrelation 139118 // mRefreshHeader (<unidirectional association>)
+	relation 139118 --->
+	  a role_name "mRefreshHeader" protected
+	    comment "下拉头部视图"
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 139118 // mRefreshHeader (<unidirectional association>)
+	  b parent class_ref 132206 // RefreshInternal
+      end
+
+      classrelation 139246 // mRefreshFooter (<unidirectional association>)
+	relation 139246 --->
+	  a role_name "mRefreshFooter" protected
+	    comment "上拉底部视图"
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 139246 // mRefreshFooter (<unidirectional association>)
+	  b parent class_ref 132206 // RefreshInternal
+      end
+
+      classrelation 139374 // mRefreshContent (<unidirectional association>)
+	relation 139374 --->
+	  a role_name "mRefreshContent" protected
+	    comment "显示内容视图"
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 139374 // mRefreshContent (<unidirectional association>)
+	  b parent class_ref 134254 // RefreshContent
+      end
+
+      attribute 255598 "mPaint"
+	protected explicit_type "Paint"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "</editor-fold>"
+      end
+
+      attribute 255726 "mHandler"
+	protected explicit_type "Handler"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 139502 // mKernel (<unidirectional association>)
+	relation 139502 --->
+	  a role_name "mKernel" init_value " new RefreshKernelImpl()" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 139502 // mKernel (<unidirectional association>)
+	  b parent class_ref 132846 // RefreshKernel
+      end
+
+      classrelation 139630 // mListDelayedRunnable (<unidirectional association>)
+	relation 139630 --->
+	  stereotype "List"
+	  a role_name "mListDelayedRunnable" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
+"
+	    classrelation_ref 139630 // mListDelayedRunnable (<unidirectional association>)
+	  b parent class_ref 142446 // DelayedRunnable
+      end
+
+      classrelation 139758 // mState (<unidirectional association>)
+	relation 139758 --->
+	  a role_name "mState" init_value " RefreshState.None" protected
+	    comment "主状态"
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 139758 // mState (<unidirectional association>)
+	  b parent class_ref 132590 // RefreshState
+      end
+
+      classrelation 139886 // mViceState (<unidirectional association>)
+	relation 139886 --->
+	  a role_name "mViceState" init_value " RefreshState.None" protected
+	    comment "副状态（主状态刷新时候的滚动状态）"
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 139886 // mViceState (<unidirectional association>)
+	  b parent class_ref 132590 // RefreshState
+      end
+
+      attribute 255854 "mLastOpenTime"
+	protected explicit_type "long"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "上一次 刷新或者加载 时间"
+      end
+
+      attribute 255982 "mHeaderBackgroundColor"
+	protected explicit_type "int"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "为Header绘制纯色背景"
+      end
+
+      attribute 256110 "mFooterBackgroundColor"
+	protected explicit_type "int"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 256238 "mHeaderNeedTouchEventWhenRefreshing"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "为游戏Header提供独立事件"
+      end
+
+      attribute 256366 "mFooterNeedTouchEventWhenLoading"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 256494 "mFooterLocked"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "Footer 正在loading 的时候是否锁住 列表不能向上滚动"
+      end
+
+      attribute 256622 "sManualFooterCreator"
+	class_attribute protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 140014 // sFooterCreator (<unidirectional association>)
+	relation 140014 --->
+	  a role_name "sFooterCreator" init_value " new DefaultRefreshFooterCreator() {
+        @NonNull
+        @Override
+        public RefreshFooter createRefreshFooter(@NonNull Context context, @NonNull RefreshLayout layout) {
+            return new BallPulseFooter(context);
+        }
+    }" class_relation protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 140014 // sFooterCreator (<unidirectional association>)
+	  b parent class_ref 142574 // DefaultRefreshFooterCreator
+      end
+
+      classrelation 140142 // sHeaderCreator (<unidirectional association>)
+	relation 140142 --->
+	  a role_name "sHeaderCreator" init_value " new DefaultRefreshHeaderCreator() {
+        @NonNull
+        @Override
+        public RefreshHeader createRefreshHeader(@NonNull Context context, @NonNull RefreshLayout layout) {
+            return new BezierRadarHeader(context);
+        }
+    }" class_relation protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 140142 // sHeaderCreator (<unidirectional association>)
+	  b parent class_ref 142702 // DefaultRefreshHeaderCreator
+      end
+
+      operation 183662 "SmartRefreshLayout"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "context" explicit_type "Context"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"构造方法 construction methods\">"
+      end
+
+      operation 183790 "SmartRefreshLayout"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 183918 "SmartRefreshLayout"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	  param in name "defStyleAttr" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 184046 "onFinishInflate"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "86985902
+</editor-fold>
+<editor-fold desc=\"生命周期 life cycle\">"
+      end
+
+      operation 184174 "onAttachedToWindow"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 184302 "onMeasure"
+	protected explicit_return_type "void"
+	nparams 2
+	  param in name "widthMeasureSpec" explicit_type "int"
+	  param in name "heightMeasureSpec" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}final ${t0} ${p0}, final ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 184430 "onLayout"
+	protected explicit_return_type "void"
+	nparams 5
+	  param inout name "changed" explicit_type "boolean"
+	  param in name "l" explicit_type "int"
+	  param in name "t" explicit_type "int"
+	  param in name "r" explicit_type "int"
+	  param in name "b" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 184558 "onDetachedFromWindow"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 184686 "drawChild"
+	protected explicit_return_type "boolean"
+	nparams 3
+	  param inout name "canvas" explicit_type "Canvas"
+	  param inout name "child" explicit_type "View"
+	  param in name "drawingTime" explicit_type "long"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      attribute 256750 "mVerticalPermit"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "<editor-fold desc=\"惯性计算\">
+竖直通信证（用于特殊事件的权限判定）"
+      end
+
+      operation 184814 "computeScroll"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      attribute 256878 "mFalsifyEvent"
+	protected explicit_type "MotionEvent"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "</editor-fold>
+</editor-fold>
+<editor-fold desc=\"滑动判断 judgement of slide\">"
+      end
+
+      operation 184942 "dispatchTouchEvent"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "e" explicit_type "MotionEvent"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 185070 "startFlingIfNeed"
+	protected explicit_return_type "boolean"
+	nparams 1
+	  param inout name "flingVelocity" explicit_type "Float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@param flingVelocity 速度
+@return true 可以拦截 嵌套滚动的 Fling"
+      end
+
+      operation 185198 "interceptAnimatorByAction"
+	protected explicit_return_type "boolean"
+	nparams 1
+	  param in name "action" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "在动画执行时，触摸屏幕，打断动画，转为拖动状态"
+      end
+
+      operation 185326 "notifyStateChanged"
+	protected explicit_return_type "void"
+	nparams 1
+	  param inout name "state" type class_ref 132590 // RefreshState
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /*
+     * 这段代码来自谷歌官方的 SwipeRefreshLayout
+     * 应用场景已经在英文注释中解释清楚
+     * 大部分第三方下拉刷新库都保留了这段代码，本库也不例外
+     */
+    @Override
+    public void requestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+        // if this is a List < L or another view that doesn't support nested
+        // scrolling, ignore this request so that the vertical scroll event
+        // isn't stolen
+        View target = mRefreshContent.getScrollableView();
+        if ((android.os.Build.VERSION.SDK_INT >= 21 || !(target instanceof AbsListView))
+                && (target == null || ViewCompat.isNestedScrollingEnabled(target))) {
+            super.requestDisallowInterceptTouchEvent(disallowIntercept);
+            //} else {
+            // Nope.
+        }
+    }
+</editor-fold>
+<editor-fold desc=\"状态更改 state changes\">"
+      end
+
+      operation 185454 "setStateDirectLoading"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 185582 "setStateLoading"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 185710 "setStateRefreshing"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 185838 "resetStatus"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "重置状态"
+      end
+
+      operation 185966 "setViceState"
+	protected explicit_return_type "void"
+	nparams 1
+	  param inout name "state" type class_ref 132590 // RefreshState
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      attribute 257006 "animationRunnable"
+	protected explicit_type "Runnable"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "</editor-fold>
+<editor-fold desc=\"视图位移 displacement\">
+<editor-fold desc=\"动画监听 Animator Listener\">"
+      end
+
+      attribute 257134 "reboundAnimator"
+	protected explicit_type "ValueAnimator"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      class 142830 "FlingRunnable"
+	visibility protected 
+	cpp_decl ""
+	java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	classrelation 140270 // <realization>
+	  relation 140270 -_-|>
+	    a public
+	      java "${type}"
+	      classrelation_ref 140270 // <realization>
+	    b parent class_ref 135278 // Runnable
+	end
+
+	attribute 257262 "mOffset"
+	  package explicit_type "int"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 257390 "mFrame"
+	  package explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 257518 "mFrameDelay"
+	  package explicit_type "int"
+	  init_value " 10"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 257646 "mVelocity"
+	  package explicit_type "float"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 257774 "mDamping"
+	  package explicit_type "float"
+	  init_value " 0.98f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "每帧速度衰减值"
+	end
+
+	attribute 257902 "mStartTime"
+	  package explicit_type "long"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 258030 "mLastTime"
+	  package explicit_type "long"
+	  init_value " AnimationUtils.currentAnimationTimeMillis()"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	operation 186094 "FlingRunnable"
+	  package explicit_return_type ""
+	  nparams 1
+	    param in name "velocity" explicit_type "float"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 186222 "start"
+	  public explicit_return_type "Runnable"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 186350 "run"
+	  public explicit_return_type "void"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	end
+      end
+
+      class 142958 "BounceRunnable"
+	visibility protected 
+	cpp_decl ""
+	java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	classrelation 140398 // <realization>
+	  relation 140398 -_-|>
+	    a public
+	      java "${type}"
+	      classrelation_ref 140398 // <realization>
+	    b parent class_ref 135278 // Runnable
+	end
+
+	attribute 258158 "mFrame"
+	  package explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 258286 "mFrameDelay"
+	  package explicit_type "int"
+	  init_value " 10"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 258414 "mSmoothDistance"
+	  package explicit_type "int"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 258542 "mLastTime"
+	  package explicit_type "long"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 258670 "mOffset"
+	  package explicit_type "float"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 258798 "mVelocity"
+	  package explicit_type "float"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	operation 186478 "BounceRunnable"
+	  package explicit_return_type ""
+	  nparams 2
+	    param in name "velocity" explicit_type "float"
+	    param in name "smoothDistance" explicit_type "int"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 186606 "run"
+	  public explicit_return_type "void"
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	end
+      end
+
+      operation 186734 "animSpinner"
+	protected explicit_return_type "ValueAnimator"
+	nparams 4
+	  param in name "endSpinner" explicit_type "int"
+	  param in name "startDelay" explicit_type "int"
+	  param inout name "interpolator" explicit_type "Interpolator"
+	  param in name "duration" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "</editor-fold>
+
+执行回弹动画"
+      end
+
+      operation 186862 "animSpinnerBounce"
+	protected explicit_return_type "void"
+	nparams 1
+	  param in name "velocity" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}final ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "越界回弹动画"
+      end
+
+      operation 186990 "overSpinner"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "手势拖动结束
+开始执行回弹动画"
+      end
+
+      operation 187118 "moveSpinnerInfinitely"
+	protected explicit_return_type "void"
+	nparams 1
+	  param in name "spinner" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 187246 "checkLayoutParams"
+	protected explicit_return_type "boolean"
+	nparams 1
+	  param inout name "p" explicit_type "ViewGroup.LayoutParams"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"布局参数 LayoutParams\">"
+      end
+
+      class 143086 "LayoutParams"
+	visibility public 
+	cpp_decl ""
+	java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	classrelation 140526 // <generalisation>
+	  relation 140526 ---|>
+	    a public
+	      java "${type}"
+	      classrelation_ref 140526 // <generalisation>
+	    b parent class_ref 143214 // MarginLayoutParams
+	end
+
+	operation 187758 "LayoutParams"
+	  public explicit_return_type ""
+	  nparams 2
+	    param inout name "context" explicit_type "Context"
+	    param inout name "attrs" explicit_type "AttributeSet"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 187886 "LayoutParams"
+	  public explicit_return_type ""
+	  nparams 2
+	    param in name "width" explicit_type "int"
+	    param in name "height" explicit_type "int"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 188014 "LayoutParams"
+	  public explicit_return_type ""
+	  nparams 1
+	    param inout name "source" explicit_type "MarginLayoutParams"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 188142 "LayoutParams"
+	  public explicit_return_type ""
+	  nparams 1
+	    param inout name "source" explicit_type "ViewGroup.LayoutParams"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	attribute 258926 "backgroundColor"
+	  public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	classrelation 140654 // spinnerStyle (<unidirectional association>)
+	  relation 140654 --->
+	    a role_name "spinnerStyle" init_value " null" public
+	      java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	      classrelation_ref 140654 // spinnerStyle (<unidirectional association>)
+	    b parent class_ref 132718 // SpinnerStyle
+	end
+      end
+
+      operation 187374 "generateDefaultLayoutParams"
+	protected return_type class_ref 143086 // LayoutParams
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 187502 "generateLayoutParams"
+	protected return_type class_ref 143086 // LayoutParams
+	nparams 1
+	  param inout name "p" explicit_type "ViewGroup.LayoutParams"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 187630 "generateLayoutParams"
+	public return_type class_ref 143086 // LayoutParams
+	nparams 1
+	  param inout name "attrs" explicit_type "AttributeSet"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 188270 "getNestedScrollAxes"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"嵌套滚动 NestedScrolling\">
+<editor-fold desc=\"NestedScrollingParent\">"
+      end
+
+      operation 188398 "onStartNestedScroll"
+	public explicit_return_type "boolean"
+	nparams 3
+	  param inout name "child" explicit_type "View"
+	  param inout name "target" explicit_type "View"
+	  param in name "nestedScrollAxes" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 188526 "onNestedScrollAccepted"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "child" explicit_type "View"
+	  param inout name "target" explicit_type "View"
+	  param in name "axes" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 188654 "onNestedPreScroll"
+	public explicit_return_type "void"
+	nparams 4
+	  param inout name "target" explicit_type "View"
+	  param in name "dx" explicit_type "int"
+	  param in name "dy" explicit_type "int"
+	  param inout name "consumed" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, @NonNull ${t3}[] ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 188782 "onNestedScroll"
+	public explicit_return_type "void"
+	nparams 5
+	  param inout name "target" explicit_type "View"
+	  param in name "dxConsumed" explicit_type "int"
+	  param in name "dyConsumed" explicit_type "int"
+	  param in name "dxUnconsumed" explicit_type "int"
+	  param in name "dyUnconsumed" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 188910 "onNestedPreFling"
+	public explicit_return_type "boolean"
+	nparams 3
+	  param inout name "target" explicit_type "View"
+	  param in name "velocityX" explicit_type "float"
+	  param in name "velocityY" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 189038 "onNestedFling"
+	public explicit_return_type "boolean"
+	nparams 4
+	  param inout name "target" explicit_type "View"
+	  param in name "velocityX" explicit_type "float"
+	  param in name "velocityY" explicit_type "float"
+	  param inout name "consumed" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 189166 "onStopNestedScroll"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "target" explicit_type "View"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 189294 "setNestedScrollingEnabled"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"NestedScrollingChild\">"
+      end
+
+      operation 189422 "isNestedScrollingEnabled"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 189550 "canScrollVertically"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param in name "direction" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 189678 "setFooterHeight"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "heightDp" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    @Deprecated
+    public boolean startNestedScroll(int axes) {
+        return mNestedChild.startNestedScroll(axes);
+    }
+
+    @Override
+    @Deprecated
+    public void stopNestedScroll() {
+        mNestedChild.stopNestedScroll();
+    }
+
+    @Override
+    @Deprecated
+    public boolean hasNestedScrollingParent() {
+        return mNestedChild.hasNestedScrollingParent();
+    }
+
+    @Override
+    @Deprecated
+    public boolean dispatchNestedScroll(int dxConsumed, int dyConsumed, int dxUnconsumed,
+                                        int dyUnconsumed, int[] offsetInWindow) {
+        return mNestedChild.dispatchNestedScroll(dxConsumed, dyConsumed,
+                dxUnconsumed, dyUnconsumed, offsetInWindow);
+    }
+
+    @Override
+    @Deprecated
+    public boolean dispatchNestedPreScroll(int dx, int dy, int[] consumed, int[] offsetInWindow) {
+        return mNestedChild.dispatchNestedPreScroll(
+                dx, dy, consumed, offsetInWindow);
+    }
+
+    @Override
+    @Deprecated
+    public boolean dispatchNestedFling(float velocityX, float velocityY, boolean consumed) {
+        return mNestedChild.dispatchNestedFling(velocityX, velocityY, consumed);
+    }
+
+    @Override
+    @Deprecated
+    public boolean dispatchNestedPreFling(float velocityX, float velocityY) {
+        return mNestedChild.dispatchNestedPreFling(velocityX, velocityY);
+    }
+</editor-fold>
+</editor-fold>
+<editor-fold desc=\"开放接口 open interface\">"
+      end
+
+      operation 189806 "setHeaderHeight"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "heightDp" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public SmartRefreshLayout setFooterHeightPx(int heightPx) {
+        if (mFooterHeightStatus.canReplaceWith(DimensionStatus.CodeExact)) {
+            mFooterHeight = heightPx;
+            mFooterExtendHeight = (int) Math.max((heightPx * (mFooterMaxDragRate - 1)), 0);
+            mFooterHeightStatus = DimensionStatus.CodeExactUnNotify;
+            if (mRefreshFooter != null) {
+                mRefreshFooter.getView().requestLayout();
+            }
+        }
+        return this;
+    }"
+      end
+
+      operation 189934 "setHeaderInsetStart"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "insetDp" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public SmartRefreshLayout setHeaderHeightPx(int heightPx) {
+        if (mHeaderHeightStatus.canReplaceWith(DimensionStatus.CodeExact)) {
+            mHeaderHeight = heightPx;
+            mHeaderExtendHeight = (int) Math.max((heightPx * (mHeaderMaxDragRate - 1)), 0);
+            mHeaderHeightStatus = DimensionStatus.CodeExactUnNotify;
+            if (mRefreshHeader != null) {
+                mRefreshHeader.getView().requestLayout();
+            }
+        }
+        return this;
+    }"
+      end
+
+      operation 190062 "setFooterInsetStart"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "insetDp" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public SmartRefreshLayout setHeaderInsetStartPx(int insetPx) {
+        mHeaderInsetStart = insetPx;
+        return this;
+    }"
+      end
+
+      operation 190190 "setDragRate"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public SmartRefreshLayout setFooterInsetStartPx(int insetPx) {
+        mFooterInsetStart = insetPx;
+        return this;
+    }
+
+@param rate 显示拖动高度/真实拖动高度 比率
+@return RefreshLayout"
+      end
+
+      operation 190318 "setHeaderMaxDragRate"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置下拉最大高度和Header高度的比率（将会影响可以下拉的最大高度）
+@param rate 下拉最大高度和Header高度的比率"
+      end
+
+      operation 190446 "setFooterMaxDragRate"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置上拉最大高度和Footer高度的比率（将会影响可以上拉的最大高度）
+@param rate 上拉最大高度和Footer高度的比率
+@return SmartRefreshLayout"
+      end
+
+      operation 190574 "setHeaderTriggerRate"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置 触发刷新距离 与 HeaderHeight 的比率
+@param rate 触发刷新距离 与 HeaderHeight 的比率
+@return SmartRefreshLayout"
+      end
+
+      operation 190702 "setFooterTriggerRate"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置 触发加载距离 与 FooterHeight 的比率
+@param rate 触发加载距离 与 FooterHeight 的比率
+@return SmartRefreshLayout"
+      end
+
+      operation 190830 "setReboundInterpolator"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "interpolator" explicit_type "Interpolator"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置回弹显示插值器
+@param interpolator 动画插值器
+@return SmartRefreshLayout"
+      end
+
+      operation 190958 "setReboundDuration"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "duration" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置回弹动画时长
+@param duration 时长
+@return SmartRefreshLayout"
+      end
+
+      operation 191086 "setEnableLoadMore"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否启用上拉加载更多（默认启用）
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 191214 "setEnableRefresh"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "是否启用下拉刷新（默认启用）
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 191342 "setEnableHeaderTranslationContent"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否启用内容视图拖动效果
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 191470 "setEnableFooterTranslationContent"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否启用内容视图拖动效果
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 191598 "setEnableAutoLoadMore"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否监听列表在滚动到底部时触发加载事件
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 191726 "setEnableOverScrollBounce"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否启用越界回弹
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 191854 "setEnablePureScrollMode"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否开启纯滚动模式
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 191982 "setEnableScrollContentWhenLoaded"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否在加载更多完成之后滚动内容显示新数据
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 192110 "setEnableScrollContentWhenRefreshed"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "是否在刷新完成之后滚动内容显示新数据
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 192238 "setEnableLoadMoreWhenContentNotFull"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置在内容不满一页的时候，是否可以上拉加载更多
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 192366 "setEnableOverScrollDrag"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否启用越界拖动（仿苹果效果）
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 192494 "setEnableFooterFollowWhenLoadFinished"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否在全部加载结束之后Footer跟随内容
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 192622 "setEnableClipHeaderWhenFixedBehind"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否 当 Header FixedBehind 时候是否剪裁遮挡 Header
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 192750 "setEnableClipFooterWhenFixedBehind"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否 当 Footer FixedBehind 时候是否剪裁遮挡 Footer
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 192878 "setEnableNestedScroll"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是会否启用嵌套滚动功能（默认关闭+智能开启）
+@param enabled 是否启用
+@return SmartRefreshLayout"
+      end
+
+      operation 193006 "setDisableContentWhenRefresh"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "disable" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否开启在刷新时候禁止操作内容视图
+@param disable 是否禁止
+@return SmartRefreshLayout"
+      end
+
+      operation 193134 "setDisableContentWhenLoading"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "disable" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置是否开启在加载时候禁止操作内容视图
+@param disable 是否禁止
+@return SmartRefreshLayout"
+      end
+
+      operation 193262 "setRefreshHeader"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置指定的 Header
+@param header 刷新头
+@return SmartRefreshLayout"
+      end
+
+      operation 193390 "setRefreshHeader"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 3
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置指定的 Header
+@param header 刷新头
+@param width 宽度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@param height 高度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@return SmartRefreshLayout"
+      end
+
+      operation 193518 "setRefreshFooter"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置指定的 Footer
+@param footer 刷新尾巴
+@return SmartRefreshLayout"
+      end
+
+      operation 193646 "setRefreshFooter"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 3
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置指定的 Footer
+@param footer 刷新尾巴
+@param width 宽度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@param height 高度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@return SmartRefreshLayout"
+      end
+
+      operation 193774 "setRefreshContent"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "content" explicit_type "View"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置指定的Content
+@param content 内容视图
+@return SmartRefreshLayout"
+      end
+
+      operation 193902 "setRefreshContent"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 3
+	  param inout name "content" explicit_type "View"
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置指定的 Content
+@param content 内容视图
+@param width 宽度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@param height 高度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@return SmartRefreshLayout"
+      end
+
+      operation 194030 "getRefreshFooter"
+	public return_type class_ref 141294 // RefreshFooter
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Nullable
+    @Override
+"
+	
+	
+	
+	comment "获取底部上拉组件的实现
+@return RefreshFooter"
+      end
+
+      operation 194158 "getRefreshHeader"
+	public return_type class_ref 132974 // RefreshHeader
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Nullable
+    @Override
+"
+	
+	
+	
+	comment "获取顶部下拉组件的实现
+@return RefreshHeader"
+      end
+
+      operation 194286 "getState"
+	public return_type class_ref 132590 // RefreshState
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "获取状态
+@return RefreshState"
+      end
+
+      operation 194414 "getLayout"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "获取实体布局视图
+@return SmartRefreshLayout"
+      end
+
+      operation 194542 "setOnRefreshListener"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "listener" type class_ref 141422 // OnRefreshListener
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "单独设置刷新监听器
+@param listener 刷新监听器
+@return SmartRefreshLayout"
+      end
+
+      operation 194670 "setOnLoadMoreListener"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "listener" type class_ref 141550 // OnLoadMoreListener
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "同时设置刷新和加载监听器
+@param listener 加载监听器
+@return SmartRefreshLayout"
+      end
+
+      operation 194798 "setOnRefreshLoadMoreListener"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "listener" type class_ref 141678 // OnRefreshLoadMoreListener
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "单独设置加载监听器
+@param listener 刷新加载监听器
+@return SmartRefreshLayout"
+      end
+
+      operation 194926 "setOnMultiPurposeListener"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "listener" type class_ref 141806 // OnMultiPurposeListener
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置多功能监听器
+@param listener 建议使用 {@link com.scwang.smartrefresh.layout.listener.SimpleMultiPurposeListener}
+@return SmartRefreshLayout"
+      end
+
+      operation 195054 "setPrimaryColors"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "" explicit_type "int...primaryColors"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置主题颜色
+@param primaryColors 主题颜色
+@return SmartRefreshLayout"
+      end
+
+      operation 195182 "setPrimaryColorsId"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "" explicit_type "int...primaryColorId"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorRes ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置主题颜色
+@param primaryColorId 主题颜色ID
+@return SmartRefreshLayout"
+      end
+
+      operation 195310 "setScrollBoundaryDecider"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "boundary" type class_ref 141934 // ScrollBoundaryDecider
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "设置滚动边界
+@param boundary 建议使用 {@link com.scwang.smartrefresh.layout.impl.ScrollBoundaryDeciderAdapter}
+@return SmartRefreshLayout"
+      end
+
+      operation 195438 "setNoMoreData"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "noMoreData" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "恢复没有更多数据的原始状态
+@param noMoreData 是否有更多数据
+@return SmartRefreshLayout"
+      end
+
+      operation 195566 "finishRefresh"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "完成刷新
+@return SmartRefreshLayout"
+      end
+
+      operation 195694 "finishLoadMore"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "完成加载
+@return SmartRefreshLayout"
+      end
+
+      operation 195822 "finishRefresh"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "delayed" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "完成刷新
+@param delayed 开始延时
+@return SmartRefreshLayout"
+      end
+
+      operation 195950 "finishRefresh"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "success" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "完成刷新
+@param success 数据是否成功刷新 （会影响到上次更新时间的改变）
+@return SmartRefreshLayout"
+      end
+
+      operation 196078 "finishRefresh"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 2
+	  param in name "delayed" explicit_type "int"
+	  param in name "success" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, final ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "完成刷新
+@param delayed 开始延时
+@param success 数据是否成功刷新 （会影响到上次更新时间的改变）
+@return SmartRefreshLayout"
+      end
+
+      operation 196206 "finishLoadMore"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param in name "delayed" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "完成加载
+@param delayed 开始延时
+@return SmartRefreshLayout"
+      end
+
+      operation 196334 "finishLoadMore"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 1
+	  param inout name "success" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "完成加载
+@param success 数据是否成功
+@return SmartRefreshLayout"
+      end
+
+      operation 196462 "finishLoadMore"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 3
+	  param in name "delayed" explicit_type "int"
+	  param in name "success" explicit_type "boolean"
+	  param in name "noMoreData" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, final ${t1} ${p1}, final ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "完成加载
+@param delayed 开始延时
+@param success 数据是否成功
+@param noMoreData 是否有更多数据
+@return SmartRefreshLayout"
+      end
+
+      operation 196590 "finishLoadMoreWithNoMoreData"
+	public return_type class_ref 141038 // SmartRefreshLayout
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "完成加载并标记没有更多数据
+@return SmartRefreshLayout"
+      end
+
+      operation 196718 "autoRefresh"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "自动刷新
+@return 是否成功"
+      end
+
+      operation 196846 "autoRefresh"
+	public explicit_return_type "boolean"
+	nparams 3
+	  param in name "delayed" explicit_type "int"
+	  param in name "duration" explicit_type "int"
+	  param in name "dragRate" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, final ${t1} ${p1}, final ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    /**
+     * 自动刷新
+     * @param delayed 开始延时
+     * @return 是否成功
+     */
+    @Override
+    public boolean autoRefresh(int delayed) {
+        return autoRefresh(delayed, mReboundDuration, 1f * ((mHeaderMaxDragRate/2 + 0.5f) * mHeaderHeight)) / (mHeaderHeight == 0 ? 1 : mHeaderHeight));
+    }
+
+自动刷新
+@param delayed 开始延时
+@param duration 拖拽动画持续时间
+@param dragRate 拉拽的高度比率（要求 ≥ 1 ）
+@return 是否成功"
+      end
+
+      operation 196974 "autoLoadMore"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "自动加载
+@return 是否成功"
+      end
+
+      operation 197102 "autoLoadMore"
+	public explicit_return_type "boolean"
+	nparams 3
+	  param in name "delayed" explicit_type "int"
+	  param in name "duration" explicit_type "int"
+	  param in name "dragRate" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, final ${t1} ${p1}, final ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    /**
+     * 自动加载
+     * @param delayed 开始延时
+     * @return 是否成功
+     */
+    @Override
+    public boolean autoLoadMore(int delayed) {
+        return autoLoadMore(delayed, mReboundDuration, 1f * (mFooterHeight * (mFooterMaxDragRate / 2 + 0.5f)) / (mFooterHeight == 0 ? 1 : mFooterHeight));
+    }
+
+自动加载
+@param delayed 开始延时
+@param duration 拖拽动画持续时间
+@param dragRate 拉拽的高度比率（要求 ≥ 1 ）
+@return 是否成功"
+      end
+
+      operation 197230 "isEnableRefresh"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 197358 "isEnableLoadMore"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 197486 "setDefaultRefreshHeaderCreator"
+	class_operation public explicit_return_type "void"
+	nparams 1
+	  param inout name "creator" type class_ref 142702 // DefaultRefreshHeaderCreator
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置默认 Header 构建器
+@param creator Header构建器"
+      end
+
+      operation 197614 "setDefaultRefreshFooterCreator"
+	class_operation public explicit_return_type "void"
+	nparams 1
+	  param inout name "creator" type class_ref 142574 // DefaultRefreshFooterCreator
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置默认 Footer 构建器
+@param creator Footer构建器"
+      end
+
+      class 143342 "RefreshKernelImpl"
+	visibility public 
+	cpp_decl ""
+	java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	classrelation 140782 // <realization>
+	  relation 140782 -_-|>
+	    a public
+	      java "${type}"
+	      classrelation_ref 140782 // <realization>
+	    b parent class_ref 132846 // RefreshKernel
+	end
+
+	operation 199278 "getRefreshLayout"
+	  public return_type class_ref 132462 // RefreshLayout
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@NonNull
+        @Override
+"
+	  
+	  
+	  
+	end
+
+	operation 199406 "getRefreshContent"
+	  public return_type class_ref 134254 // RefreshContent
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@NonNull
+        @Override
+"
+	  
+	  
+	  
+	end
+
+	operation 199534 "setState"
+	  public return_type class_ref 132846 // RefreshKernel
+	  nparams 1
+	    param inout name "state" type class_ref 132590 // RefreshState
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	end
+
+	operation 199662 "startTwoLevel"
+	  public return_type class_ref 132846 // RefreshKernel
+	  nparams 1
+	    param inout name "open" explicit_type "boolean"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	end
+
+	operation 199790 "finishTwoLevel"
+	  public return_type class_ref 132846 // RefreshKernel
+	  nparams 0
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	end
+
+	operation 199918 "moveSpinner"
+	  public return_type class_ref 132846 // RefreshKernel
+	  nparams 2
+	    param in name "spinner" explicit_type "int"
+	    param inout name "isDragging" explicit_type "boolean"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	  comment "<editor-fold desc=\"状态更改 state changes\">
+</editor-fold>
+<editor-fold desc=\"视图位移 Spinner\">
+
+移动滚动 Scroll
+moveSpinner 的取名来自 谷歌官方的 {@link android.support.v4.widget.SwipeRefreshLayout#moveSpinner(float)}"
+	end
+
+	operation 200046 "animSpinner"
+	  public explicit_return_type "ValueAnimator"
+	  nparams 1
+	    param in name "endSpinner" explicit_type "int"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 200174 "requestDrawBackgroundFor"
+	  public return_type class_ref 132846 // RefreshKernel
+	  nparams 2
+	    param inout name "internal" type class_ref 132206 // RefreshInternal
+	    param in name "backgroundColor" explicit_type "int"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	  comment "</editor-fold>
+<editor-fold desc=\"请求事件\">"
+	end
+
+	operation 200302 "requestNeedTouchEventFor"
+	  public return_type class_ref 132846 // RefreshKernel
+	  nparams 2
+	    param inout name "internal" type class_ref 132206 // RefreshInternal
+	    param inout name "request" explicit_type "boolean"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	  comment "        @Override
+        public RefreshKernel requestDrawBackgroundForHeader(int backgroundColor) {
+            if (mPaint == null && backgroundColor != 0) {
+                mPaint = new Paint();
+            }
+            mHeaderBackgroundColor = backgroundColor;
+            return this;
+        }
+
+        @Override
+        public RefreshKernel requestDrawBackgroundForFooter(int backgroundColor) {
+            if (mPaint == null && backgroundColor != 0) {
+                mPaint = new Paint();
+            }
+            mFooterBackgroundColor = backgroundColor;
+            return this;
+        }"
+	end
+
+	operation 200430 "requestDefaultTranslationContentFor"
+	  public return_type class_ref 132846 // RefreshKernel
+	  nparams 2
+	    param inout name "internal" type class_ref 132206 // RefreshInternal
+	    param inout name "translation" explicit_type "boolean"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	  comment "        @Override
+        public RefreshKernel requestNeedTouchEventWhenRefreshing(boolean request) {
+            mHeaderNeedTouchEventWhenRefreshing = request;
+            return this;
+        }
+        @Override
+        public RefreshKernel requestNeedTouchEventWhenLoading(boolean request) {
+            mFooterNeedTouchEventWhenLoading = request;
+            return this;
+        }"
+	end
+
+	operation 200558 "requestRemeasureHeightFor"
+	  public return_type class_ref 132846 // RefreshKernel
+	  nparams 1
+	    param inout name "internal" type class_ref 132206 // RefreshInternal
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	  comment "        @Override
+        public RefreshKernel requestDefaultHeaderTranslationContent(boolean translation) {
+            if (!mManualHeaderTranslationContent) {
+                mManualHeaderTranslationContent = true;
+                mEnableHeaderTranslationContent = translation;
+            }
+            return this;
+        }"
+	end
+
+	operation 200686 "requestFloorDuration"
+	  public return_type class_ref 132846 // RefreshKernel
+	  nparams 1
+	    param in name "duration" explicit_type "int"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	  comment "        @Override
+        public RefreshKernel requestRemeasureHeightForHeader() {
+            if (mHeaderHeightStatus.notified) {
+                mHeaderHeightStatus = mHeaderHeightStatus.unNotify();
+            }
+            return this;
+        }
+        @Override
+        public RefreshKernel requestRemeasureHeightForFooter() {
+            if (mFooterHeightStatus.notified) {
+                mFooterHeightStatus = mFooterHeightStatus.unNotify();
+            }
+            return this;
+        }"
+	end
+      end
+
+      operation 200814 "post"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "action" explicit_type "Runnable"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>
+</editor-fold>
+<editor-fold desc=\"内存泄漏 postDelayed优化\">"
+      end
+
+      operation 200942 "postDelayed"
+	public explicit_return_type "boolean"
+	nparams 2
+	  param inout name "action" explicit_type "Runnable"
+	  param in name "delayMillis" explicit_type "long"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+
+    class 146414 "ExampleUnitTest"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Example local unit test, which will execute on the development machine (host).
+
+@see <a href=\"http://d.android.com/tools/testing\">Testing documentation</a>"
+      operation 226798 "addition_isCorrect"
+	public explicit_return_type "void"
+	nparams 0
+	nexceptions 1
+	  explicit_exception "Exception"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Test
+"
+	
+	
+	
+      end
+    end
+  end
+
+  deploymentview 131182 "layout"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 134766 "BuildConfig"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_classes
+	class_ref 139502 // BuildConfig
+      end
+      comment "Automatically generated file. DO NOT MODIFY"
+    end
+
+    artifact 134894 "R"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_classes
+	class_ref 139630 // R
+      end
+      comment " AUTO-GENERATED FILE.  DO NOT MODIFY.
+
+This class was automatically generated by the
+gradle plugin from the resource data it found. It
+should not be modified by hand."
+    end
+
+    artifact 135150 "ExampleInstrumentedTest"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.content.Context;
+import android.support.test.InstrumentationRegistry;
+import android.support.test.runner.AndroidJUnit4;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import static org.junit.Assert.*;
+${definition}"
+      associated_classes
+	class_ref 140910 // ExampleInstrumentedTest
+      end
+    end
+
+    artifact 135534 "SmartRefreshLayout"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ValueAnimator;
+import android.animation.ValueAnimator.AnimatorUpdateListener;
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.os.Build;
+import android.os.Handler;
+import android.support.annotation.ColorInt;
+import android.support.annotation.ColorRes;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.view.NestedScrollingChild;
+import android.support.v4.view.NestedScrollingChildHelper;
+import android.support.v4.view.NestedScrollingParent;
+import android.support.v4.view.NestedScrollingParentHelper;
+import android.support.v4.view.ViewCompat;
+import android.util.AttributeSet;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.VelocityTracker;
+import android.view.View;
+import android.view.ViewConfiguration;
+import android.view.ViewGroup;
+import android.view.ViewParent;
+import android.view.animation.AnimationUtils;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.Interpolator;
+import android.widget.Scroller;
+import android.widget.TextView;
+import com.scwang.smartrefresh.layout.api.DefaultRefreshFooterCreator;
+import com.scwang.smartrefresh.layout.api.DefaultRefreshHeaderCreator;
+import com.scwang.smartrefresh.layout.api.RefreshContent;
+import com.scwang.smartrefresh.layout.api.RefreshFooter;
+import com.scwang.smartrefresh.layout.api.RefreshHeader;
+import com.scwang.smartrefresh.layout.api.RefreshInternal;
+import com.scwang.smartrefresh.layout.api.RefreshKernel;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.api.ScrollBoundaryDecider;
+import com.scwang.smartrefresh.layout.constant.DimensionStatus;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
+import com.scwang.smartrefresh.layout.footer.BallPulseFooter;
+import com.scwang.smartrefresh.layout.header.BezierRadarHeader;
+import com.scwang.smartrefresh.layout.impl.RefreshContentWrapper;
+import com.scwang.smartrefresh.layout.impl.RefreshFooterWrapper;
+import com.scwang.smartrefresh.layout.impl.RefreshHeaderWrapper;
+import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
+import com.scwang.smartrefresh.layout.listener.OnMultiPurposeListener;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
+import com.scwang.smartrefresh.layout.listener.OnStateChangedListener;
+import com.scwang.smartrefresh.layout.util.DelayedRunnable;
+import com.scwang.smartrefresh.layout.util.DensityUtil;
+import com.scwang.smartrefresh.layout.util.ScrollBoundaryUtil;
+import com.scwang.smartrefresh.layout.util.ViscousFluidInterpolator;
+import java.util.ArrayList;
+import java.util.List;
+${definition}"
+      associated_classes
+	class_ref 141038 // SmartRefreshLayout
+      end
+    end
+
+    artifact 140014 "ExampleUnitTest"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import org.junit.Test;
+import static org.junit.Assert.*;
+${definition}"
+      associated_classes
+	class_ref 146414 // ExampleUnitTest
+      end
+    end
+  end
+
+  package_ref 133742 // util
+
+  package_ref 133870 // footer
+
+  package_ref 134126 // impl
+end

@@ -1,0 +1,13 @@
+class PaintDrawable
+!!!167278.java!!!	PaintDrawable()
+        mPaint.setStyle(Paint.Style.FILL);
+        mPaint.setAntiAlias(true);
+        mPaint.setColor(0xffaaaaaa);
+!!!167406.java!!!	setColor(in color : int) : void
+        mPaint.setColor(color);
+!!!167534.java!!!	setAlpha(in alpha : int) : void
+        mPaint.setAlpha(alpha);
+!!!167662.java!!!	setColorFilter(inout cf : ColorFilter) : void
+        mPaint.setColorFilter(cf);
+!!!167790.java!!!	getOpacity() : int
+        return PixelFormat.TRANSLUCENT;

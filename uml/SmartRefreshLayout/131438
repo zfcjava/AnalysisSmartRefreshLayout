@@ -1,0 +1,2077 @@
+format 76
+"test" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::header::test
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-header/build/generated/source/buildConfig/androidTest/debug/com/scwang/smartrefresh/header/test/"
+  java_package "com.scwang.smartrefresh.header.test"
+  classview 129262 "test"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 130414 "BuildConfig"
+      visibility public 
+      cpp_decl ""
+      final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 130286 "DEBUG"
+	class_attribute const_attribute public explicit_type "boolean"
+	init_value " Boolean.parseBoolean(\"true\")"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130414 "APPLICATION_ID"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"com.scwang.smartrefresh.header.test\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130542 "BUILD_TYPE"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"debug\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130670 "FLAVOR"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130798 "VERSION_CODE"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 1"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 130926 "VERSION_NAME"
+	class_attribute const_attribute public explicit_type "String"
+	init_value " \"1.0\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+    end
+
+    class 131182 "R"
+      visibility public 
+      cpp_decl ""
+      final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      class 131310 "attr"
+	visibility public 
+	cpp_decl ""
+	final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 143086 "dhDrawable1"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010000"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+"
+	end
+
+	attribute 143214 "dhDrawable2"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010001"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+"
+	end
+
+	attribute 143342 "dhDrawable3"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010002"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+"
+	end
+
+	attribute 143470 "fghBackColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000b"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 143598 "fghBallSpeed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010004"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 143726 "fghBlockHorizontalNum"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010003"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be an integer value, such as \"<code>100</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 143854 "fghLeftColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000c"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 143982 "fghMaskTextBottom"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010008"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 144110 "fghMaskTextSizeBottom"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000a"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 144238 "fghMaskTextSizeTop"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010009"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 144366 "fghMaskTextTop"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010005"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 144494 "fghMaskTextTopPull"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010006"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 144622 "fghMaskTextTopRelease"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010007"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 144750 "fghMiddleColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000d"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 144878 "fghRightColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000e"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 145006 "fghTextGameOver"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010012"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 145134 "fghTextLoading"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01000f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 145262 "fghTextLoadingFailed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010011"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 145390 "fghTextLoadingFinished"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010010"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 145518 "mhPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010013"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 145646 "mhShadowColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010014"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 145774 "mhShadowRadius"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010015"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 145902 "mhShowBezierWave"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010016"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 146030 "msvPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010017"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 146158 "msvViewportHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010018"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 146286 "phAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001a"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 146414 "phPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010019"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 146542 "shhDropHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001d"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 146670 "shhEnableFadeAnimation"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001e"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 146798 "shhLineWidth"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001c"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 146926 "shhText"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001b"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 147054 "thPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f01001f"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 147182 "wshAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010021"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 147310 "wshPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010020"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 147438 "wshShadowColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010022"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+
+	attribute 147566 "wshShadowRadius"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f010023"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " <p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+"
+	end
+      end
+
+      class 131438 "string"
+	visibility public 
+	cpp_decl ""
+	final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 147694 "app_name"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020007"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 147822 "fgh_mask_bottom"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020000"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 147950 "fgh_mask_top_pull"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020001"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 148078 "fgh_mask_top_release"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020002"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 148206 "fgh_text_game_over"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020003"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 148334 "fgh_text_loading"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020004"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 148462 "fgh_text_loading_failed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020005"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	attribute 148590 "fgh_text_loading_finish"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value "0x7f020006"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+      end
+
+      class 131566 "styleable"
+	visibility public 
+	cpp_decl ""
+	final java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	attribute 148718 "DropBoxHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010000, 0x7f010001, 0x7f010002
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a DropBoxHeader.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #DropBoxHeader_dhDrawable1 com.scwang.smartrefresh.header.test:dhDrawable1}</code></td><td></td></tr>
+<tr><td><code>{@link #DropBoxHeader_dhDrawable2 com.scwang.smartrefresh.header.test:dhDrawable2}</code></td><td></td></tr>
+<tr><td><code>{@link #DropBoxHeader_dhDrawable3 com.scwang.smartrefresh.header.test:dhDrawable3}</code></td><td></td></tr>
+</table>
+@see #DropBoxHeader_dhDrawable1
+@see #DropBoxHeader_dhDrawable2
+@see #DropBoxHeader_dhDrawable3
+"
+	end
+
+	attribute 148846 "DropBoxHeader_dhDrawable1"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#dhDrawable1}
+attribute's value can be found in the {@link #DropBoxHeader} array.
+
+
+<p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+@attr name com.scwang.smartrefresh.header.test:dhDrawable1
+"
+	end
+
+	attribute 148974 "DropBoxHeader_dhDrawable2"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#dhDrawable2}
+attribute's value can be found in the {@link #DropBoxHeader} array.
+
+
+<p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+@attr name com.scwang.smartrefresh.header.test:dhDrawable2
+"
+	end
+
+	attribute 149102 "DropBoxHeader_dhDrawable3"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#dhDrawable3}
+attribute's value can be found in the {@link #DropBoxHeader} array.
+
+
+<p>Must be a reference to another resource, in the form \"<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>\"
+or to a theme attribute in the form \"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\".
+@attr name com.scwang.smartrefresh.header.test:dhDrawable3
+"
+	end
+
+	attribute 149230 "FunGameHitBlockHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010003, 0x7f010004
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a FunGameHitBlockHeader.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #FunGameHitBlockHeader_fghBallSpeed com.scwang.smartrefresh.header.test:fghBallSpeed}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameHitBlockHeader_fghBlockHorizontalNum com.scwang.smartrefresh.header.test:fghBlockHorizontalNum}</code></td><td></td></tr>
+</table>
+@see #FunGameHitBlockHeader_fghBallSpeed
+@see #FunGameHitBlockHeader_fghBlockHorizontalNum
+"
+	end
+
+	attribute 149358 "FunGameHitBlockHeader_fghBallSpeed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghBallSpeed}
+attribute's value can be found in the {@link #FunGameHitBlockHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghBallSpeed
+"
+	end
+
+	attribute 149486 "FunGameHitBlockHeader_fghBlockHorizontalNum"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghBlockHorizontalNum}
+attribute's value can be found in the {@link #FunGameHitBlockHeader} array.
+
+
+<p>Must be an integer value, such as \"<code>100</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghBlockHorizontalNum
+"
+	end
+
+	attribute 149614 "FunGameView"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
+            0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c,
+            0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010,
+            0x7f010011, 0x7f010012
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a FunGameView.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #FunGameView_fghBackColor com.scwang.smartrefresh.header.test:fghBackColor}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghLeftColor com.scwang.smartrefresh.header.test:fghLeftColor}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghMaskTextBottom com.scwang.smartrefresh.header.test:fghMaskTextBottom}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghMaskTextSizeBottom com.scwang.smartrefresh.header.test:fghMaskTextSizeBottom}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghMaskTextSizeTop com.scwang.smartrefresh.header.test:fghMaskTextSizeTop}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghMaskTextTop com.scwang.smartrefresh.header.test:fghMaskTextTop}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghMaskTextTopPull com.scwang.smartrefresh.header.test:fghMaskTextTopPull}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghMaskTextTopRelease com.scwang.smartrefresh.header.test:fghMaskTextTopRelease}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghMiddleColor com.scwang.smartrefresh.header.test:fghMiddleColor}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghRightColor com.scwang.smartrefresh.header.test:fghRightColor}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghTextGameOver com.scwang.smartrefresh.header.test:fghTextGameOver}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghTextLoading com.scwang.smartrefresh.header.test:fghTextLoading}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghTextLoadingFailed com.scwang.smartrefresh.header.test:fghTextLoadingFailed}</code></td><td></td></tr>
+<tr><td><code>{@link #FunGameView_fghTextLoadingFinished com.scwang.smartrefresh.header.test:fghTextLoadingFinished}</code></td><td></td></tr>
+</table>
+@see #FunGameView_fghBackColor
+@see #FunGameView_fghLeftColor
+@see #FunGameView_fghMaskTextBottom
+@see #FunGameView_fghMaskTextSizeBottom
+@see #FunGameView_fghMaskTextSizeTop
+@see #FunGameView_fghMaskTextTop
+@see #FunGameView_fghMaskTextTopPull
+@see #FunGameView_fghMaskTextTopRelease
+@see #FunGameView_fghMiddleColor
+@see #FunGameView_fghRightColor
+@see #FunGameView_fghTextGameOver
+@see #FunGameView_fghTextLoading
+@see #FunGameView_fghTextLoadingFailed
+@see #FunGameView_fghTextLoadingFinished
+"
+	end
+
+	attribute 149742 "FunGameView_fghBackColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 6"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghBackColor}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghBackColor
+"
+	end
+
+	attribute 149870 "FunGameView_fghLeftColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 7"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghLeftColor}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghLeftColor
+"
+	end
+
+	attribute 149998 "FunGameView_fghMaskTextBottom"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghMaskTextBottom}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghMaskTextBottom
+"
+	end
+
+	attribute 150126 "FunGameView_fghMaskTextSizeBottom"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 5"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghMaskTextSizeBottom}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghMaskTextSizeBottom
+"
+	end
+
+	attribute 150254 "FunGameView_fghMaskTextSizeTop"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 4"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghMaskTextSizeTop}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghMaskTextSizeTop
+"
+	end
+
+	attribute 150382 "FunGameView_fghMaskTextTop"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghMaskTextTop}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghMaskTextTop
+"
+	end
+
+	attribute 150510 "FunGameView_fghMaskTextTopPull"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghMaskTextTopPull}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghMaskTextTopPull
+"
+	end
+
+	attribute 150638 "FunGameView_fghMaskTextTopRelease"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghMaskTextTopRelease}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghMaskTextTopRelease
+"
+	end
+
+	attribute 150766 "FunGameView_fghMiddleColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 8"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghMiddleColor}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghMiddleColor
+"
+	end
+
+	attribute 150894 "FunGameView_fghRightColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 9"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghRightColor}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghRightColor
+"
+	end
+
+	attribute 151022 "FunGameView_fghTextGameOver"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 13"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghTextGameOver}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghTextGameOver
+"
+	end
+
+	attribute 151150 "FunGameView_fghTextLoading"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 10"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghTextLoading}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghTextLoading
+"
+	end
+
+	attribute 151278 "FunGameView_fghTextLoadingFailed"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 12"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghTextLoadingFailed}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghTextLoadingFailed
+"
+	end
+
+	attribute 151406 "FunGameView_fghTextLoadingFinished"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 11"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#fghTextLoadingFinished}
+attribute's value can be found in the {@link #FunGameView} array.
+
+
+<p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:fghTextLoadingFinished
+"
+	end
+
+	attribute 151534 "MaterialHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a MaterialHeader.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #MaterialHeader_mhPrimaryColor com.scwang.smartrefresh.header.test:mhPrimaryColor}</code></td><td></td></tr>
+<tr><td><code>{@link #MaterialHeader_mhShadowColor com.scwang.smartrefresh.header.test:mhShadowColor}</code></td><td></td></tr>
+<tr><td><code>{@link #MaterialHeader_mhShadowRadius com.scwang.smartrefresh.header.test:mhShadowRadius}</code></td><td></td></tr>
+<tr><td><code>{@link #MaterialHeader_mhShowBezierWave com.scwang.smartrefresh.header.test:mhShowBezierWave}</code></td><td></td></tr>
+</table>
+@see #MaterialHeader_mhPrimaryColor
+@see #MaterialHeader_mhShadowColor
+@see #MaterialHeader_mhShadowRadius
+@see #MaterialHeader_mhShowBezierWave
+"
+	end
+
+	attribute 151662 "MaterialHeader_mhPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#mhPrimaryColor}
+attribute's value can be found in the {@link #MaterialHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:mhPrimaryColor
+"
+	end
+
+	attribute 151790 "MaterialHeader_mhShadowColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#mhShadowColor}
+attribute's value can be found in the {@link #MaterialHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:mhShadowColor
+"
+	end
+
+	attribute 151918 "MaterialHeader_mhShadowRadius"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#mhShadowRadius}
+attribute's value can be found in the {@link #MaterialHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:mhShadowRadius
+"
+	end
+
+	attribute 152046 "MaterialHeader_mhShowBezierWave"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#mhShowBezierWave}
+attribute's value can be found in the {@link #MaterialHeader} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:mhShowBezierWave
+"
+	end
+
+	attribute 152174 "MountainSceneView"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010017, 0x7f010018
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a MountainSceneView.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #MountainSceneView_msvPrimaryColor com.scwang.smartrefresh.header.test:msvPrimaryColor}</code></td><td></td></tr>
+<tr><td><code>{@link #MountainSceneView_msvViewportHeight com.scwang.smartrefresh.header.test:msvViewportHeight}</code></td><td></td></tr>
+</table>
+@see #MountainSceneView_msvPrimaryColor
+@see #MountainSceneView_msvViewportHeight
+"
+	end
+
+	attribute 152302 "MountainSceneView_msvPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#msvPrimaryColor}
+attribute's value can be found in the {@link #MountainSceneView} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:msvPrimaryColor
+"
+	end
+
+	attribute 152430 "MountainSceneView_msvViewportHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#msvViewportHeight}
+attribute's value can be found in the {@link #MountainSceneView} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:msvViewportHeight
+"
+	end
+
+	attribute 152558 "PhoenixHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010019, 0x7f01001a
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a PhoenixHeader.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #PhoenixHeader_phAccentColor com.scwang.smartrefresh.header.test:phAccentColor}</code></td><td></td></tr>
+<tr><td><code>{@link #PhoenixHeader_phPrimaryColor com.scwang.smartrefresh.header.test:phPrimaryColor}</code></td><td></td></tr>
+</table>
+@see #PhoenixHeader_phAccentColor
+@see #PhoenixHeader_phPrimaryColor
+"
+	end
+
+	attribute 152686 "PhoenixHeader_phAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#phAccentColor}
+attribute's value can be found in the {@link #PhoenixHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:phAccentColor
+"
+	end
+
+	attribute 152814 "PhoenixHeader_phPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#phPrimaryColor}
+attribute's value can be found in the {@link #PhoenixHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:phPrimaryColor
+"
+	end
+
+	attribute 152942 "StoreHouseHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a StoreHouseHeader.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #StoreHouseHeader_shhDropHeight com.scwang.smartrefresh.header.test:shhDropHeight}</code></td><td></td></tr>
+<tr><td><code>{@link #StoreHouseHeader_shhEnableFadeAnimation com.scwang.smartrefresh.header.test:shhEnableFadeAnimation}</code></td><td></td></tr>
+<tr><td><code>{@link #StoreHouseHeader_shhLineWidth com.scwang.smartrefresh.header.test:shhLineWidth}</code></td><td></td></tr>
+<tr><td><code>{@link #StoreHouseHeader_shhText com.scwang.smartrefresh.header.test:shhText}</code></td><td></td></tr>
+</table>
+@see #StoreHouseHeader_shhDropHeight
+@see #StoreHouseHeader_shhEnableFadeAnimation
+@see #StoreHouseHeader_shhLineWidth
+@see #StoreHouseHeader_shhText
+"
+	end
+
+	attribute 153070 "StoreHouseHeader_shhDropHeight"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#shhDropHeight}
+attribute's value can be found in the {@link #StoreHouseHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:shhDropHeight
+"
+	end
+
+	attribute 153198 "StoreHouseHeader_shhEnableFadeAnimation"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#shhEnableFadeAnimation}
+attribute's value can be found in the {@link #StoreHouseHeader} array.
+
+
+<p>Must be a boolean value, either \"<code>true</code>\" or \"<code>false</code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:shhEnableFadeAnimation
+"
+	end
+
+	attribute 153326 "StoreHouseHeader_shhLineWidth"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#shhLineWidth}
+attribute's value can be found in the {@link #StoreHouseHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:shhLineWidth
+"
+	end
+
+	attribute 153454 "StoreHouseHeader_shhText"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#shhText}
+attribute's value can be found in the {@link #StoreHouseHeader} array.
+
+
+<p>Must be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:shhText
+"
+	end
+
+	attribute 153582 "TaurusHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f01001f
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a TaurusHeader.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #TaurusHeader_thPrimaryColor com.scwang.smartrefresh.header.test:thPrimaryColor}</code></td><td></td></tr>
+</table>
+@see #TaurusHeader_thPrimaryColor
+"
+	end
+
+	attribute 153710 "TaurusHeader_thPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#thPrimaryColor}
+attribute's value can be found in the {@link #TaurusHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:thPrimaryColor
+"
+	end
+
+	attribute 153838 "WaveSwipeHeader"
+	  class_attribute const_attribute public explicit_type "int"
+	  multiplicity "[]"
+	  init_value " {
+            0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023
+        }"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment " Attributes that can be used with a WaveSwipeHeader.
+<p>Includes the following attributes:</p>
+<table>
+<colgroup align=\"left\" />
+<colgroup align=\"left\" />
+<tr><th>Attribute</th><th>Description</th></tr>
+<tr><td><code>{@link #WaveSwipeHeader_wshAccentColor com.scwang.smartrefresh.header.test:wshAccentColor}</code></td><td></td></tr>
+<tr><td><code>{@link #WaveSwipeHeader_wshPrimaryColor com.scwang.smartrefresh.header.test:wshPrimaryColor}</code></td><td></td></tr>
+<tr><td><code>{@link #WaveSwipeHeader_wshShadowColor com.scwang.smartrefresh.header.test:wshShadowColor}</code></td><td></td></tr>
+<tr><td><code>{@link #WaveSwipeHeader_wshShadowRadius com.scwang.smartrefresh.header.test:wshShadowRadius}</code></td><td></td></tr>
+</table>
+@see #WaveSwipeHeader_wshAccentColor
+@see #WaveSwipeHeader_wshPrimaryColor
+@see #WaveSwipeHeader_wshShadowColor
+@see #WaveSwipeHeader_wshShadowRadius
+"
+	end
+
+	attribute 153966 "WaveSwipeHeader_wshAccentColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 1"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#wshAccentColor}
+attribute's value can be found in the {@link #WaveSwipeHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:wshAccentColor
+"
+	end
+
+	attribute 154094 "WaveSwipeHeader_wshPrimaryColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 0"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#wshPrimaryColor}
+attribute's value can be found in the {@link #WaveSwipeHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:wshPrimaryColor
+"
+	end
+
+	attribute 154222 "WaveSwipeHeader_wshShadowColor"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 2"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#wshShadowColor}
+attribute's value can be found in the {@link #WaveSwipeHeader} array.
+
+
+<p>Must be a color value, in the form of \"<code>#<i>rgb</i></code>\", \"<code>#<i>argb</i></code>\",
+\"<code>#<i>rrggbb</i></code>\", or \"<code>#<i>aarrggbb</i></code>\".
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:wshShadowColor
+"
+	end
+
+	attribute 154350 "WaveSwipeHeader_wshShadowRadius"
+	  class_attribute const_attribute public explicit_type "int"
+	  init_value " 3"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  comment "<p>This symbol is the offset where the {@link com.scwang.smartrefresh.header.test.R.attr#wshShadowRadius}
+attribute's value can be found in the {@link #WaveSwipeHeader} array.
+
+
+<p>Must be a dimension value, which is a floating point number appended with a unit such as \"<code>14.5sp</code>\".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+\"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>\") or
+theme attribute (in the form
+\"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>\")
+containing a value of this type.
+@attr name com.scwang.smartrefresh.header.test:wshShadowRadius
+"
+	end
+      end
+    end
+  end
+
+  deploymentview 129262 "test"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 129646 "BuildConfig"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_classes
+	class_ref 130414 // BuildConfig
+      end
+      comment "Automatically generated file. DO NOT MODIFY"
+    end
+
+    artifact 130030 "R"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_classes
+	class_ref 131182 // R
+      end
+      comment " AUTO-GENERATED FILE.  DO NOT MODIFY.
+
+This class was automatically generated by the
+aapt tool from the resource data it found.  It
+should not be modified by hand."
+    end
+  end
+end

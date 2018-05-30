@@ -1,0 +1,2006 @@
+format 76
+"header" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::layout::header
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-layout/src/main/java/com/scwang/smartrefresh/layout/header/"
+  java_package "com.scwang.smartrefresh.layout.header"
+  classview 130158 "header"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 133614 "FalsifyHeader"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "虚假的 Header
+用于 正真的 Header 在 RefreshLayout 外部时，
+使用本虚假的 FalsifyHeader 填充在 RefreshLayout 内部
+具体使用方法 参考 纸飞机（FlyRefreshHeader）
+Created by SCWANG on 2017/6/14."
+      classrelation 130030 // <generalisation>
+	relation 130030 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 130030 // <generalisation>
+	  b parent class_ref 131950 // InternalAbstract
+      end
+
+      classrelation 130158 // <realization>
+	relation 130158 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 130158 // <realization>
+	  b parent class_ref 132974 // RefreshHeader
+      end
+
+      classrelation 130286 // mRefreshKernel (<unidirectional association>)
+	relation 130286 --->
+	  a role_name "mRefreshKernel" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 130286 // mRefreshKernel (<unidirectional association>)
+	  b parent class_ref 132846 // RefreshKernel
+      end
+
+      operation 137198 "FalsifyHeader"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "context" explicit_type "Context"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "<editor-fold desc=\"FalsifyHeader\">"
+      end
+
+      operation 137326 "FalsifyHeader"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137454 "FalsifyHeader"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	  param in name "defStyleAttr" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137582 "dispatchDraw"
+	protected explicit_return_type "void"
+	nparams 1
+	  param inout name "canvas" explicit_type "Canvas"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 137710 "onInitialized"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "kernel" type class_ref 132846 // RefreshKernel
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"RefreshHeader\">"
+      end
+
+      operation 137838 "onReleased"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+
+    class 144238 "BezierRadarHeader"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings({\"UnusedReturnValue\", \"unused\"})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "贝塞尔曲线类雷达风格刷新组件
+Created by lcodecore on 2016/10/2."
+      classrelation 142574 // <generalisation>
+	relation 142574 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 142574 // <generalisation>
+	  b parent class_ref 131950 // InternalAbstract
+      end
+
+      classrelation 142702 // <realization>
+	relation 142702 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 142702 // <realization>
+	  b parent class_ref 132974 // RefreshHeader
+      end
+
+      attribute 268270 "mAccentColor"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "<editor-fold desc=\"属性字段\">"
+      end
+
+      attribute 268398 "mPrimaryColor"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 268526 "mManualPrimaryColor"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 268654 "mManualAccentColor"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 268782 "mWavePulling"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 268910 "mEnableHorizontalDrag"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 269038 "mPath"
+	protected explicit_type "Path"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 269166 "mPaint"
+	protected explicit_type "Paint"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 269294 "mWaveTop"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 269422 "mWaveHeight"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 269550 "mWaveOffsetX"
+	protected explicit_type "int"
+	init_value " -1"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 269678 "mDotAlpha"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 269806 "mDotFraction"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 269934 "mDotRadius"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 270062 "mRippleRadius"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 270190 "mRadarAngle"
+	protected explicit_type "int"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 270318 "mRadarRadius"
+	protected explicit_type "float"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 270446 "mRadarCircle"
+	protected explicit_type "float"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 270574 "mRadarScale"
+	protected explicit_type "float"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 270702 "mAnimatorSet"
+	protected explicit_type "Animator"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 270830 "mRadarRect"
+	protected explicit_type "RectF"
+	init_value " new RectF(0,0,0,0)"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "    protected ValueAnimator mRadarAnimator;"
+      end
+
+      operation 210414 "BezierRadarHeader"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "context" explicit_type "Context"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"FrameLayout\">"
+      end
+
+      operation 210542 "BezierRadarHeader"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 210670 "BezierRadarHeader"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	  param in name "defStyleAttr" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 210798 "onDetachedFromWindow"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 210926 "dispatchDraw"
+	protected explicit_return_type "void"
+	nparams 1
+	  param inout name "canvas" explicit_type "Canvas"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"绘制方法 - draw\">"
+      end
+
+      operation 211054 "drawWave"
+	protected explicit_return_type "void"
+	nparams 2
+	  param inout name "canvas" explicit_type "Canvas"
+	  param in name "width" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 211182 "drawDot"
+	protected explicit_return_type "void"
+	nparams 3
+	  param inout name "canvas" explicit_type "Canvas"
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 211310 "drawRadar"
+	protected explicit_return_type "void"
+	nparams 3
+	  param inout name "canvas" explicit_type "Canvas"
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 211438 "drawRipple"
+	protected explicit_return_type "void"
+	nparams 3
+	  param inout name "canvas" explicit_type "Canvas"
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 211566 "onMoving"
+	public explicit_return_type "void"
+	nparams 5
+	  param inout name "isDragging" explicit_type "boolean"
+	  param in name "percent" explicit_type "float"
+	  param in name "offset" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"刷新接口 - RefreshHeader\">"
+      end
+
+      operation 211694 "onReleased"
+	public explicit_return_type "void"
+	nparams 3
+	  param in name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull final ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public void onPulling(float percent, int offset, int height, int maxDragHeight) {
+        mWavePulling = true;
+        mWaveTop = Math.min(height, offset);
+        mWaveHeight = (int) (1.9f * Math.max(0, offset - height));
+        mDotFraction = percent;
+    }
+
+    @Override
+    public void onReleasing(float percent, int offset, int height, int maxDragHeight) {
+        if (mWavePulling) {
+            onPulling(percent, offset, height, maxDragHeight);
+        }
+    }"
+      end
+
+      operation 211822 "onFinish"
+	public explicit_return_type "int"
+	nparams 2
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	  param inout name "success" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 211950 "onStateChanged"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param inout name "oldState" type class_ref 132590 // RefreshState
+	  param inout name "newState" type class_ref 132590 // RefreshState
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}, @NonNull ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 212078 "setPrimaryColors"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "colors" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ... ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override@Deprecated
+"
+	
+	
+	
+      end
+
+      operation 212206 "isSupportHorizontalDrag"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @NonNull
+    @Override
+    public SpinnerStyle getSpinnerStyle() {
+        return SpinnerStyle.Scale;
+    }"
+      end
+
+      operation 212334 "onHorizontalDrag"
+	public explicit_return_type "void"
+	nparams 3
+	  param in name "percentX" explicit_type "float"
+	  param in name "offsetX" explicit_type "int"
+	  param in name "offsetMax" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 212462 "setPrimaryColor"
+	public return_type class_ref 144238 // BezierRadarHeader
+	nparams 1
+	  param in name "color" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"开放接口 - API\">"
+      end
+
+      operation 212590 "setAccentColor"
+	public return_type class_ref 144238 // BezierRadarHeader
+	nparams 1
+	  param in name "color" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 212718 "setPrimaryColorId"
+	public return_type class_ref 144238 // BezierRadarHeader
+	nparams 1
+	  param in name "colorId" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorRes ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 212846 "setAccentColorId"
+	public return_type class_ref 144238 // BezierRadarHeader
+	nparams 1
+	  param in name "colorId" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorRes ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 212974 "setEnableHorizontalDrag"
+	public return_type class_ref 144238 // BezierRadarHeader
+	nparams 1
+	  param inout name "enable" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      attribute 270958 "PROPERTY_RADAR_SCALE"
+	class_attribute const_attribute protected explicit_type "byte"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "</editor-fold>
+<editor-fold desc=\"动画更新\">"
+      end
+
+      attribute 271086 "PROPERTY_WAVE_HEIGHT"
+	class_attribute const_attribute protected explicit_type "byte"
+	init_value " 1"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 271214 "PROPERTY_DOT_ALPHA"
+	class_attribute const_attribute protected explicit_type "byte"
+	init_value " 2"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 271342 "PROPERTY_RIPPLE_RADIUS"
+	class_attribute const_attribute protected explicit_type "byte"
+	init_value " 3"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 271470 "PROPERTY_RADAR_ANGLE"
+	class_attribute const_attribute protected explicit_type "byte"
+	init_value " 4"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      class 144366 "AnimatorUpdater"
+	visibility protected 
+	cpp_decl ""
+	java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	
+	classrelation 142830 // <realization>
+	  relation 142830 -_-|>
+	    a public
+	      java "${type}"
+	      classrelation_ref 142830 // <realization>
+	    b parent class_ref 144494 // AnimatorUpdateListener
+	end
+
+	attribute 271598 "propertyName"
+	  package explicit_type "byte"
+	  cpp_decl ""
+	  java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	end
+
+	operation 213102 "AnimatorUpdater"
+	  package explicit_return_type ""
+	  nparams 1
+	    param in name "name" explicit_type "byte"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  
+	  
+	  
+	end
+
+	operation 213230 "onAnimationUpdate"
+	  public explicit_return_type "void"
+	  nparams 1
+	    param inout name "animation" explicit_type "ValueAnimator"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	end
+      end
+    end
+
+    class 144622 "ClassicsHeader"
+      visibility public 
+      nactuals 5
+      actual class class_ref 143854 // InternalClassics
+        rank 0 explicit_value ""
+      actual class class_ref 143854 // InternalClassics
+        rank 1 explicit_value ""
+      actual class class_ref 143854 // InternalClassics
+        rank 2 explicit_value ""
+      actual class class_ref 143854 // InternalClassics
+        rank 3 explicit_value ""
+      actual class class_ref 143854 // InternalClassics
+        rank 4 explicit_value ""
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings({\"unused\", \"UnusedReturnValue\"})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "经典下拉头部
+Created by SCWANG on 2017/5/28."
+      classrelation 142958 // <realization>
+	relation 142958 -_-|>
+	  stereotype "bind"
+	  a public
+	    java "${type}"
+	    classrelation_ref 142958 // <realization>
+	  b parent class_ref 143854 // InternalClassics
+      end
+
+      classrelation 143086 // <realization>
+	relation 143086 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 143086 // <realization>
+	  b parent class_ref 132974 // RefreshHeader
+      end
+
+      attribute 271726 "ID_TEXT_UPDATE"
+	class_attribute const_attribute public explicit_type "byte"
+	init_value " 4"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 271854 "REFRESH_HEADER_PULLING"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"下拉可以刷新\";"
+      end
+
+      attribute 271982 "REFRESH_HEADER_REFRESHING"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"正在刷新...\";"
+      end
+
+      attribute 272110 "REFRESH_HEADER_LOADING"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"正在加载...\";"
+      end
+
+      attribute 272238 "REFRESH_HEADER_RELEASE"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"释放立即刷新\";"
+      end
+
+      attribute 272366 "REFRESH_HEADER_FINISH"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"刷新完成\";"
+      end
+
+      attribute 272494 "REFRESH_HEADER_FAILED"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"刷新失败\";"
+      end
+
+      attribute 272622 "REFRESH_HEADER_UPDATE"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"上次更新 M-d HH:mm\";"
+      end
+
+      attribute 272750 "REFRESH_HEADER_SECONDARY"
+	class_attribute public explicit_type "String"
+	init_value " null"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "\"释放进入二楼\";"
+      end
+
+      attribute 272878 "KEY_LAST_UPDATE_TIME"
+	protected explicit_type "String"
+	init_value " \"LAST_UPDATE_TIME\""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "    public static String REFRESH_HEADER_UPDATE = \"'Last update' M-d HH:mm\";"
+      end
+
+      attribute 273006 "mLastTime"
+	protected explicit_type "Date"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 273134 "mLastUpdateText"
+	protected explicit_type "TextView"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 273262 "mShared"
+	protected explicit_type "SharedPreferences"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 273390 "mLastUpdateFormat"
+	protected explicit_type "DateFormat"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 273518 "mEnableLastTime"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 213358 "ClassicsHeader"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "context" explicit_type "Context"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "<editor-fold desc=\"RelativeLayout\">"
+      end
+
+      operation 213486 "ClassicsHeader"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 213614 "ClassicsHeader"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	  param in name "defStyleAttr" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 213742 "onFinish"
+	public explicit_return_type "int"
+	nparams 2
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	  param inout name "success" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    protected ClassicsHeader self() {
+        return this;
+    }
+</editor-fold>
+<editor-fold desc=\"RefreshHeader\">"
+      end
+
+      operation 213870 "onStateChanged"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param inout name "oldState" type class_ref 132590 // RefreshState
+	  param inout name "newState" type class_ref 132590 // RefreshState
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}, @NonNull ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 213998 "setLastUpdateTime"
+	public return_type class_ref 144622 // ClassicsHeader
+	nparams 1
+	  param inout name "time" explicit_type "Date"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"API\">"
+      end
+
+      operation 214126 "setTimeFormat"
+	public return_type class_ref 144622 // ClassicsHeader
+	nparams 1
+	  param inout name "format" explicit_type "DateFormat"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 214254 "setLastUpdateText"
+	public return_type class_ref 144622 // ClassicsHeader
+	nparams 1
+	  param inout name "text" explicit_type "CharSequence"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 214382 "setAccentColor"
+	public return_type class_ref 144622 // ClassicsHeader
+	nparams 1
+	  param in name "accentColor" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 214510 "setEnableLastTime"
+	public return_type class_ref 144622 // ClassicsHeader
+	nparams 1
+	  param inout name "enable" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 214638 "setTextSizeTime"
+	public return_type class_ref 144622 // ClassicsHeader
+	nparams 1
+	  param in name "size" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 214766 "setTextTimeMarginTop"
+	public return_type class_ref 144622 // ClassicsHeader
+	nparams 1
+	  param in name "dp" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    public ClassicsHeader setTextSizeTime(int unit, float size) {
+        mLastUpdateText.setTextSize(unit, size);
+        if (mRefreshKernel != null) {
+            mRefreshKernel.requestRemeasureHeightForHeader();
+        }
+        return this;
+    }"
+      end
+    end
+
+    class 144750 "TwoLevelHeader"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings({\"unused\", \"UnusedReturnValue\"})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "二级刷新
+Created by SCWANG on 2017/5/26."
+      classrelation 143214 // <generalisation>
+	relation 143214 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 143214 // <generalisation>
+	  b parent class_ref 131950 // InternalAbstract
+      end
+
+      classrelation 143342 // <realization>
+	relation 143342 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 143342 // <realization>
+	  b parent class_ref 132974 // RefreshHeader
+      end
+
+      attribute 273646 "mSpinner"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment ", InvocationHandler
+<editor-fold desc=\"属性字段\">"
+      end
+
+      attribute 273774 "mPercent"
+	protected explicit_type "float"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 273902 "mMaxRage"
+	protected explicit_type "float"
+	init_value " 2.5f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 274030 "mFloorRage"
+	protected explicit_type "float"
+	init_value " 1.9f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 274158 "mRefreshRage"
+	protected explicit_type "float"
+	init_value " 1f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 274286 "mEnableTwoLevel"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 274414 "mEnablePullToCloseTwoLevel"
+	protected explicit_type "boolean"
+	init_value " true"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 274542 "mFloorDuration"
+	protected explicit_type "int"
+	init_value " 1000"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 274670 "mHeaderHeight"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 143470 // mRefreshHeader (<unidirectional association>)
+	relation 143470 --->
+	  a role_name "mRefreshHeader" protected
+	    comment "    protected int mPaintAlpha;
+    protected Paint mPaint;
+"
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 143470 // mRefreshHeader (<unidirectional association>)
+	  b parent class_ref 132974 // RefreshHeader
+      end
+
+      classrelation 143598 // mRefreshKernel (<unidirectional association>)
+	relation 143598 --->
+	  a role_name "mRefreshKernel" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 143598 // mRefreshKernel (<unidirectional association>)
+	  b parent class_ref 132846 // RefreshKernel
+      end
+
+      classrelation 143726 // mTwoLevelListener (<unidirectional association>)
+	relation 143726 --->
+	  a role_name "mTwoLevelListener" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 143726 // mTwoLevelListener (<unidirectional association>)
+	  b parent class_ref 143470 // OnTwoLevelListener
+      end
+
+      operation 214894 "TwoLevelHeader"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "context" explicit_type "Context"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    protected SpinnerStyle mSpinnerStyle = SpinnerStyle.FixedBehind;
+    protected Method mRequestDrawBackgroundForHeaderMethod;
+</editor-fold>
+<editor-fold desc=\"构造方法\">"
+      end
+
+      operation 215022 "TwoLevelHeader"
+	public explicit_return_type ""
+	nparams 2
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}@NonNull ${t0} ${p0}, @Nullable ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 215150 "TwoLevelHeader"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	  param in name "defStyleAttr" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}@NonNull ${t0} ${p0}, @Nullable ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 215278 "onFinishInflate"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"生命周期\">"
+      end
+
+      operation 215406 "onAttachedToWindow"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 215534 "onDetachedFromWindow"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 215662 "onMeasure"
+	protected explicit_return_type "void"
+	nparams 2
+	  param in name "widthMeasureSpec" explicit_type "int"
+	  param in name "heightMeasureSpec" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 215790 "getView"
+	public explicit_return_type "View"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@NonNull
+    @Override
+"
+	
+	
+	
+	comment "    @Override
+    protected boolean drawChild(Canvas canvas, View child, long drawingTime) {
+        boolean isInEditMode = isInEditMode();
+        if (child == mRefreshHeader.getView() && mPaint != null) {
+            canvas.drawRect(0, 0, getWidth(), ((isInEditMode) ? mHeaderHeight : mSpinner) + child.getTop(), mPaint);
+        }
+        return super.drawChild(canvas, child, drawingTime);
+    }
+</editor-fold>
+<editor-fold desc=\"Header实现\">
+    @Override
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        Object returnValue = null;
+        if (mRefreshKernel != null) {
+            if (method.equals(mRequestDrawBackgroundForHeaderMethod)) {
+                int backgroundColor = (int) args[0];
+                if (backgroundColor == 0) {
+                    mPaint = null;
+                } else {
+                    if (mPaint == null) {
+                        mPaint = new Paint();
+                    }
+                    mPaint.setColor(backgroundColor);
+                    mPaintAlpha = ((backgroundColor & 0xFF000000) >> 24);
+                }
+                returnValue = proxy;
+            } else {
+                returnValue = method.invoke(mRefreshKernel, args);
+            }
+        }
+        if (method.getReturnType().equals(RefreshKernel.class)) {
+            if (mRefreshKernel == null && RefreshKernel.class.equals(method.getDeclaringClass())) {
+                if (mRequestDrawBackgroundForHeaderMethod == null) {
+                    mRequestDrawBackgroundForHeaderMethod = method;
+                }
+            }
+            return proxy;
+        }
+        return returnValue;
+    }"
+      end
+
+      operation 215918 "onInitialized"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "kernel" type class_ref 132846 // RefreshKernel
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 216046 "onStateChanged"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param inout name "oldState" type class_ref 132590 // RefreshState
+	  param inout name "newState" type class_ref 132590 // RefreshState
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}, @NonNull ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 216174 "onMoving"
+	public explicit_return_type "void"
+	nparams 5
+	  param inout name "isDragging" explicit_type "boolean"
+	  param in name "percent" explicit_type "float"
+	  param in name "offset" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 216302 "moveSpinner"
+	protected explicit_return_type "void"
+	nparams 1
+	  param in name "spinner" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    @Override
+    public void onPulling(float percent, int offset, int height, int maxDragHeight) {
+        moveSpinner(offset);
+        mRefreshHeader.onPulling(percent, offset, height, maxDragHeight);
+        if (mPercent < mFloorRage && percent >= mFloorRage && mEnableTwoLevel) {
+            mRefreshKernel.setState(RefreshState.ReleaseToTwoLevel);
+        } else if (mPercent >= mFloorRage && percent < mRefreshRage) {
+            mRefreshKernel.setState(RefreshState.PullDownToRefresh);
+        } else if (mPercent >= mFloorRage && percent < mFloorRage) {
+            mRefreshKernel.setState(RefreshState.ReleaseToRefresh);
+        }
+        mPercent = percent;
+    }
+
+    @Override
+    public void onReleasing(float percent, int offset, int height, int maxDragHeight) {
+        moveSpinner(offset);
+        mRefreshHeader.onReleasing(percent, offset, height, maxDragHeight);
+    }"
+      end
+
+      operation 216430 "setRefreshHeader"
+	public return_type class_ref 144750 // TwoLevelHeader
+	nparams 1
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    @Override
+    public void onReleased(@NonNull RefreshLayout refreshLayout, int height, int maxDragHeight) {
+        mRefreshHeader.onReleased(refreshLayout, height, maxDragHeight);
+    }
+
+    @NonNull
+    @Override
+    public SpinnerStyle getSpinnerStyle() {
+        return mSpinnerStyle;
+    }
+
+    @Override
+    public void setPrimaryColors(int... colors) {
+        mRefreshHeader.setPrimaryColors(colors);
+    }
+
+    @Override
+    public void onHorizontalDrag(float percentX, int offsetX, int offsetMax) {
+        mRefreshHeader.onHorizontalDrag(percentX, offsetX, offsetMax);
+    }
+
+    @Override
+    public void onStartAnimator(@NonNull RefreshLayout refreshLayout, int height, int maxDragHeight) {
+        mRefreshHeader.onStartAnimator(refreshLayout, height, maxDragHeight);
+    }
+
+    @Override
+    public int onFinish(@NonNull RefreshLayout refreshLayout, boolean success) {
+        return mRefreshHeader.onFinish(refreshLayout, success);
+    }
+
+    @Override
+    public boolean isSupportHorizontalDrag() {
+        return mRefreshHeader.isSupportHorizontalDrag();
+    }
+</editor-fold>
+<editor-fold desc=\"开放接口 - API\">
+
+设置指定的Header"
+      end
+
+      operation 216558 "setRefreshHeader"
+	public return_type class_ref 144750 // TwoLevelHeader
+	nparams 3
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置指定的Header"
+      end
+
+      operation 216686 "setMaxRage"
+	public return_type class_ref 144750 // TwoLevelHeader
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置下拉Header的最大高度比值
+@param rate MaxDragHeight/HeaderHeight"
+      end
+
+      operation 216814 "setEnablePullToCloseTwoLevel"
+	public return_type class_ref 144750 // TwoLevelHeader
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "是否禁止在二极状态是上滑关闭状态回到初态
+@param enabled 是否启用"
+      end
+
+      operation 216942 "setFloorRage"
+	public return_type class_ref 144750 // TwoLevelHeader
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 217070 "setRefreshRage"
+	public return_type class_ref 144750 // TwoLevelHeader
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 217198 "setEnableTwoLevel"
+	public return_type class_ref 144750 // TwoLevelHeader
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 217326 "setFloorDuration"
+	public return_type class_ref 144750 // TwoLevelHeader
+	nparams 1
+	  param in name "duration" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 217454 "setOnTwoLevelListener"
+	public return_type class_ref 144750 // TwoLevelHeader
+	nparams 1
+	  param inout name "listener" type class_ref 143470 // OnTwoLevelListener
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 217582 "finishTwoLevel"
+	public return_type class_ref 144750 // TwoLevelHeader
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+  end
+
+  deploymentview 129902 "header"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 131182 "FalsifyHeader"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.DashPathEffect;
+import android.graphics.Paint;
+import android.support.annotation.NonNull;
+import android.util.AttributeSet;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.TextView;
+import com.scwang.smartrefresh.layout.R;
+import com.scwang.smartrefresh.layout.api.RefreshHeader;
+import com.scwang.smartrefresh.layout.api.RefreshKernel;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.internal.InternalAbstract;
+import com.scwang.smartrefresh.layout.util.DensityUtil;
+import static android.view.View.MeasureSpec.EXACTLY;
+import static android.view.View.MeasureSpec.makeMeasureSpec;
+${definition}"
+      associated_classes
+	class_ref 133614 // FalsifyHeader
+      end
+    end
+
+    artifact 137326 "BezierRadarHeader"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.animation.Animator;
+import android.animation.AnimatorSet;
+import android.animation.ValueAnimator;
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.RectF;
+import android.os.Build;
+import android.support.annotation.ColorInt;
+import android.support.annotation.ColorRes;
+import android.support.annotation.NonNull;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.Interpolator;
+import com.scwang.smartrefresh.layout.R;
+import com.scwang.smartrefresh.layout.api.RefreshHeader;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
+import com.scwang.smartrefresh.layout.internal.InternalAbstract;
+import com.scwang.smartrefresh.layout.util.DensityUtil;
+import com.scwang.smartrefresh.layout.util.DesignUtil;
+import static com.scwang.smartrefresh.layout.util.SmartUtil.getColor;
+${definition}"
+      associated_classes
+	class_ref 144238 // BezierRadarHeader
+      end
+    end
+
+    artifact 137454 "ClassicsHeader"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.res.TypedArray;
+import android.support.annotation.ColorInt;
+import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.util.AttributeSet;
+import android.util.TypedValue;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import com.scwang.smartrefresh.layout.R;
+import com.scwang.smartrefresh.layout.api.RefreshHeader;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
+import com.scwang.smartrefresh.layout.internal.ArrowDrawable;
+import com.scwang.smartrefresh.layout.internal.InternalClassics;
+import com.scwang.smartrefresh.layout.internal.ProgressDrawable;
+import com.scwang.smartrefresh.layout.util.DensityUtil;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
+${definition}"
+      associated_classes
+	class_ref 144622 // ClassicsHeader
+      end
+    end
+
+    artifact 137582 "TwoLevelHeader"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.ViewGroup;
+import com.scwang.smartrefresh.layout.R;
+import com.scwang.smartrefresh.layout.api.OnTwoLevelListener;
+import com.scwang.smartrefresh.layout.api.RefreshHeader;
+import com.scwang.smartrefresh.layout.api.RefreshKernel;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
+import com.scwang.smartrefresh.layout.impl.RefreshHeaderWrapper;
+import com.scwang.smartrefresh.layout.internal.InternalAbstract;
+import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
+import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
+${definition}"
+      associated_classes
+	class_ref 144750 // TwoLevelHeader
+      end
+    end
+  end
+end

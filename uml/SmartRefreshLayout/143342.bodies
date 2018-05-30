@@ -1,0 +1,314 @@
+class RefreshKernelImpl
+!!!199278.java!!!	getRefreshLayout() : RefreshLayout
+            return SmartRefreshLayout.this;
+!!!199406.java!!!	getRefreshContent() : RefreshContent
+            return mRefreshContent;
+!!!199534.java!!!	setState(inout state : RefreshState) : RefreshKernel
+            switch (state) {
+                case None:
+                    resetStatus();
+                    break;
+                case PullDownToRefresh:
+                    if (!mState.isOpening && isEnableRefresh()) {
+                        notifyStateChanged(RefreshState.PullDownToRefresh);
+                    } else {
+                        setViceState(RefreshState.PullDownToRefresh);
+                    }
+                    break;
+                case PullUpToLoad:
+                    if (isEnableLoadMore() && !mState.isOpening && !mState.isFinishing && !(mFooterNoMoreData && mEnableFooterFollowWhenLoadFinished)) {
+                        notifyStateChanged(RefreshState.PullUpToLoad);
+                    } else {
+                        setViceState(RefreshState.PullUpToLoad);
+                    }
+                    break;
+                case PullDownCanceled:
+                    if (!mState.isOpening && isEnableRefresh()) {
+                        notifyStateChanged(RefreshState.PullDownCanceled);
+                        resetStatus();
+                    } else {
+                        setViceState(RefreshState.PullDownCanceled);
+                    }
+                    break;
+                case PullUpCanceled:
+                    if (isEnableLoadMore() && !mState.isOpening && !(mFooterNoMoreData && mEnableFooterFollowWhenLoadFinished)) {
+                        notifyStateChanged(RefreshState.PullUpCanceled);
+                        resetStatus();
+                    } else {
+                        setViceState(RefreshState.PullUpCanceled);
+                    }
+                    break;
+                case ReleaseToRefresh:
+                    if (!mState.isOpening && isEnableRefresh()) {
+                        notifyStateChanged(RefreshState.ReleaseToRefresh);
+                    } else {
+                        setViceState(RefreshState.ReleaseToRefresh);
+                    }
+                    break;
+                case ReleaseToLoad:
+                    if (isEnableLoadMore() && !mState.isOpening && !mState.isFinishing && !(mFooterNoMoreData && mEnableFooterFollowWhenLoadFinished)) {
+                        notifyStateChanged(RefreshState.ReleaseToLoad);
+                    } else {
+                        setViceState(RefreshState.ReleaseToLoad);
+                    }
+                    break;
+                case ReleaseToTwoLevel: {
+                    if (!mState.isOpening && isEnableRefresh()) {
+                        notifyStateChanged(RefreshState.ReleaseToTwoLevel);
+                    } else {
+                        setViceState(RefreshState.ReleaseToTwoLevel);
+                    }
+                    break;
+                }
+                case RefreshReleased: {
+                    if (!mState.isOpening && isEnableRefresh()) {
+                        notifyStateChanged(RefreshState.RefreshReleased);
+                    } else {
+                        setViceState(RefreshState.RefreshReleased);
+                    }
+                    break;
+                }
+                case LoadReleased: {
+                    if (!mState.isOpening && isEnableLoadMore()) {
+                        notifyStateChanged(RefreshState.LoadReleased);
+                    } else {
+                        setViceState(RefreshState.LoadReleased);
+                    }
+                    break;
+                }
+                case Refreshing:
+                    setStateRefreshing();
+                    break;
+                case Loading:
+                    setStateLoading();
+                    break;
+                case RefreshFinish: {
+                    if (mState == RefreshState.Refreshing) {
+                        notifyStateChanged(RefreshState.RefreshFinish);
+                    }
+                    break;
+                }
+                case LoadFinish:{
+                    if (mState == RefreshState.Loading) {
+                        notifyStateChanged(RefreshState.LoadFinish);
+                    }
+                    break;
+                }
+                case TwoLevelReleased:
+                    notifyStateChanged(RefreshState.TwoLevelReleased);
+                    break;
+                case TwoLevelFinish:
+                    notifyStateChanged(RefreshState.TwoLevelFinish);
+                    break;
+                case TwoLevel:
+                    notifyStateChanged(RefreshState.TwoLevel);
+                    break;
+            }
+            return null;
+!!!199662.java!!!	startTwoLevel(inout open : boolean) : RefreshKernel
+            if (open) {
+                AnimatorListenerAdapter listener = new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        mKernel.setState(RefreshState.TwoLevel);
+                    }
+                };
+                final View thisView = SmartRefreshLayout.this;
+                ValueAnimator animator = animSpinner(thisView.getMeasuredHeight());
+                if (animator != null && animator == reboundAnimator) {
+                    animator.setDuration(mFloorDuration);
+                    animator.addListener(listener);
+                } else {
+                    listener.onAnimationEnd(null);
+                }
+            } else {
+                if (animSpinner(0) == null) {
+                    notifyStateChanged(RefreshState.None);
+                }
+            }
+            return this;
+!!!199790.java!!!	finishTwoLevel() : RefreshKernel
+            if (mState == RefreshState.TwoLevel) {
+                mKernel.setState(RefreshState.TwoLevelFinish);
+                if (mSpinner == 0) {
+                    moveSpinner(0, false);
+                    notifyStateChanged(RefreshState.None);
+                } else {
+                    animSpinner(0).setDuration(mFloorDuration);
+                }
+            }
+            return this;
+!!!199918.java!!!	moveSpinner(in spinner : int, inout isDragging : boolean) : RefreshKernel
+            if (mSpinner == spinner
+                    && (mRefreshHeader == null || !mRefreshHeader.isSupportHorizontalDrag())
+                    && (mRefreshFooter == null || !mRefreshFooter.isSupportHorizontalDrag())) {
+                return this;
+            }
+            final View thisView = SmartRefreshLayout.this;
+            final int oldSpinner = mSpinner;
+            mSpinner = spinner;
+            if (isDragging && mViceState.isDragging) {
+                if (mSpinner > mHeaderHeight * mHeaderTriggerRate) {
+                    if (mState != RefreshState.ReleaseToTwoLevel) {
+                        mKernel.setState(RefreshState.ReleaseToRefresh);
+                    }
+                } else if (-mSpinner > mFooterHeight * mFooterTriggerRate && !mFooterNoMoreData) {
+                    mKernel.setState(RefreshState.ReleaseToLoad);
+                } else if (mSpinner < 0 && !mFooterNoMoreData) {
+                    mKernel.setState(RefreshState.PullUpToLoad);
+                } else if (mSpinner > 0) {
+                    mKernel.setState(RefreshState.PullDownToRefresh);
+                }
+            }
+            if (mRefreshContent != null) {
+                Integer tSpinner = null;
+                if (spinner >= 0 && mRefreshHeader != null) {
+                    if (mEnableHeaderTranslationContent || mRefreshHeader.getSpinnerStyle() == SpinnerStyle.FixedBehind) {
+                        tSpinner = spinner;
+                    } else if (oldSpinner < 0) {
+                        tSpinner = 0;
+                    }
+                }
+                if (spinner <= 0 && mRefreshFooter != null) {
+                    if (mEnableFooterTranslationContent || mRefreshFooter.getSpinnerStyle() == SpinnerStyle.FixedBehind) {
+                        tSpinner = spinner;
+                    } else if (oldSpinner > 0) {
+                        tSpinner = 0;
+                    }
+                }
+                if (tSpinner != null) {
+                    mRefreshContent.moveSpinner(tSpinner, mHeaderTranslationViewId, mFooterTranslationViewId);
+                    boolean header = mEnableClipHeaderWhenFixedBehind && mRefreshHeader.getSpinnerStyle() == SpinnerStyle.FixedBehind;
+                    header = header || mHeaderBackgroundColor != 0;
+                    boolean footer = mEnableClipFooterWhenFixedBehind && mRefreshFooter.getSpinnerStyle() == SpinnerStyle.FixedBehind;
+                    footer = footer || mFooterBackgroundColor != 0;
+                    if ((header && (tSpinner >= 0 || oldSpinner > 0)) || (footer && (tSpinner <= 0 || oldSpinner < 0))) {
+                        thisView.invalidate();
+                    }
+                }
+            }
+            if ((spinner >= 0 || oldSpinner > 0) && mRefreshHeader != null) {
+
+                final int offset = Math.max(spinner, 0);
+                final int headerHeight = mHeaderHeight;
+                final int maxDragHeight = (int) (mHeaderHeight * mHeaderMaxDragRate);
+                final float percent = 1f * offset / (mHeaderHeight == 0 ? 1 : mHeaderHeight);
+
+                if (isEnableRefresh() || (mState == RefreshState.RefreshFinish && !isDragging)) {
+                    if (oldSpinner != mSpinner) {
+                        if (mRefreshHeader.getSpinnerStyle() == SpinnerStyle.Translate) {
+                            mRefreshHeader.getView().setTranslationY(mSpinner);
+                            if (mHeaderBackgroundColor != 0 && mPaint != null && !mEnableHeaderTranslationContent) {
+                                thisView.invalidate();
+                            }
+                        } else if (mRefreshHeader.getSpinnerStyle() == SpinnerStyle.Scale){
+                            mRefreshHeader.getView().requestLayout();
+                        }
+                        if (!isDragging) {
+                            mRefreshHeader.onMoving(false, percent, offset, headerHeight, maxDragHeight);
+                        }
+                    }
+                    if (isDragging) {
+                        if (mRefreshHeader.isSupportHorizontalDrag()) {
+                            final int offsetX = (int) mLastTouchX;
+                            final int offsetMax = thisView.getWidth();
+                            final float percentX = mLastTouchX / (offsetMax == 0 ? 1 : offsetMax);
+                            mRefreshHeader.onHorizontalDrag(percentX, offsetX, offsetMax);
+                            mRefreshHeader.onMoving(true, percent, offset, headerHeight, maxDragHeight);
+                        } else if (oldSpinner != mSpinner) {
+                            mRefreshHeader.onMoving(true, percent, offset, headerHeight, maxDragHeight);
+                        }
+                    }
+                }
+
+                if (oldSpinner != mSpinner && mOnMultiPurposeListener != null && mRefreshHeader instanceof RefreshHeader) {
+                    mOnMultiPurposeListener.onHeaderMoving((RefreshHeader) mRefreshHeader, isDragging, percent, offset, headerHeight, maxDragHeight);
+                }
+
+            }
+            if ((spinner <= 0 || oldSpinner < 0) && mRefreshFooter != null) {
+
+                final int offset = -Math.min(spinner, 0);
+                final int footerHeight = mFooterHeight;
+                final int maxDragHeight = (int) (mFooterHeight * mFooterMaxDragRate);
+                final float percent = offset * 1f / (mFooterHeight == 0 ? 1 : mFooterHeight);
+
+                if (isEnableLoadMore() || (mState == RefreshState.LoadFinish && !isDragging)) {
+                    if (oldSpinner != mSpinner) {
+                        if (mRefreshFooter.getSpinnerStyle() == SpinnerStyle.Translate) {
+                            mRefreshFooter.getView().setTranslationY(mSpinner);
+                            if (mFooterBackgroundColor != 0 && mPaint != null && !mEnableFooterTranslationContent) {
+                                thisView.invalidate();
+                            }
+                        } else if (mRefreshFooter.getSpinnerStyle() == SpinnerStyle.Scale){
+                            mRefreshFooter.getView().requestLayout();
+                        }
+                        if (!isDragging) {
+                            mRefreshFooter.onMoving(false, percent, offset, footerHeight, maxDragHeight);
+                        }
+                    }
+
+                    if (isDragging) {
+                        if (mRefreshFooter.isSupportHorizontalDrag()) {
+                            final int offsetX = (int) mLastTouchX;
+                            final int offsetMax = thisView.getWidth();
+                            final float percentX = mLastTouchX / (offsetMax == 0 ? 1 : offsetMax);
+                            mRefreshFooter.onHorizontalDrag(percentX, offsetX, offsetMax);
+                            mRefreshFooter.onMoving(true, percent, offset, footerHeight, maxDragHeight);
+                        } else if (oldSpinner != mSpinner) {
+                            mRefreshFooter.onMoving(true, percent, offset, footerHeight, maxDragHeight);
+                        }
+                    }
+                }
+
+                if (oldSpinner != mSpinner && mOnMultiPurposeListener != null && mRefreshFooter instanceof RefreshFooter) {
+                    mOnMultiPurposeListener.onFooterMoving((RefreshFooter)mRefreshFooter, isDragging, percent, offset, footerHeight, maxDragHeight);
+                }
+            }
+            return this;
+!!!200046.java!!!	animSpinner(in endSpinner : int) : ValueAnimator
+            return SmartRefreshLayout.this.animSpinner(endSpinner, 0, mReboundInterpolator, mReboundDuration);
+!!!200174.java!!!	requestDrawBackgroundFor(inout internal : RefreshInternal, in backgroundColor : int) : RefreshKernel
+            if (mPaint == null && backgroundColor != 0) {
+                mPaint = new Paint();
+            }
+            if (mRefreshHeader != null && mRefreshHeader.getView() == internal.getView()) {
+                mHeaderBackgroundColor = backgroundColor;
+            } else if (mRefreshFooter != null && mRefreshFooter.getView() == internal.getView()) {
+                mFooterBackgroundColor = backgroundColor;
+            }
+            return this;
+!!!200302.java!!!	requestNeedTouchEventFor(inout internal : RefreshInternal, inout request : boolean) : RefreshKernel
+            if (mRefreshHeader != null && mRefreshHeader.getView() == internal.getView()) {
+                mHeaderNeedTouchEventWhenRefreshing = request;
+            } else if (mRefreshFooter != null && mRefreshFooter.getView() == internal.getView()) {
+                mFooterNeedTouchEventWhenLoading = request;
+            }
+            return this;
+!!!200430.java!!!	requestDefaultTranslationContentFor(inout internal : RefreshInternal, inout translation : boolean) : RefreshKernel
+            if (mRefreshHeader != null && mRefreshHeader.getView() == internal.getView()) {
+                if (!mManualHeaderTranslationContent) {
+                    mManualHeaderTranslationContent = true;
+                    mEnableHeaderTranslationContent = translation;
+                }
+            } else if (mRefreshFooter != null && mRefreshFooter.getView() == internal.getView()) {
+                if (!mManualFooterTranslationContent) {
+                    mManualFooterTranslationContent = true;
+                    mEnableFooterTranslationContent = translation;
+                }
+            }
+            return this;
+!!!200558.java!!!	requestRemeasureHeightFor(inout internal : RefreshInternal) : RefreshKernel
+            if (mRefreshHeader != null && mRefreshHeader.getView() == internal.getView()) {
+                if (mHeaderHeightStatus.notified) {
+                    mHeaderHeightStatus = mHeaderHeightStatus.unNotify();
+                }
+            } else if (mRefreshFooter != null && mRefreshFooter.getView() == internal.getView()) {
+                if (mFooterHeightStatus.notified) {
+                    mFooterHeightStatus = mFooterHeightStatus.unNotify();
+                }
+            }
+            return this;
+!!!200686.java!!!	requestFloorDuration(in duration : int) : RefreshKernel
+            mFloorDuration = duration;
+            return this;

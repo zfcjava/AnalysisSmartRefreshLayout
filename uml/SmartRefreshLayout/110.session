@@ -1,0 +1,30 @@
+window_sizes 1920 1018 553 1361 720 86
+diagrams
+  classdiagram_ref 128366 // SmartRefreshLayout
+    1071 628 100 4 72 0
+  active  sequencediagram_ref 134894 // sqSmartRefreshLayout
+    1361 859 100 10 468 0
+end
+show_stereotypes
+selected class_ref 142958 // BounceRunnable
+open
+  classview_ref 128238 // test
+  classview_ref 129262 // test
+  classview_ref 129390 // header
+  deploymentview_ref 129390 // header
+  classview_ref 130286 // flyrefresh
+  
+  package_ref 132718 // internal
+  classview_ref 130158 // header
+  class_ref 142958 // BounceRunnable
+  classview_ref 132078 // impl
+  classview_ref 128494 // app
+  deploymentview_ref 128494 // app
+  
+  package_ref 130542 // support
+  classview_ref 129646 // unknown
+  classview_ref 131310 // ViewTreeObserver
+  classview_ref 131950 // ValueAnimator
+  usecaseview_ref 128238 // SmartRefreshLayout
+end
+end

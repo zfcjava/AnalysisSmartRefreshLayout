@@ -1,0 +1,11 @@
+class DensityUtil
+!!!224366.java!!!	DensityUtil()
+        density = Resources.getSystem().getDisplayMetrics().density;
+!!!224494.java!!!	dp2px(in dpValue : float) : int
+        return (int) (0.5f + dpValue * Resources.getSystem().getDisplayMetrics().density);
+!!!224622.java!!!	px2dp(in pxValue : int) : float
+        return (pxValue / Resources.getSystem().getDisplayMetrics().density);
+!!!224750.java!!!	dip2px(in dpValue : float) : int
+        return (int) (0.5f + dpValue * density);
+!!!224878.java!!!	px2dip(in pxValue : int) : float
+        return (pxValue / density);

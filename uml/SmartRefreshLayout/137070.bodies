@@ -1,0 +1,122 @@
+class PathsDrawable
+!!!167918.java!!!	onMeasure() : void
+        Integer top = null,left = null,right = null,bottom = null;
+        if (mPaths != null) {
+            for (Path path : mPaths) {
+                REGION.setPath(path, MAX_CLIP);
+                Rect bounds = REGION.getBounds();
+                top = Math.min(top == null ? bounds.top : top, bounds.top);
+                left = Math.min(left == null ? bounds.left : left, bounds.left);
+                right = Math.max(right == null ? bounds.right : right, bounds.right);
+                bottom = Math.max(bottom == null ? bounds.bottom : bottom, bounds.bottom);
+            }
+        }
+        mStartX = left == null ? 0 : left;
+        mStartY = top == null ? 0 : top;
+        mWidth = right == null ? 0 : right - mStartX;
+        mHeight = bottom == null ? 0 : bottom - mStartY;
+        if (mOriginWidth == 0) {
+            mOriginWidth = mWidth;
+        }
+        if (mOriginHeight == 0) {
+            mOriginHeight = mHeight;
+        }
+        final Drawable drawable = PathsDrawable.this;
+        final Rect bounds = drawable.getBounds();
+        super.setBounds(bounds.left, bounds.top, bounds.left + mWidth, bounds.top + mHeight);
+!!!168046.java!!!	setBounds(in left : int, in top : int, in right : int, in bottom : int) : void
+        final int width = right - left;
+        final int height = bottom - top;
+        if (mOriginPaths != null && mOriginPaths.size() > 0 &&
+                (width != mWidth || height != mHeight)) {
+            float ratioWidth = 1f * width / mOriginWidth;
+            float ratioHeight = 1f * height / mOriginHeight;
+            mPaths = PathParser.transformScale(ratioWidth, ratioHeight, mOriginPaths, mOriginSvgs);
+            onMeasure();
+        } else {
+            super.setBounds(left, top, right, bottom);
+        }
+!!!168174.java!!!	setBounds(inout bounds : Rect) : void
+        setBounds(bounds.left, bounds.top, bounds.right, bounds.bottom);
+!!!168302.java!!!	parserPaths(inout  : String...paths) : void
+        mOriginWidth = mOriginHeight = 0;
+        mOriginSvgs = new ArrayList<>();
+        mPaths = mOriginPaths = new ArrayList<>();
+        for (String path : paths) {
+            mOriginSvgs.add(path);
+            mOriginPaths.add(PathParser.createPathFromPathData(path));
+        }
+        onMeasure();
+!!!168430.java!!!	parserColors(inout  : int...colors) : void
+        mColors = new ArrayList<>();
+        for (int color : colors) {
+            mColors.add(color);
+        }
+!!!168558.java!!!	draw(inout canvas : Canvas) : void
+        final Drawable drawable = PathsDrawable.this;
+        final Rect bounds = drawable.getBounds();
+        final int width = bounds.width();
+        final int height = bounds.height();
+        if (mPaint.getAlpha() == 0xFF) {
+            canvas.save();
+            canvas.translate(bounds.left-mStartX, bounds.top-mStartY);
+            if (mPaths != null) {
+                for (int i = 0; i < mPaths.size(); i++) {
+                    if (mColors != null && i < mColors.size()) {
+                        mPaint.setColor(mColors.get(i));
+                    }
+                    canvas.drawPath(mPaths.get(i), mPaint);
+                }
+                mPaint.setAlpha(0xFF);
+            }
+            canvas.restore();
+        } else {
+            createCachedBitmapIfNeeded(width, height);
+            if (mCacheDirty) {
+                mCachedBitmap.eraseColor(Color.TRANSPARENT);
+                Canvas tmpCanvas = new Canvas(mCachedBitmap);
+                drawCachedBitmap(tmpCanvas);
+                // Use shallow copy here and shallow comparison in canReuseCache(),
+                // likely hit cache miss more, but practically not much difference.
+                mCacheDirty = false;
+            }
+            canvas.drawBitmap(mCachedBitmap, bounds.left, bounds.top, mPaint);
+        }
+!!!168686.java!!!	setGeometricWidth(in width : int) : void
+        final Drawable drawable = PathsDrawable.this;
+        final Rect bounds = drawable.getBounds();
+        float rate = 1f * width / bounds.width();
+        setBounds(
+                (int) (bounds.left * rate),
+                (int) (bounds.top * rate),
+                (int) (bounds.right * rate),
+                (int) (bounds.bottom * rate)
+        );
+
+!!!168814.java!!!	setGeometricHeight(in height : int) : void
+        final Drawable drawable = PathsDrawable.this;
+        final Rect bounds = drawable.getBounds();
+        float rate = 1f * height / bounds.height();
+        setBounds(
+                (int) (bounds.left * rate),
+                (int) (bounds.top * rate),
+                (int) (bounds.right * rate),
+                (int) (bounds.bottom * rate)
+        );
+!!!168942.java!!!	drawCachedBitmap(inout canvas : Canvas) : void
+        canvas.translate(-mStartX, -mStartY);
+        if (mPaths != null) {
+            for (int i = 0; i < mPaths.size(); i++) {
+                if (mColors != null && i < mColors.size()) {
+                    mPaint.setColor(mColors.get(i));
+                }
+                canvas.drawPath(mPaths.get(i), mPaint);
+            }
+        }
+!!!169070.java!!!	createCachedBitmapIfNeeded(in width : int, in height : int) : void
+        if (mCachedBitmap == null || width != mCachedBitmap.getWidth() || height != mCachedBitmap.getHeight()) {
+            mCachedBitmap = Bitmap.createBitmap(width, height,
+                    Bitmap.Config.ARGB_8888);
+            mCacheDirty = true;
+        }
+

@@ -1,0 +1,612 @@
+format 76
+"constant" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::layout::constant
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-layout/src/main/java/com/scwang/smartrefresh/layout/constant/"
+  java_package "com.scwang.smartrefresh.layout.constant"
+  classview 130030 "constant"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 132590 "RefreshState"
+      visibility public stereotype "enum"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}enum ${name}${implements} {
+${items};
+${members}}
+"
+      java_annotation "@SuppressWarnings(\"unused\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新状态"
+      attribute 260718 "None"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(0,false,false,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 260846 "PullDownToRefresh"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(1,true,false,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 260974 "PullUpToLoad"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(2,true,false,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 261102 "PullDownCanceled"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(1,false,false,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 261230 "PullUpCanceled"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(2,false,false,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 261358 "ReleaseToRefresh"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(1,true,false,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 261486 "ReleaseToLoad"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(2,true,false,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 261614 "ReleaseToTwoLevel"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(1, true,false,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 261742 "TwoLevelReleased"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(1,false,false,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 261870 "RefreshReleased"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(1,false,false,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 261998 "LoadReleased"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(2,false,false,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 262126 "Refreshing"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(1,false,true,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 262254 "Loading"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(2,false,true,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 262382 "TwoLevel"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(1, false, true,false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 262510 "RefreshFinish"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(1,false,false,true),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 262638 "LoadFinish"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(2,false,false,true),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 262766 "TwoLevelFinish"
+	public type class_ref 132590 // RefreshState
+	cpp_decl ""
+	java_decl "  ${@}${name}(1,false,false,true),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 262894 "isHeader"
+	const_attribute public explicit_type "boolean"
+	stereotype "attribute"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 263022 "isFooter"
+	const_attribute public explicit_type "boolean"
+	stereotype "attribute"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 263150 "isDragging"
+	const_attribute public explicit_type "boolean"
+	stereotype "attribute"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " 正在拖动状态：PullDownToRefresh PullUpToLoad ReleaseToRefresh ReleaseToLoad ReleaseToTwoLevel"
+      end
+
+      attribute 263278 "isOpening"
+	const_attribute public explicit_type "boolean"
+	stereotype "attribute"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment " 正在刷新状态：Refreshing Loading TwoLevel"
+      end
+
+      attribute 263406 "isFinishing"
+	const_attribute public explicit_type "boolean"
+	stereotype "attribute"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "正在完成状态：RefreshFinish LoadFinish TwoLevelFinish"
+      end
+
+      operation 203758 "RefreshState"
+	package explicit_return_type ""
+	nparams 4
+	  param in name "role" explicit_type "int"
+	  param inout name "dragging" explicit_type "boolean"
+	  param inout name "opening" explicit_type "boolean"
+	  param inout name "finishing" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 132718 "SpinnerStyle"
+      visibility public stereotype "enum"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}enum ${name}${implements} {
+${items};
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "顶部和底部的组件在拖动时候的变换方式
+Created by SCWANG on 2017/5/26."
+      attribute 263534 "Translate"
+	public type class_ref 132718 // SpinnerStyle
+	cpp_decl ""
+	java_decl "  ${@}${name}${value},${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "平行移动        特点: HeaderView高度不会改变，"
+      end
+
+      attribute 263662 "Scale"
+	public type class_ref 132718 // SpinnerStyle
+	cpp_decl ""
+	java_decl "  ${@}${name}${value},${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "拉伸形变            特点：在下拉和上弹（HeaderView高度改变）时候，会自动触发OnDraw事件"
+      end
+
+      attribute 263790 "FixedBehind"
+	public type class_ref 132718 // SpinnerStyle
+	cpp_decl ""
+	java_decl "  ${@}${name}${value},${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "固定在背后    特点：HeaderView高度不会改变，"
+      end
+
+      attribute 263918 "FixedFront"
+	public type class_ref 132718 // SpinnerStyle
+	cpp_decl ""
+	java_decl "  ${@}${name}${value},${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "固定在前面     特点：HeaderView高度不会改变，"
+      end
+
+      attribute 264046 "MatchLayout"
+	public type class_ref 132718 // SpinnerStyle
+	cpp_decl ""
+	java_decl "  ${@}${name}//填满布局       特点：HeaderView高度不会改变，尺寸充满 RefreshLayout
+,${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+    end
+
+    class 142318 "DimensionStatus"
+      visibility public stereotype "enum"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}enum ${name}${implements} {
+${items};
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "尺寸值的定义状态，用于在值覆盖的时候决定优先级
+越往下优先级越高"
+      attribute 259054 "DefaultUnNotify"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 259182 "Default"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(true),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "默认值，但是还没通知确认"
+      end
+
+      attribute 259310 "XmlWrapUnNotify"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "默认值"
+      end
+
+      attribute 259438 "XmlWrap"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(true),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "Xml计算，但是还没通知确认"
+      end
+
+      attribute 259566 "XmlExactUnNotify"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "Xml计算"
+      end
+
+      attribute 259694 "XmlExact"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(true),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "Xml 的view 指定，但是还没通知确认"
+      end
+
+      attribute 259822 "XmlLayoutUnNotify"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "Xml 的view 指定"
+      end
+
+      attribute 259950 "XmlLayout"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(true),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "Xml 的layout 中指定，但是还没通知确认"
+      end
+
+      attribute 260078 "CodeExactUnNotify"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "Xml 的layout 中指定"
+      end
+
+      attribute 260206 "CodeExact"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(true),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "代码指定，但是还没通知确认"
+      end
+
+      attribute 260334 "DeadLockUnNotify"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(false),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "代码指定"
+      end
+
+      attribute 260462 "DeadLock"
+	public type class_ref 142318 // DimensionStatus
+	cpp_decl ""
+	java_decl "  ${@}${name}(true),${comment}"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "锁死，但是还没通知确认"
+      end
+
+      attribute 260590 "notified"
+	const_attribute public explicit_type "boolean"
+	stereotype "attribute"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "锁死"
+      end
+
+      operation 203118 "DimensionStatus"
+	package explicit_return_type ""
+	nparams 1
+	  param inout name "notified" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 203246 "unNotify"
+	public return_type class_ref 142318 // DimensionStatus
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "转换为未通知状态
+@return 未通知状态"
+      end
+
+      operation 203374 "notified"
+	public return_type class_ref 142318 // DimensionStatus
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "转换为通知状态
+@return 通知状态"
+      end
+
+      operation 203502 "canReplaceWith"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "status" type class_ref 142318 // DimensionStatus
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "是否可以被新的状态替换
+@param status 新转台
+@return 小于等于"
+      end
+
+      operation 203630 "gteReplaceWith"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "status" type class_ref 142318 // DimensionStatus
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "是否没有达到新的状态
+@param status 新转台
+@return 大于等于"
+      end
+    end
+  end
+
+  deploymentview 131310 "constant"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 136430 "DimensionStatus"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_classes
+	class_ref 142318 // DimensionStatus
+      end
+    end
+
+    artifact 136558 "RefreshState"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_classes
+	class_ref 132590 // RefreshState
+      end
+    end
+
+    artifact 136686 "SpinnerStyle"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_classes
+	class_ref 132718 // SpinnerStyle
+      end
+    end
+  end
+end

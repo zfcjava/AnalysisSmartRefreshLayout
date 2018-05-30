@@ -1,0 +1,906 @@
+format 76
+"waveswipe" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::header::waveswipe
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-header/src/main/java/com/scwang/smartrefresh/header/waveswipe/"
+  java_package "com.scwang.smartrefresh.header.waveswipe"
+  classview 130926 "waveswipe"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 136302 "WaveView"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "@author amyu
+        <p>
+        波と落ちる円を描画するView"
+      classrelation 137582 // <generalisation>
+	relation 137582 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 137582 // <generalisation>
+	  b parent class_ref 136942 // View
+      end
+
+      classrelation 137710 // <realization>
+	relation 137710 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 137710 // <realization>
+	  b parent class_ref 139118 // OnPreDrawListener
+      end
+
+      attribute 201582 "DROP_CIRCLE_ANIMATOR_DURATION"
+	class_attribute const_attribute protected explicit_type "long"
+	init_value " 500"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "{@link WaveView#mDropCircleAnimator} のDuration
+"
+      end
+
+      attribute 201710 "DROP_VERTEX_ANIMATION_DURATION"
+	class_attribute const_attribute protected explicit_type "long"
+	init_value " 500"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "{@link WaveView#mDropBounceVerticalAnimator} のDuration
+"
+      end
+
+      attribute 201838 "DROP_BOUNCE_ANIMATOR_DURATION"
+	class_attribute const_attribute protected explicit_type "long"
+	init_value " 500"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "{@link WaveView#mDropBounceVerticalAnimator} と {@link WaveView#mDropBounceHorizontalAnimator}
+のDuration
+"
+      end
+
+      attribute 201966 "DROP_REMOVE_ANIMATOR_DURATION"
+	class_attribute const_attribute protected explicit_type "int"
+	init_value " 200"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "{@link WaveView#mDisappearCircleAnimator} のDuration
+"
+      end
+
+      attribute 202094 "WAVE_ANIMATOR_DURATION"
+	class_attribute const_attribute protected explicit_type "int"
+	init_value " 1000"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "波がくねくねしているDuration
+"
+      end
+
+      attribute 202222 "MAX_WAVE_HEIGHT"
+	class_attribute const_attribute protected explicit_type "float"
+	init_value " 0.2f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "波の最大の高さ
+"
+      end
+
+      attribute 202350 "SHADOW_COLOR"
+	class_attribute const_attribute protected explicit_type "int"
+	init_value " 0x99000000"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "影の色
+"
+      end
+
+      attribute 202478 "mDropCircleRadius"
+	protected explicit_type "float"
+	init_value " 100"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "円のRadius
+"
+      end
+
+      attribute 202606 "mPaint"
+	protected explicit_type "Paint"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "すべてを描画するPaint
+"
+      end
+
+      attribute 202734 "mWavePath"
+	protected explicit_type "Path"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "画面の波を描画するためのPath
+"
+      end
+
+      attribute 202862 "mDropTangentPath"
+	protected explicit_type "Path"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "落ちる円の接線を描画するためのPath
+"
+      end
+
+      attribute 202990 "mDropCirclePath"
+	protected explicit_type "Path"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "落ちる円を描画するためのPath
+"
+      end
+
+      attribute 203118 "mShadowPath"
+	protected explicit_type "Path"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "    /**
+     * 影のPaint
+     */
+  protected Paint mShadowPaint;
+
+影のPath
+"
+      end
+
+      attribute 203246 "mDropRect"
+	protected explicit_type "RectF"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "落ちる円の座標を入れているRectF
+"
+      end
+
+      attribute 203374 "mWidth"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "Viewの横幅
+"
+      end
+
+      attribute 203502 "mCurrentCircleCenterY"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "{@link WaveView#mDropCircleAnimator} でアニメーションしてる時の円の中心のY座標
+"
+      end
+
+      attribute 203630 "mMaxDropHeight"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "円が落ちる最大の高さ
+"
+      end
+
+      attribute 203758 "mIsManualRefreshing"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 203886 "mDropHeightUpdated"
+	protected explicit_type "boolean"
+	init_value " false"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "落ちる円の高さが更新されたかどうか
+"
+      end
+
+      attribute 204014 "mUpdateMaxDropHeight"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "{@link WaveView#mMaxDropHeight} を更新するための一時的な値の置き場
+"
+      end
+
+      attribute 204142 "mDropVertexAnimator"
+	protected explicit_type "ValueAnimator"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "落ちてくる円についてくる三角形の一番上の頂点のAnimator
+"
+      end
+
+      attribute 204270 "mDropBounceVerticalAnimator"
+	protected explicit_type "ValueAnimator"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "落ちた円が横に伸びるときのAnimator
+"
+      end
+
+      attribute 204398 "mDropBounceHorizontalAnimator"
+	protected explicit_type "ValueAnimator"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "落ちた縁が縦に伸びるときのAnimator
+"
+      end
+
+      attribute 204526 "mDropCircleAnimator"
+	protected explicit_type "ValueAnimator"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "落ちる円の中心座標のAnimator
+"
+      end
+
+      attribute 204654 "mDisappearCircleAnimator"
+	protected explicit_type "ValueAnimator"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "落ちた円を消すためのAnimator
+"
+      end
+
+      attribute 204782 "mWaveReverseAnimator"
+	protected explicit_type "ValueAnimator"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "帰ってくる波ののAnimator
+"
+      end
+
+      attribute 204910 "BEGIN_PHASE_POINTS"
+	class_attribute const_attribute protected explicit_type "float"
+	multiplicity "[][]"
+	init_value " {
+            //1
+            {0.1655f, 0},           //ハンドル
+            {0.4188f, -0.0109f},    //ハンドル
+            {0.4606f, -0.0049f},    //アンカーポイント
+
+            //2
+            {0.4893f, 0.f},         //ハンドル
+            {0.4893f, 0.f},         //ハンドル
+            {0.5f, 0.f}             //アンカーポイント
+    }"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "ベジェ曲線を引く際の座標
+左側の2つのアンカーポイントでいい感じに右側にも
+"
+      end
+
+      attribute 205038 "APPEAR_PHASE_POINTS"
+	class_attribute const_attribute protected explicit_type "float"
+	multiplicity "[][]"
+	init_value " {
+            //1
+            {0.1655f, 0.f},         //ハンドル
+            {0.5237f, 0.0553f},     //ハンドル
+            {0.4557f, 0.0936f},     //アンカーポイント
+
+            //2
+            {0.3908f, 0.1302f},     //ハンドル
+            {0.4303f, 0.2173f},     //ハンドル
+            {0.5f, 0.2173f}         //アンカーポイント
+    }"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 205166 "EXPAND_PHASE_POINTS"
+	class_attribute const_attribute protected explicit_type "float"
+	multiplicity "[][]"
+	init_value " {
+            //1
+            {0.1655f, 0.f},         //ハンドル
+            {0.5909f, 0.0000f},     //ハンドル
+            {0.4557f, 0.1642f},     //アンカーポイント
+
+            //2
+            {0.3941f, 0.2061f},     //ハンドル
+            {0.4303f, 0.2889f},     //ハンドル
+            {0.5f, 0.2889f}         //アンカーポイント
+    }"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type}${multiplicity} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 205294 "mAnimatorUpdateListener"
+	protected explicit_type "ValueAnimator.AnimatorUpdateListener"
+	init_value "
+            new ValueAnimator.AnimatorUpdateListener() {
+                @Override
+                public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                    final View thisView = WaveView.this;
+                    thisView.postInvalidate();
+                }
+            }"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "各AnimatorのAnimatorUpdateListener
+"
+      end
+
+      operation 173166 "WaveView"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "context" explicit_type "Context"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "Constructor
+{@inheritDoc}"
+      end
+
+      operation 173294 "onSizeChanged"
+	protected explicit_return_type "void"
+	nparams 4
+	  param in name "w" explicit_type "int"
+	  param in name "h" explicit_type "int"
+	  param in name "oldw" explicit_type "int"
+	  param in name "oldh" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "Viewのサイズが決まったら {@link WaveView#mWidth} に横幅
+{@inheritDoc}"
+      end
+
+      operation 173422 "onPreDraw"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "描画されてから {@link WaveView#mMaxDropHeight} を更新する
+{@inheritDoc}"
+      end
+
+      operation 173550 "onDraw"
+	protected explicit_return_type "void"
+	nparams 1
+	  param inout name "canvas" explicit_type "Canvas"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 173678 "onDetachedFromWindow"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 173806 "resetAnimator"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    protected void setUpPaint() {
+        float density = getResources().getDisplayMetrics().density;
+        mPaint = new Paint();
+        mPaint.setColor(0xff2196F3);
+        mPaint.setAntiAlias(true);
+        mPaint.setStyle(Paint.Style.FILL);
+        mPaint.setShadowLayer((int) (0.5f + 2.0f * density), 0f, 0f, SHADOW_COLOR);
+
+//    float density = getResources().getDisplayMetrics().density;
+//    mShadowPaint = new Paint();
+//    mShadowPaint.setAntiAlias(true);
+//    mShadowPaint.setShadowLayer((int) (0.5f + 2.0f * density), 0f, 0f, SHADOW_COLOR);
+    }
+
+    protected void setUpPath() {
+        mWavePath = new Path();
+        mDropTangentPath = new Path();
+        mDropCirclePath = new Path();
+        mShadowPath = new Path();
+    }"
+      end
+
+      operation 173934 "onPreDragWave"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 174062 "manualRefresh"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 174190 "beginPhase"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "move1" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 174318 "appearPhase"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "move1" explicit_type "float"
+	  param in name "move2" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 174446 "expandPhase"
+	public explicit_return_type "void"
+	nparams 3
+	  param in name "move1" explicit_type "float"
+	  param in name "move2" explicit_type "float"
+	  param in name "move3" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 174574 "updateMaxDropHeight"
+	protected explicit_return_type "void"
+	nparams 1
+	  param in name "height" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@param height 高さ"
+      end
+
+      operation 174702 "startDropAnimation"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 174830 "startDisappearCircleAnimation"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 174958 "startWaveAnimation"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "h" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "@param h 波が始まる高さ"
+      end
+
+      operation 175086 "animationDropCircle"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 175214 "getCurrentCircleCenterY"
+	public explicit_return_type "float"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 175342 "setShadow"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "radius" explicit_type "int"
+	  param in name "color" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * @param maxDropHeight ある程度の高さ
+     */
+    public void setMaxDropHeight(int maxDropHeight) {
+        if (mDropHeightUpdated) {
+            updateMaxDropHeight(maxDropHeight);
+        } else {
+            mUpdateMaxDropHeight = maxDropHeight;
+            mDropHeightUpdated = true;
+            if (getViewTreeObserver().isAlive()) {
+                getViewTreeObserver().removeOnPreDrawListener(this);
+                getViewTreeObserver().addOnPreDrawListener(this);
+            }
+        }
+    }
+
+    public boolean isDisappearCircleAnimatorRunning() {
+        return mDisappearCircleAnimator.isRunning();
+    }
+
+    /**
+     * @param radius 影の深さ
+     */
+    public void setShadowRadius(int radius) {
+//    mShadowPaint.setShadowLayer(radius, 0.0f, 2.0f, SHADOW_COLOR);
+        mPaint.setShadowLayer(radius, 0f, 0f, SHADOW_COLOR);
+    }
+
+@param radius 影の深さ
+@param color 阴影颜色"
+      end
+
+      operation 175470 "setWaveColor"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "color" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "WaveView is colored by given color (including alpha)
+
+@param color ARGB color. WaveView will be colored by Black if rgb color is provided.
+@see Paint#setColor(int)"
+      end
+    end
+
+    class 138862 "DropBounceInterpolator"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "@author amyu
+
+{@link WaveView#mDropBounceHorizontalAnimator} と {@link WaveView#mDropVertexAnimator} にセットするInterpolator
+WavePullToRefresh/DropBounceInterpolator.gcxにグラフの詳細"
+      classrelation 137454 // <realization>
+	relation 137454 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 137454 // <realization>
+	  b parent class_ref 138990 // Interpolator
+      end
+
+      operation 173038 "getInterpolation"
+	public explicit_return_type "float"
+	nparams 1
+	  param in name "v" explicit_type "float"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "{@inheritDoc}
+@param v 动画帧
+@return 加速值"
+      end
+    end
+  end
+
+  deploymentview 130926 "waveswipe"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 134254 "DropBounceInterpolator"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.view.animation.Interpolator;
+${definition}"
+      associated_classes
+	class_ref 138862 // DropBounceInterpolator
+      end
+    end
+
+    artifact 134382 "WaveView"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ValueAnimator;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.RectF;
+import android.os.Build;
+import android.support.annotation.ColorInt;
+import android.util.Log;
+import android.view.View;
+import android.view.ViewTreeObserver;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.BounceInterpolator;
+${definition}"
+      associated_classes
+	class_ref 136302 // WaveView
+      end
+      comment "Copyright (C) 2015 RECRUIT LIFESTYLE CO., LTD.
+
+Licensed under the Apache License, Version 2.0 (the \"License\");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an \"AS IS\" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License."
+    end
+  end
+end

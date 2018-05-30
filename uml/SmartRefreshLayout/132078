@@ -1,0 +1,683 @@
+format 76
+"listener" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::layout::listener
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-layout/src/main/java/com/scwang/smartrefresh/layout/listener/"
+  java_package "com.scwang.smartrefresh.layout.listener"
+  classview 129902 "listener"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 132334 "OnStateChangedListener"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新状态改变监听器
+Created by SCWANG on 2017/5/26."
+      operation 128622 "onStateChanged"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param inout name "oldState" type class_ref 132590 // RefreshState
+	  param inout name "newState" type class_ref 132590 // RefreshState
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}, @NonNull ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "状态改变事件 {@link RefreshState}
+@param refreshLayout RefreshLayout
+@param oldState 改变之前的状态
+@param newState 改变之后的状态"
+      end
+    end
+
+    class 141422 "OnRefreshListener"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新监听器
+Created by SCWANG on 2017/5/26."
+      operation 221550 "onRefresh"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 141550 "OnLoadMoreListener"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "加载更多监听器
+Created by SCWANG on 2017/5/26."
+      operation 221422 "onLoadMore"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 141678 "OnRefreshLoadMoreListener"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新加载组合监听器
+Created by SCWANG on 2017/5/26."
+      classrelation 145646 // <generalisation>
+	relation 145646 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 145646 // <generalisation>
+	  b parent class_ref 141422 // OnRefreshListener
+      end
+
+      classrelation 145774 // <generalisation>
+	relation 145774 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 145774 // <generalisation>
+	  b parent class_ref 141550 // OnLoadMoreListener
+      end
+    end
+
+    class 141806 "OnMultiPurposeListener"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "多功能监听器
+Created by SCWANG on 2017/5/26."
+      classrelation 145902 // <generalisation>
+	relation 145902 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 145902 // <generalisation>
+	  b parent class_ref 141678 // OnRefreshLoadMoreListener
+      end
+
+      classrelation 146030 // <generalisation>
+	relation 146030 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 146030 // <generalisation>
+	  b parent class_ref 132334 // OnStateChangedListener
+      end
+
+      operation 221678 "onHeaderMoving"
+	public explicit_return_type "void"
+	nparams 6
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	  param inout name "isDragging" explicit_type "boolean"
+	  param in name "percent" explicit_type "float"
+	  param in name "offset" explicit_type "int"
+	  param in name "headerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}, ${t5} ${p5}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "手指拖动下拉（会连续多次调用，添加isDragging并取代之前的onPulling、onReleasing）
+@param header 头部
+@param isDragging true 手指正在拖动 false 回弹动画
+@param percent 下拉的百分比 值 = offset/footerHeight (0 - percent - (footerHeight+maxDragHeight) / footerHeight )
+@param offset 下拉的像素偏移量  0 - offset - (footerHeight+maxDragHeight)
+@param headerHeight 高度 HeaderHeight or FooterHeight
+@param maxDragHeight 最大拖动高度"
+      end
+
+      operation 221806 "onHeaderReleased"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	  param in name "headerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    void onHeaderPulling(RefreshHeader header, float percent, int offset, int headerHeight, int maxDragHeight);
+    void onHeaderReleasing(RefreshHeader header, float percent, int offset, int headerHeight, int maxDragHeight);"
+      end
+
+      operation 221934 "onHeaderStartAnimator"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	  param in name "headerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 222062 "onHeaderFinish"
+	public explicit_return_type "void"
+	nparams 2
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	  param inout name "success" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 222190 "onFooterMoving"
+	public explicit_return_type "void"
+	nparams 6
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	  param inout name "isDragging" explicit_type "boolean"
+	  param in name "percent" explicit_type "float"
+	  param in name "offset" explicit_type "int"
+	  param in name "footerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}, ${t5} ${p5}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "手指拖动上拉（会连续多次调用，添加isDragging并取代之前的onPulling、onReleasing）
+@param footer 尾部
+@param isDragging true 手指正在拖动 false 回弹动画
+@param percent 下拉的百分比 值 = offset/footerHeight (0 - percent - (footerHeight+maxDragHeight) / footerHeight )
+@param offset 下拉的像素偏移量  0 - offset - (footerHeight+maxDragHeight)
+@param footerHeight 高度 HeaderHeight or FooterHeight
+@param maxDragHeight 最大拖动高度"
+      end
+
+      operation 222318 "onFooterReleased"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	  param in name "footerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    void onFooterPulling(RefreshFooter footer, float percent, int offset, int footerHeight, int maxDragHeight);
+    void onFooterReleasing(RefreshFooter footer, float percent, int offset, int footerHeight, int maxDragHeight);"
+      end
+
+      operation 222446 "onFooterStartAnimator"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	  param in name "footerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 222574 "onFooterFinish"
+	public explicit_return_type "void"
+	nparams 2
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	  param inout name "success" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 145006 "CoordinatorLayoutListener"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 217710 "onCoordinatorUpdate"
+	public explicit_return_type "void"
+	nparams 2
+	  param inout name "enableRefresh" explicit_type "boolean"
+	  param inout name "enableLoadMore" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 145646 "SimpleMultiPurposeListener"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "多功能监听器
+Created by SCWANG on 2017/5/26."
+      classrelation 146158 // <realization>
+	relation 146158 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 146158 // <realization>
+	  b parent class_ref 141806 // OnMultiPurposeListener
+      end
+
+      operation 222702 "onHeaderMoving"
+	public explicit_return_type "void"
+	nparams 6
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	  param inout name "isDragging" explicit_type "boolean"
+	  param in name "percent" explicit_type "float"
+	  param in name "offset" explicit_type "int"
+	  param in name "headerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}, ${t5} ${p5}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public void onHeaderPulling(RefreshHeader header, float percent, int offset, int headerHeight, int maxDragHeight) {
+
+    }"
+      end
+
+      operation 222830 "onHeaderReleased"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	  param in name "headerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 222958 "onHeaderStartAnimator"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	  param in name "footerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public void onHeaderReleasing(RefreshHeader header, float percent, int offset, int footerHeight, int maxDragHeight) {
+
+    }"
+      end
+
+      operation 223086 "onHeaderFinish"
+	public explicit_return_type "void"
+	nparams 2
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	  param inout name "success" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 223214 "onFooterMoving"
+	public explicit_return_type "void"
+	nparams 6
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	  param inout name "isDragging" explicit_type "boolean"
+	  param in name "percent" explicit_type "float"
+	  param in name "offset" explicit_type "int"
+	  param in name "footerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}, ${t5} ${p5}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 223342 "onFooterReleased"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	  param in name "footerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public void onFooterPulling(RefreshFooter footer, float percent, int offset, int footerHeight, int maxDragHeight) {
+
+    }"
+      end
+
+      operation 223470 "onFooterStartAnimator"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	  param in name "headerHeight" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public void onFooterReleasing(RefreshFooter footer, float percent, int offset, int footerHeight, int maxDragHeight) {
+
+    }"
+      end
+
+      operation 223598 "onFooterFinish"
+	public explicit_return_type "void"
+	nparams 2
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	  param inout name "success" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 223726 "onRefresh"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 223854 "onLoadMore"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 223982 "onStateChanged"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param inout name "oldState" type class_ref 132590 // RefreshState
+	  param inout name "newState" type class_ref 132590 // RefreshState
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}, @NonNull ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+  end
+
+  deploymentview 129518 "listener"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 130286 "OnStateChangedListener"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.support.annotation.NonNull;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+${definition}"
+      associated_classes
+	class_ref 132334 // OnStateChangedListener
+      end
+    end
+
+    artifact 137710 "CoordinatorLayoutListener"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_classes
+	class_ref 145006 // CoordinatorLayoutListener
+      end
+    end
+
+    artifact 138606 "OnLoadMoreListener"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.support.annotation.NonNull;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+${definition}"
+      associated_classes
+	class_ref 141550 // OnLoadMoreListener
+      end
+    end
+
+    artifact 138734 "OnRefreshListener"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.support.annotation.NonNull;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+${definition}"
+      associated_classes
+	class_ref 141422 // OnRefreshListener
+      end
+    end
+
+    artifact 138862 "OnRefreshLoadMoreListener"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_classes
+	class_ref 141678 // OnRefreshLoadMoreListener
+      end
+    end
+
+    artifact 138990 "OnMultiPurposeListener"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import com.scwang.smartrefresh.layout.api.RefreshFooter;
+import com.scwang.smartrefresh.layout.api.RefreshHeader;
+${definition}"
+      associated_classes
+	class_ref 141806 // OnMultiPurposeListener
+      end
+    end
+
+    artifact 139118 "SimpleMultiPurposeListener"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.support.annotation.NonNull;
+import com.scwang.smartrefresh.layout.api.RefreshFooter;
+import com.scwang.smartrefresh.layout.api.RefreshHeader;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+${definition}"
+      associated_classes
+	class_ref 145646 // SimpleMultiPurposeListener
+      end
+    end
+  end
+end

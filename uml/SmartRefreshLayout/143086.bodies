@@ -1,0 +1,15 @@
+class LayoutParams
+!!!187758.java!!!	LayoutParams(inout context : Context, inout attrs : AttributeSet)
+            super(context, attrs);
+            TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.SmartRefreshLayout_Layout);
+            backgroundColor = ta.getColor(R.styleable.SmartRefreshLayout_Layout_layout_srlBackgroundColor, backgroundColor);
+            if (ta.hasValue(R.styleable.SmartRefreshLayout_Layout_layout_srlSpinnerStyle)) {
+                spinnerStyle = SpinnerStyle.values()[ta.getInt(R.styleable.SmartRefreshLayout_Layout_layout_srlSpinnerStyle, SpinnerStyle.Translate.ordinal())];
+            }
+            ta.recycle();
+!!!187886.java!!!	LayoutParams(in width : int, in height : int)
+            super(width, height);
+!!!188014.java!!!	LayoutParams(inout source : MarginLayoutParams)
+            super(source);
+!!!188142.java!!!	LayoutParams(inout source : ViewGroup.LayoutParams)
+            super(source);

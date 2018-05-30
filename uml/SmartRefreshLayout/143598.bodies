@@ -1,0 +1,136 @@
+class BallPulseFooter
+!!!203886.java!!!	BallPulseFooter(inout context : Context)
+        this(context, null);
+!!!204014.java!!!	BallPulseFooter(inout context : Context, inout attrs : AttributeSet)
+        this(context, attrs, 0);
+!!!204142.java!!!	BallPulseFooter(inout context : Context, inout attrs : AttributeSet, in defStyleAttr : int)
+        super(context, attrs, defStyleAttr);
+
+        final View thisView = this;
+        thisView.setMinimumHeight(DensityUtil.dp2px(60));
+
+        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.BallPulseFooter);
+
+        if (ta.hasValue(R.styleable.BallPulseFooter_srlNormalColor)) {
+            setNormalColor(ta.getColor(R.styleable.BallPulseFooter_srlNormalColor, 0));
+        }
+        if (ta.hasValue(R.styleable.BallPulseFooter_srlAnimatingColor)) {
+            setAnimatingColor(ta.getColor(R.styleable.BallPulseFooter_srlAnimatingColor, 0));
+        }
+
+        mSpinnerStyle = SpinnerStyle.Translate;
+        mSpinnerStyle = SpinnerStyle.values()[ta.getInt(R.styleable.BallPulseFooter_srlClassicsSpinnerStyle, mSpinnerStyle.ordinal())];
+
+        ta.recycle();
+
+        mCircleSpacing = DensityUtil.dp2px(4);
+
+        mPaint = new Paint();
+        mPaint.setColor(Color.WHITE);
+        mPaint.setStyle(Paint.Style.FILL);
+        mPaint.setAntiAlias(true);
+
+        mAnimators = new ArrayList<>();
+        final int[] delays = new int[]{120, 240, 360};
+        for (int i = 0; i < 3; i++) {
+            final int index = i;
+
+            ValueAnimator animator = ValueAnimator.ofFloat(1, 0.3f, 1);
+
+            animator.setDuration(750);
+            animator.setRepeatCount(ValueAnimator.INFINITE);
+            animator.setTarget(i);
+            animator.setStartDelay(delays[i]);
+
+            mUpdateListeners.put(animator, new ValueAnimator.AnimatorUpdateListener() {
+                @Override
+                public void onAnimationUpdate(ValueAnimator animation) {
+                    mScaleFloats[index] = (float) animation.getAnimatedValue();
+                    thisView.postInvalidate();
+                }
+            });
+            mAnimators.add(animator);
+        }
+!!!204270.java!!!	onDetachedFromWindow() : void
+        super.onDetachedFromWindow();
+        if (mAnimators != null) for (int i = 0; i < mAnimators.size(); i++) {
+            mAnimators.get(i).cancel();
+            mAnimators.get(i).removeAllListeners();
+            mAnimators.get(i).removeAllUpdateListeners();
+        }
+!!!204398.java!!!	dispatchDraw(inout canvas : Canvas) : void
+        final View thisView = this;
+        final int width = thisView.getWidth();
+        final int height = thisView.getHeight();
+        float radius = (Math.min(width, height) - mCircleSpacing * 2) / 6;
+        float x = width / 2 - (radius * 2 + mCircleSpacing);
+        float y = height / 2;
+        for (int i = 0; i < 3; i++) {
+            canvas.save();
+            float translateX = x + (radius * 2) * i + mCircleSpacing * i;
+            canvas.translate(translateX, y);
+            canvas.scale(mScaleFloats[i], mScaleFloats[i]);
+            canvas.drawCircle(0, 0, radius, mPaint);
+            canvas.restore();
+        }
+        super.dispatchDraw(canvas);
+!!!204526.java!!!	onStartAnimator(inout layout : RefreshLayout, in height : int, in maxDragHeight : int) : void
+        if (mIsStarted) return;
+
+        for (int i = 0; i < mAnimators.size(); i++) {
+            ValueAnimator animator = mAnimators.get(i);
+
+            //when the animator restart , add the updateListener again because they was removed by animator stop .
+            ValueAnimator.AnimatorUpdateListener updateListener = mUpdateListeners.get(animator);
+            if (updateListener != null) {
+                animator.addUpdateListener(updateListener);
+            }
+            animator.start();
+        }
+        mIsStarted = true;
+        mPaint.setColor(mAnimatingColor);
+!!!204654.java!!!	onFinish(inout layout : RefreshLayout, inout success : boolean) : int
+        if (mAnimators != null && mIsStarted) {
+            mIsStarted = false;
+            mScaleFloats = new float[]{1f, 1f, 1f};
+            for (ValueAnimator animator : mAnimators) {
+                if (animator != null) {
+                    animator.removeAllUpdateListeners();
+                    animator.end();
+                }
+            }
+        }
+        mPaint.setColor(mNormalColor);
+        return 0;
+!!!204782.java!!!	setNoMoreData(inout noMoreData : boolean) : boolean
+        return false;
+!!!204910.java!!!	setPrimaryColors(inout  : int...colors) : void
+        if (!mManualAnimationColor && colors.length > 1) {
+            setAnimatingColor(colors[0]);
+            mManualAnimationColor = false;
+        }
+        if (!mManualNormalColor) {
+            if (colors.length > 1) {
+                setNormalColor(colors[1]);
+            } else if (colors.length > 0) {
+                setNormalColor(ColorUtils.compositeColors(0x99ffffff,colors[0]));
+            }
+            mManualNormalColor = false;
+        }
+!!!205038.java!!!	setSpinnerStyle(inout mSpinnerStyle : SpinnerStyle) : BallPulseFooter
+        this.mSpinnerStyle = mSpinnerStyle;
+        return this;
+!!!205166.java!!!	setNormalColor(in color : int) : BallPulseFooter
+        mNormalColor = color;
+        mManualNormalColor = true;
+        if (!mIsStarted) {
+            mPaint.setColor(color);
+        }
+        return this;
+!!!205294.java!!!	setAnimatingColor(in color : int) : BallPulseFooter
+        mAnimatingColor = color;
+        mManualAnimationColor = true;
+        if (mIsStarted) {
+            mPaint.setColor(color);
+        }
+        return this;

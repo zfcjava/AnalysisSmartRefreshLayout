@@ -1,0 +1,227 @@
+class InternalClassics
+!!!205422.java!!!	InternalClassics(inout context : Context, inout attrs : AttributeSet, in defStyleAttr : int)
+        super(context, attrs, defStyleAttr);
+
+        mSpinnerStyle = SpinnerStyle.Translate;
+        mArrowView = new ImageView(context);
+        mProgressView = new ImageView(context);
+        mTitleText = new TextView(context);
+        mTitleText.setTextColor(0xff666666);
+        mCenterLayout = new LinearLayout(context);
+        mCenterLayout.setGravity(Gravity.CENTER_HORIZONTAL);
+        mCenterLayout.setOrientation(LinearLayout.VERTICAL);
+
+        final View thisView = this;
+        final ViewGroup thisGroup = this;
+        final View arrowView = mArrowView;
+        final View titleView = mTitleText;
+        final View progressView = mProgressView;
+        final ViewGroup centerLayout = mCenterLayout;
+        final DensityUtil density = new DensityUtil();
+
+        titleView.setId(ID_TEXT_TITLE);
+        arrowView.setId(ID_IMAGE_ARROW);
+        progressView.setId(ID_IMAGE_PROGRESS);
+        centerLayout.setId(android.R.id.widget_frame);
+
+        LinearLayout.LayoutParams lpHeaderText = new LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT);
+        centerLayout.addView(titleView, lpHeaderText);
+
+        LayoutParams lpHeaderLayout = new LayoutParams(WRAP_CONTENT, WRAP_CONTENT);
+        lpHeaderLayout.addRule(CENTER_IN_PARENT);
+        thisGroup.addView(centerLayout,lpHeaderLayout);
+
+        LayoutParams lpArrow = new LayoutParams(density.dip2px(20), density.dip2px(20));
+        lpArrow.addRule(CENTER_VERTICAL);
+        lpArrow.addRule(LEFT_OF, android.R.id.widget_frame);
+        thisGroup.addView(arrowView, lpArrow);
+
+        LayoutParams lpProgress = new LayoutParams((ViewGroup.LayoutParams)lpArrow);
+        lpProgress.addRule(CENTER_VERTICAL);
+        lpProgress.addRule(LEFT_OF, android.R.id.widget_frame);
+        progressView.animate().setInterpolator(new LinearInterpolator());
+        thisGroup.addView(progressView, lpProgress);
+
+        if (thisView.getPaddingTop() == 0) {
+            if (thisView.getPaddingBottom() == 0) {
+                thisView.setPadding(thisView.getPaddingLeft(), mPaddingTop = density.dip2px(20), thisView.getPaddingRight(), mPaddingBottom = density.dip2px(20));
+            } else {
+                thisView.setPadding(thisView.getPaddingLeft(), mPaddingTop = density.dip2px(20), thisView.getPaddingRight(), mPaddingBottom = thisView.getPaddingBottom());
+            }
+        } else {
+            if (thisView.getPaddingBottom() == 0) {
+                thisView.setPadding(thisView.getPaddingLeft(), mPaddingTop = thisView.getPaddingTop(), thisView.getPaddingRight(), mPaddingBottom = density.dip2px(20));
+            } else {
+                mPaddingTop = thisView.getPaddingTop();
+                mPaddingBottom = thisView.getPaddingBottom();
+            }
+        }
+
+        if (thisView.isInEditMode()) {
+            arrowView.setVisibility(GONE);
+        } else {
+            progressView.setVisibility(GONE);
+        }
+
+!!!205550.java!!!	onMeasure(in widthMeasureSpec : int, in heightMeasureSpec : int) : void
+        final View thisView = this;
+        if (MeasureSpec.getMode(heightMeasureSpec) == MeasureSpec.EXACTLY) {
+            thisView.setPadding(thisView.getPaddingLeft(), 0, thisView.getPaddingRight(), 0);
+        } else {
+            thisView.setPadding(thisView.getPaddingLeft(), mPaddingTop, thisView.getPaddingRight(), mPaddingBottom);
+        }
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+!!!205678.java!!!	onDetachedFromWindow() : void
+        super.onDetachedFromWindow();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+            final View arrowView = mArrowView;
+            final View progressView = mProgressView;
+            arrowView.animate().cancel();
+            progressView.animate().cancel();
+        }
+        final Drawable drawable = mProgressView.getDrawable();
+        if (drawable instanceof Animatable) {
+            if (((Animatable) drawable).isRunning()) {
+                ((Animatable) drawable).stop();
+            }
+        }
+!!!205806.java!!!	self() : T
+        //noinspection unchecked
+        return (T) this;
+!!!205934.java!!!	onInitialized(inout kernel : RefreshKernel, in height : int, in maxDragHeight : int) : void
+        mRefreshKernel = kernel;
+        mRefreshKernel.requestDrawBackgroundFor(this, mBackgroundColor);
+//        if (this instanceof RefreshHeader) {
+//            mRefreshKernel.requestDrawBackgroundForHeader(mBackgroundColor);
+//        } else if (this instanceof RefreshFooter) {
+//            mRefreshKernel.requestDrawBackgroundForFooter(mBackgroundColor);
+//        }
+!!!206062.java!!!	onStartAnimator(inout refreshLayout : RefreshLayout, in height : int, in maxDragHeight : int) : void
+        final View progressView = mProgressView;
+        if (progressView.getVisibility() != VISIBLE) {
+            progressView.setVisibility(VISIBLE);
+            Drawable drawable = mProgressView.getDrawable();
+            if (drawable instanceof Animatable) {
+                ((Animatable) drawable).start();
+            } else {
+                progressView.animate().rotation(36000).setDuration(100000);
+            }
+        }
+!!!206190.java!!!	onReleased(inout refreshLayout : RefreshLayout, in height : int, in maxDragHeight : int) : void
+        onStartAnimator(refreshLayout, height, maxDragHeight);
+!!!206318.java!!!	onFinish(inout refreshLayout : RefreshLayout, inout success : boolean) : int
+        final View progressView = mProgressView;
+        Drawable drawable = mProgressView.getDrawable();
+        if (drawable instanceof Animatable) {
+            if (((Animatable) drawable).isRunning()) {
+                ((Animatable) drawable).stop();
+            }
+        } else {
+            progressView.animate().rotation(0).setDuration(0);
+        }
+        progressView.setVisibility(GONE);
+        return mFinishDuration;//延迟500毫秒之后再弹回
+!!!206446.java!!!	setPrimaryColors(in colors : int) : void
+        if (colors.length > 0) {
+            final View thisView = this;
+            if (!(thisView.getBackground() instanceof BitmapDrawable) && mPrimaryColor == null) {
+                setPrimaryColor(colors[0]);
+                mPrimaryColor = null;
+            }
+            if (mAccentColor == null) {
+                if (colors.length > 1) {
+                    setAccentColor(colors[1]);
+                } else {
+                    setAccentColor(colors[0] == 0xffffffff ? 0xff666666 : 0xffffffff);
+                }
+                mAccentColor = null;
+            }
+        }
+!!!206574.java!!!	setProgressDrawable(inout drawable : Drawable) : T
+        mProgressDrawable = null;
+        mProgressView.setImageDrawable(drawable);
+        return self();
+!!!206702.java!!!	setProgressResource(in resId : int) : T
+        mProgressDrawable = null;
+        mProgressView.setImageResource(resId);
+        return self();
+!!!206830.java!!!	setArrowDrawable(inout drawable : Drawable) : T
+        mArrowDrawable = null;
+        mArrowView.setImageDrawable(drawable);
+        return self();
+!!!206958.java!!!	setArrowResource(in resId : int) : T
+        mArrowDrawable = null;
+        mArrowView.setImageResource(resId);
+        return self();
+!!!207086.java!!!	setSpinnerStyle(inout style : SpinnerStyle) : T
+        this.mSpinnerStyle = style;
+        return self();
+!!!207214.java!!!	setPrimaryColor(in primaryColor : int) : T
+        mBackgroundColor = mPrimaryColor = primaryColor;
+        if (mRefreshKernel != null) {
+            mRefreshKernel.requestDrawBackgroundFor(this, mPrimaryColor);
+//            if (this instanceof RefreshHeader) {
+//                mRefreshKernel.requestDrawBackgroundForHeader(mPrimaryColor);
+//            } else if (this instanceof RefreshFooter) {
+//                mRefreshKernel.requestDrawBackgroundForFooter(mPrimaryColor);
+//            }
+        }
+        return self();
+!!!207342.java!!!	setAccentColor(in accentColor : int) : T
+        mAccentColor = accentColor;
+        mTitleText.setTextColor(accentColor);
+        if (mArrowDrawable != null) {
+            mArrowDrawable.setColor(accentColor);
+        }
+        if (mProgressDrawable != null) {
+            mProgressDrawable.setColor(accentColor);
+        }
+        return self();
+!!!207470.java!!!	setPrimaryColorId(in colorId : int) : T
+        final View thisView = this;
+        setPrimaryColor(getColor(thisView.getContext(), colorId));
+        return self();
+!!!207598.java!!!	setAccentColorId(in colorId : int) : T
+        final View thisView = this;
+        setAccentColor(getColor(thisView.getContext(), colorId));
+        return self();
+!!!207726.java!!!	setFinishDuration(in delay : int) : T
+        mFinishDuration = delay;
+        return self();
+!!!207854.java!!!	setTextSizeTitle(in size : float) : T
+        mTitleText.setTextSize(size);
+        if (mRefreshKernel != null) {
+            mRefreshKernel.requestRemeasureHeightFor(this);
+        }
+        return self();
+!!!207982.java!!!	setDrawableMarginRight(in dp : float) : T
+        final View arrowView = mArrowView;
+        final View progressView = mProgressView;
+        MarginLayoutParams lpArrow = (MarginLayoutParams)arrowView.getLayoutParams();
+        MarginLayoutParams lpProgress = (MarginLayoutParams)progressView.getLayoutParams();
+        lpArrow.rightMargin = lpProgress.rightMargin = DensityUtil.dp2px(dp);
+        arrowView.setLayoutParams(lpArrow);
+        progressView.setLayoutParams(lpProgress);
+        return self();
+!!!208110.java!!!	setDrawableSize(in dp : float) : T
+        final View arrowView = mArrowView;
+        final View progressView = mProgressView;
+        ViewGroup.LayoutParams lpArrow = arrowView.getLayoutParams();
+        ViewGroup.LayoutParams lpProgress = progressView.getLayoutParams();
+        lpArrow.width = lpProgress.width = DensityUtil.dp2px(dp);
+        lpArrow.height = lpProgress.height = DensityUtil.dp2px(dp);
+        arrowView.setLayoutParams(lpArrow);
+        progressView.setLayoutParams(lpProgress);
+        return self();
+!!!208238.java!!!	setDrawableArrowSize(in dp : float) : T
+        final View arrowView = mArrowView;
+        ViewGroup.LayoutParams lpArrow = arrowView.getLayoutParams();
+        lpArrow.height = lpArrow.width = DensityUtil.dp2px(dp);
+        arrowView.setLayoutParams(lpArrow);
+        return self();
+!!!208366.java!!!	setDrawableProgressSize(in dp : float) : T
+        final View progressView = mProgressView;
+        ViewGroup.LayoutParams lpProgress = progressView.getLayoutParams();
+        lpProgress.height = lpProgress.width = DensityUtil.dp2px(dp);
+        progressView.setLayoutParams(lpProgress);
+        return self();

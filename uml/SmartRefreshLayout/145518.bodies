@@ -1,0 +1,3 @@
+class RefreshHeaderWrapper
+!!!220142.java!!!	RefreshHeaderWrapper(inout wrapper : View)
+        super(wrapper);

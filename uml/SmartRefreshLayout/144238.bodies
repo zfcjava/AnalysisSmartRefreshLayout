@@ -1,0 +1,231 @@
+class BezierRadarHeader
+!!!210414.java!!!	BezierRadarHeader(inout context : Context)
+        this(context,null);
+!!!210542.java!!!	BezierRadarHeader(inout context : Context, inout attrs : AttributeSet)
+        this(context, attrs,0);
+!!!210670.java!!!	BezierRadarHeader(inout context : Context, inout attrs : AttributeSet, in defStyleAttr : int)
+        super(context, attrs, defStyleAttr);
+
+        mSpinnerStyle = SpinnerStyle.Scale;
+
+        final View thisView = this;
+        final DensityUtil density = new DensityUtil();
+
+        mPath = new Path();
+        mPaint = new Paint();
+        mPaint.setAntiAlias(true);
+
+        mDotRadius = density.dip2px(7);
+        mRadarRadius = density.dip2px(20);
+        mRadarCircle = density.dip2px(7);
+        mPaint.setStrokeWidth(density.dip2px(3));
+
+        thisView.setMinimumHeight(density.dip2px(100));
+
+        if (thisView.isInEditMode()) {
+            mWaveTop = 1000;
+            mRadarScale = 1;
+            mRadarAngle = 270;
+        } else {
+            mRadarScale = 0;
+        }
+
+        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.BezierRadarHeader);
+
+        mEnableHorizontalDrag = ta.getBoolean(R.styleable.BezierRadarHeader_srlEnableHorizontalDrag, mEnableHorizontalDrag);
+        setAccentColor(ta.getColor(R.styleable.BezierRadarHeader_srlAccentColor, 0xFFffffff));
+        setPrimaryColor(ta.getColor(R.styleable.BezierRadarHeader_srlPrimaryColor, 0xFF222222));
+        mManualAccentColor = ta.hasValue(R.styleable.BezierRadarHeader_srlAccentColor);
+        mManualPrimaryColor = ta.hasValue(R.styleable.BezierRadarHeader_srlPrimaryColor);
+
+        ta.recycle();
+
+!!!210798.java!!!	onDetachedFromWindow() : void
+        super.onDetachedFromWindow();
+//        if (mRadarAnimator != null) {
+//            mRadarAnimator.removeAllListeners();
+//            mRadarAnimator.removeAllUpdateListeners();
+//            mRadarAnimator.end();
+//            mRadarAnimator = null;
+//        }
+        if (mAnimatorSet != null) {
+            mAnimatorSet.removeAllListeners();
+            mAnimatorSet.end();
+            mAnimatorSet = null;
+        }
+!!!210926.java!!!	dispatchDraw(inout canvas : Canvas) : void
+        final View thisView = this;
+        final int width = thisView.getWidth();
+        final int height = thisView.getHeight();
+        drawWave(canvas, width);
+        drawDot(canvas, width, height);
+        drawRadar(canvas, width, height);
+        drawRipple(canvas, width, height);
+        super.dispatchDraw(canvas);
+!!!211054.java!!!	drawWave(inout canvas : Canvas, in width : int) : void
+        //重置画笔
+        mPath.reset();
+        //绘制贝塞尔曲线
+        mPath.lineTo(0, mWaveTop);
+        mPath.quadTo(mWaveOffsetX >= 0 ? (mWaveOffsetX) : width / 2, mWaveTop + mWaveHeight, width, mWaveTop);
+        mPath.lineTo(width, 0);
+        mPaint.setColor(mPrimaryColor);
+        canvas.drawPath(mPath, mPaint);
+!!!211182.java!!!	drawDot(inout canvas : Canvas, in width : int, in height : int) : void
+        if (mDotAlpha > 0) {
+            mPaint.setColor(mAccentColor);
+            final int num = 7;
+            float x = DensityUtil.px2dp(height);
+            float wide = (width / num) * mDotFraction -((mDotFraction >1)?((mDotFraction -1)*(width / num)/ mDotFraction):0);//y1 = t*(w/n)-(t>1)*((t-1)*(w/n)/t)
+            float high = height - ((mDotFraction >1)?((mDotFraction -1)*height/2/ mDotFraction):0);//y2 = x - (t>1)*((t-1)*x/t);
+            for (int i = 0 ; i < num; i++) {
+                float index = 1f + i - (1f + num) / 2;//y3 = (x + 1) - (n + 1)/2; 居中 index 变量：0 1 2 3 4 结果： -2 -1 0 1 2
+                float alpha = 255 * (1 - (2 * (Math.abs(index) / num)));//y4 = m * ( 1 - 2 * abs(y3) / n); 横向 alpha 差
+                mPaint.setAlpha((int) (mDotAlpha * alpha * (1d - 1d / Math.pow((x / 800d + 1d), 15))));//y5 = y4 * (1-1/((x/800+1)^15));竖直 alpha 差
+                float radius = mDotRadius * (1-1/((x/10+1)));//y6 = mDotRadius*(1-1/(x/10+1));半径
+                canvas.drawCircle(width / 2- radius/2 + wide * index , high / 2, radius, mPaint);
+            }
+            mPaint.setAlpha(255);
+        }
+!!!211310.java!!!	drawRadar(inout canvas : Canvas, in width : int, in height : int) : void
+        final View thisView = this;
+        if (/*mRadarAnimator != null*/mAnimatorSet != null || thisView.isInEditMode()) {
+            float radius = mRadarRadius * mRadarScale;
+            float circle = mRadarCircle * mRadarScale;
+
+            mPaint.setColor(mAccentColor);
+            mPaint.setStyle(Paint.Style.FILL);
+            canvas.drawCircle(width / 2, height / 2, radius, mPaint);
+
+            mPaint.setStyle(Paint.Style.STROKE);//设置为空心
+            canvas.drawCircle(width / 2, height / 2, radius + circle, mPaint);
+
+            mPaint.setColor(mPrimaryColor & 0x00ffffff | 0x55000000);
+            mPaint.setStyle(Paint.Style.FILL);
+            mRadarRect.set(width / 2 - radius, height / 2 - radius, width / 2 + radius, height / 2 + radius);
+            canvas.drawArc(mRadarRect, 270, mRadarAngle, true, mPaint);
+
+            radius += circle;
+            mPaint.setStyle(Paint.Style.STROKE);
+            mRadarRect.set(width / 2 - radius, height / 2 - radius, width / 2 + radius, height / 2 + radius);
+            canvas.drawArc(mRadarRect, 270, mRadarAngle, false, mPaint);
+
+            mPaint.setStyle(Paint.Style.FILL);
+        }
+!!!211438.java!!!	drawRipple(inout canvas : Canvas, in width : int, in height : int) : void
+        if (mRippleRadius > 0) {
+            mPaint.setColor(mAccentColor);
+            canvas.drawCircle(width / 2, height / 2, mRippleRadius, mPaint);
+        }
+!!!211566.java!!!	onMoving(inout isDragging : boolean, in percent : float, in offset : int, in height : int, in maxDragHeight : int) : void
+        if (isDragging || mWavePulling) {
+            mWavePulling = true;
+            mWaveTop = Math.min(height, offset);
+            mWaveHeight = (int) (1.9f * Math.max(0, offset - height));
+            mDotFraction = percent;
+        }
+!!!211694.java!!!	onReleased(in refreshLayout : RefreshLayout, in height : int, in maxDragHeight : int) : void
+        mWaveTop = height;
+        mWavePulling = false;
+
+        ValueAnimator mRadarAnimator = ValueAnimator.ofInt(0,360);
+        mRadarAnimator.setDuration(720);
+        mRadarAnimator.setRepeatCount(ValueAnimator.INFINITE);
+        mRadarAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
+        mRadarAnimator.addUpdateListener(new AnimatorUpdater(PROPERTY_RADAR_ANGLE));
+
+        Interpolator interpolatorDecelerate = new DecelerateInterpolator();
+        //圆点消失动画
+        ValueAnimator animatorDotAlpha = ValueAnimator.ofFloat(1, 0);
+        animatorDotAlpha.setInterpolator(interpolatorDecelerate);
+        animatorDotAlpha.addUpdateListener(new AnimatorUpdater(PROPERTY_DOT_ALPHA));
+        //雷达出现动画
+        ValueAnimator animatorRadarScale = ValueAnimator.ofFloat(0, 1);
+        animatorDotAlpha.setInterpolator(interpolatorDecelerate);
+        animatorRadarScale.addUpdateListener(new AnimatorUpdater(PROPERTY_RADAR_SCALE));
+        //连续动画集
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.playSequentially(animatorDotAlpha, animatorRadarScale, mRadarAnimator);
+        animatorSet.start();
+        //贝塞尔弹性动画
+        ValueAnimator animatorWave = ValueAnimator.ofInt(
+                mWaveHeight, 0,
+                -(int)(mWaveHeight *0.8f),0,
+                -(int)(mWaveHeight *0.4f),0);
+        animatorWave.addUpdateListener(new AnimatorUpdater(PROPERTY_WAVE_HEIGHT));
+        animatorWave.setInterpolator(interpolatorDecelerate);
+        animatorWave.setDuration(800);
+        animatorWave.start();
+
+        mAnimatorSet = animatorSet;
+!!!211822.java!!!	onFinish(inout layout : RefreshLayout, inout success : boolean) : int
+//        if (mRadarAnimator != null) {
+//            mRadarAnimator.end();
+//            mRadarAnimator = null;
+//        }
+        if (mAnimatorSet != null) {
+            mAnimatorSet.removeAllListeners();
+            mAnimatorSet.end();
+            mAnimatorSet = null;
+        }
+
+        final int duration = 400;
+        final View thisView = this;
+        final int width = thisView.getWidth();
+        final int height = thisView.getHeight();
+        final float bigRadius = (float) (Math.sqrt(width * width + height * height));
+        ValueAnimator animator = ValueAnimator.ofFloat(0, bigRadius);
+        animator.setDuration(duration);
+        animator.addUpdateListener(new AnimatorUpdater(PROPERTY_RIPPLE_RADIUS));
+        animator.start();
+        return duration;
+!!!211950.java!!!	onStateChanged(inout refreshLayout : RefreshLayout, inout oldState : RefreshState, inout newState : RefreshState) : void
+        switch (newState) {
+            case None:
+            case PullDownToRefresh:
+                mDotAlpha = 1;
+                mRadarScale = 0;
+                mRippleRadius = 0;
+                break;
+        }
+!!!212078.java!!!	setPrimaryColors(in colors : int) : void
+        if (colors.length > 0 && !mManualPrimaryColor) {
+            setPrimaryColor(colors[0]);
+            mManualPrimaryColor = false;
+        }
+        if (colors.length > 1 && !mManualAccentColor) {
+            setAccentColor(colors[1]);
+            mManualAccentColor = false;
+        }
+!!!212206.java!!!	isSupportHorizontalDrag() : boolean
+        return mEnableHorizontalDrag;
+!!!212334.java!!!	onHorizontalDrag(in percentX : float, in offsetX : int, in offsetMax : int) : void
+        mWaveOffsetX = offsetX;
+        final View thisView = this;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            thisView.postInvalidateOnAnimation();
+        } else {
+            thisView.invalidate();
+        }
+!!!212462.java!!!	setPrimaryColor(in color : int) : BezierRadarHeader
+        mPrimaryColor = color;
+        mManualPrimaryColor = true;
+        return this;
+!!!212590.java!!!	setAccentColor(in color : int) : BezierRadarHeader
+        mAccentColor = color;
+        mManualAccentColor = true;
+        return this;
+!!!212718.java!!!	setPrimaryColorId(in colorId : int) : BezierRadarHeader
+        final View thisView = this;
+        setPrimaryColor(getColor(thisView.getContext(), colorId));
+        return this;
+!!!212846.java!!!	setAccentColorId(in colorId : int) : BezierRadarHeader
+        final View thisView = this;
+        setAccentColor(getColor(thisView.getContext(), colorId));
+        return this;
+!!!212974.java!!!	setEnableHorizontalDrag(inout enable : boolean) : BezierRadarHeader
+        this.mEnableHorizontalDrag = enable;
+        if (!enable) {
+            mWaveOffsetX = -1;
+        }
+        return this;

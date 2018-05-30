@@ -1,0 +1,66 @@
+class SmartUtil
+!!!225902.java!!!	getColor(inout context : Context, in colorId : int) : int
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            return context.getColor(colorId);
+        }
+        //noinspection deprecation
+        return context.getResources().getColor(colorId);
+!!!226030.java!!!	measureViewHeight(inout view : View) : int
+        ViewGroup.LayoutParams p = view.getLayoutParams();
+        if (p == null) {
+            p = new ViewGroup.LayoutParams(MATCH_PARENT,WRAP_CONTENT);
+        }
+        int childHeightSpec;
+        int childWidthSpec = ViewGroup.getChildMeasureSpec(0, 0, p.width);
+        if (p.height > 0) {
+            childHeightSpec = View.MeasureSpec.makeMeasureSpec(p.height, View.MeasureSpec.EXACTLY);
+        } else {
+            childHeightSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
+        }
+        view.measure(childWidthSpec, childHeightSpec);
+        return view.getMeasuredHeight();
+!!!226158.java!!!	scrollListBy(inout listView : AbsListView, in y : int) : void
+        if (Build.VERSION.SDK_INT >= 19) {
+            // Call the framework version directly
+            listView.scrollListBy(y);
+        } else if (listView instanceof ListView) {
+            // provide backport on earlier versions
+            final int firstPosition = listView.getFirstVisiblePosition();
+            if (firstPosition == ListView.INVALID_POSITION) {
+                return;
+            }
+
+            //noinspection UnnecessaryLocalVariable
+            final ViewGroup listGroup = listView;
+            final View firstView = listGroup.getChildAt(0);
+            if (firstView == null) {
+                return;
+            }
+
+            final int newTop = firstView.getTop() - y;
+            ((ListView) listView).setSelectionFromTop(firstPosition, newTop);
+        } else {
+            listView.smoothScrollBy(y, 0);
+        }
+!!!226286.java!!!	isScrollableView(inout view : View) : boolean
+        return view instanceof AbsListView
+                || view instanceof ScrollView
+                || view instanceof ScrollingView
+                || view instanceof WebView
+                || view instanceof ViewPager
+                || view instanceof NestedScrollingChild
+                || view instanceof NestedScrollingParent;
+!!!226414.java!!!	fling(inout scrollableView : View, in velocity : int) : void
+        if (scrollableView instanceof ScrollView) {
+            ((ScrollView) scrollableView).fling(velocity);
+        } else if (scrollableView instanceof AbsListView) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                ((AbsListView) scrollableView).fling(velocity);
+            }
+        } else if (scrollableView instanceof WebView) {
+            ((WebView) scrollableView).flingScroll(0, velocity);
+        } else if (scrollableView instanceof NestedScrollView) {
+            ((NestedScrollView) scrollableView).fling(velocity);
+        } else if (scrollableView instanceof RecyclerView) {
+            ((RecyclerView) scrollableView).fling(0, velocity);
+        }

@@ -1,0 +1,3 @@
+class VERTICAL_DRAG_THRESHOLD
+!!!156014.java!!!	VERTICAL_DRAG_THRESHOLD(in val : float)
+            this.val = val;

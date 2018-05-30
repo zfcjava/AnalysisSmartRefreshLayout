@@ -1,0 +1,2066 @@
+format 76
+"api" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::layout::api
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-layout/src/main/java/com/scwang/smartrefresh/layout/api/"
+  java_package "com.scwang.smartrefresh.layout.api"
+  classview 129774 "api"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 132206 "RefreshInternal"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      java_annotation "@RestrictTo({LIBRARY,LIBRARY_GROUP,SUBCLASSES})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新内部组件
+Created by SCWANG on 2017/5/26."
+      classrelation 128366 // <generalisation>
+	relation 128366 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128366 // <generalisation>
+	  b parent class_ref 132334 // OnStateChangedListener
+      end
+
+      operation 128750 "getView"
+	public explicit_return_type "View"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@NonNull
+"
+	
+	
+	
+	comment "获取实体视图
+@return 实体视图"
+      end
+
+      operation 128878 "getSpinnerStyle"
+	public return_type class_ref 132718 // SpinnerStyle
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@NonNull
+"
+	
+	
+	
+	comment "获取变换方式 {@link SpinnerStyle} 必须返回 非空
+@return 变换方式"
+      end
+
+      operation 129006 "setPrimaryColors"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "" explicit_type "int...colors"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置主题颜色
+@param colors 对应Xml中配置的 srlPrimaryColor srlAccentColor"
+      end
+
+      operation 129134 "onInitialized"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "kernel" type class_ref 132846 // RefreshKernel
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "尺寸定义完成 （如果高度不改变（代码修改：setHeader），只调用一次, 在RefreshLayout#onMeasure中调用）
+@param kernel RefreshKernel
+@param height HeaderHeight or FooterHeight
+@param maxDragHeight 最大拖动高度"
+      end
+
+      operation 129262 "onMoving"
+	public explicit_return_type "void"
+	nparams 5
+	  param inout name "isDragging" explicit_type "boolean"
+	  param in name "percent" explicit_type "float"
+	  param in name "offset" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "手指拖动下拉（会连续多次调用，添加isDragging并取代之前的onPulling、onReleasing）
+@param isDragging true 手指正在拖动 false 回弹动画
+@param percent 下拉的百分比 值 = offset/footerHeight (0 - percent - (footerHeight+maxDragHeight) / footerHeight )
+@param offset 下拉的像素偏移量  0 - offset - (footerHeight+maxDragHeight)
+@param height 高度 HeaderHeight or FooterHeight
+@param maxDragHeight 最大拖动高度"
+      end
+
+      operation 129390 "onReleased"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * 手指拖动下拉（会连续多次调用）
+     * @param percent 下拉的百分比 值 = offset/footerHeight (0 - percent - (footerHeight+maxDragHeight) / footerHeight )
+     * @param offset 下拉的像素偏移量  0 - offset - (footerHeight+maxDragHeight)
+     * @param height 高度 HeaderHeight or FooterHeight
+     * @param maxDragHeight 最大拖动高度
+     */
+    void onPulling(float percent, int offset, int height, int maxDragHeight);
+    /**
+     * 手指释放之后的持续动画（会连续多次调用）
+     * @param percent 下拉的百分比 值 = offset/footerHeight (0 - percent - (footerHeight+maxDragHeight) / footerHeight )
+     * @param offset 下拉的像素偏移量  0 - offset - (footerHeight+maxDragHeight)
+     * @param height 高度 HeaderHeight or FooterHeight
+     * @param maxDragHeight 最大拖动高度
+     */
+    void onReleasing(float percent, int offset, int height, int maxDragHeight);
+
+释放时刻（调用一次，将会触发加载）
+@param refreshLayout RefreshLayout
+@param height 高度 HeaderHeight or FooterHeight
+@param maxDragHeight 最大拖动高度"
+      end
+
+      operation 129518 "onStartAnimator"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "开始动画
+@param refreshLayout RefreshLayout
+@param height HeaderHeight or FooterHeight
+@param maxDragHeight 最大拖动高度"
+      end
+
+      operation 129646 "onFinish"
+	public explicit_return_type "int"
+	nparams 2
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param inout name "success" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "动画结束
+@param refreshLayout RefreshLayout
+@param success 数据是否成功刷新或加载
+@return 完成动画所需时间 如果返回 Integer.MAX_VALUE 将取消本次完成事件，继续保持原有状态"
+      end
+
+      operation 129774 "onHorizontalDrag"
+	public explicit_return_type "void"
+	nparams 3
+	  param in name "percentX" explicit_type "float"
+	  param in name "offsetX" explicit_type "int"
+	  param in name "offsetMax" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "水平方向的拖动
+@param percentX 下拉时，手指水平坐标对屏幕的占比（0 - percentX - 1）
+@param offsetX 下拉时，手指水平坐标对屏幕的偏移（0 - offsetX - LayoutWidth）
+@param offsetMax 最大的偏移量"
+      end
+
+      operation 129902 "isSupportHorizontalDrag"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "是否支持水平方向的拖动（将会影响到onHorizontalDrag的调用）
+@return 水平拖动需要消耗更多的时间和资源，所以如果不支持请返回false"
+      end
+    end
+
+    class 132462 "RefreshLayout"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      java_annotation "@SuppressWarnings({\"UnusedReturnValue\", \"SameParameterValue\", \"unused\"})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新布局
+Created by SCWANG on 2017/5/26."
+      operation 175854 "setFooterHeight"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "dp" explicit_type "float"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置 Footer 高度
+@param dp 虚拟像素（px需要调用px2dp转换）
+@return RefreshLayout"
+      end
+
+      operation 175982 "setHeaderHeight"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "dp" explicit_type "float"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * 设置 Footer 高度
+     * @param px 像素
+     * @return RefreshLayout
+     */
+    RefreshLayout setFooterHeightPx(int px);
+
+设置 Header 高度
+@param dp 虚拟像素（px需要调用px2dp转换）
+@return RefreshLayout"
+      end
+
+      operation 176110 "setHeaderInsetStart"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "dp" explicit_type "float"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * 设置 Header 高度
+     * @param px 像素
+     * @return RefreshLayout
+     */
+    RefreshLayout setHeaderHeightPx(int px);
+
+设置 Header 起始偏移量
+@param dp 虚拟像素（px需要调用px2dp转换）
+@return RefreshLayout"
+      end
+
+      operation 176238 "setFooterInsetStart"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "dp" explicit_type "float"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * 设置 Header 起始偏移量
+     * @param insetPx 像素
+     * @return RefreshLayout
+     */
+    RefreshLayout setHeaderInsetStartPx(int insetPx);
+
+设置 Footer 起始偏移量
+@param dp 虚拟像素（px需要调用px2dp转换）
+@return RefreshLayout"
+      end
+
+      operation 176366 "setDragRate"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@FloatRange(from = 0,to = 1) ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * 设置 Footer 起始偏移量
+     * @param insetPx 像素
+     * @return RefreshLayout
+     */
+    RefreshLayout setFooterInsetStartPx(int insetPx);
+
+显示拖动高度/真实拖动高度 比率（默认0.5，阻尼效果）
+@param rate 显示拖动高度/真实拖动高度 比率
+@return RefreshLayout"
+      end
+
+      operation 176494 "setHeaderMaxDragRate"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@FloatRange(from = 1,to = 100) ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置下拉最大高度和Header高度的比率（将会影响可以下拉的最大高度）
+@param rate 下拉最大高度和Header高度的比率
+@return RefreshLayout"
+      end
+
+      operation 176622 "setFooterMaxDragRate"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@FloatRange(from = 1,to = 100) ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置上拉最大高度和Footer高度的比率（将会影响可以上拉的最大高度）
+@param rate 上拉最大高度和Footer高度的比率
+@return RefreshLayout"
+      end
+
+      operation 176750 "setHeaderTriggerRate"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@FloatRange(from = 0,to = 1.0) ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置 触发刷新距离 与 HeaderHeight 的比率
+@param rate 触发刷新距离 与 HeaderHeight 的比率
+@return RefreshLayout"
+      end
+
+      operation 176878 "setFooterTriggerRate"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "rate" explicit_type "float"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@FloatRange(from = 0,to = 1.0) ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置 触发加载距离 与 FooterHeight 的比率
+@param rate 触发加载距离 与 FooterHeight 的比率
+@return RefreshLayout"
+      end
+
+      operation 177006 "setReboundInterpolator"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "interpolator" explicit_type "Interpolator"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置回弹显示插值器 [放手时回弹动画,结束时收缩动画]
+@param interpolator 动画插值器
+@return RefreshLayout"
+      end
+
+      operation 177134 "setReboundDuration"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "duration" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置回弹动画时长 [放手时回弹动画,结束时收缩动画]
+@param duration 时长
+@return RefreshLayout"
+      end
+
+      operation 177262 "setRefreshFooter"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置指定的Footer
+@param footer 刷新尾巴
+@return RefreshLayout"
+      end
+
+      operation 177390 "setRefreshFooter"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 3
+	  param inout name "footer" type class_ref 141294 // RefreshFooter
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置指定的Footer
+@param footer 刷新尾巴
+@param width 宽度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@param height 高度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@return RefreshLayout"
+      end
+
+      operation 177518 "setRefreshHeader"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置指定的Header
+@param header 刷新头
+@return RefreshLayout"
+      end
+
+      operation 177646 "setRefreshHeader"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 3
+	  param inout name "header" type class_ref 132974 // RefreshHeader
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置指定的Header
+@param header 刷新头
+@param width 宽度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@param height 高度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@return RefreshLayout"
+      end
+
+      operation 177774 "setRefreshContent"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "content" explicit_type "View"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置指定的 Content
+@param content 内容视图
+@return RefreshLayout"
+      end
+
+      operation 177902 "setRefreshContent"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 3
+	  param inout name "content" explicit_type "View"
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置指定的 Content
+@param content 内容视图
+@param width 宽度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@param height 高度 可以使用 MATCH_PARENT, WRAP_CONTENT
+@return RefreshLayout"
+      end
+
+      operation 178030 "setEnableLoadMore"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否启用上拉加载更多（默认启用）
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 178158 "setEnableRefresh"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "是否启用下拉刷新（默认启用）
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 178286 "setEnableAutoLoadMore"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否监听列表在滚动到底部时触发加载事件（默认true）
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 178414 "setEnableHeaderTranslationContent"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否启在下拉Header的同时下拉内容
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 178542 "setEnableFooterTranslationContent"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否启在上拉Footer的同时上拉内容
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 178670 "setEnableOverScrollBounce"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否启用越界回弹
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 178798 "setEnablePureScrollMode"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否开启纯滚动模式
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 178926 "setEnableScrollContentWhenLoaded"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否在加载更多完成之后滚动内容显示新数据
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 179054 "setEnableScrollContentWhenRefreshed"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "是否在刷新完成之后滚动内容显示新数据
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 179182 "setEnableLoadMoreWhenContentNotFull"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置在内容不满一页的时候，是否可以上拉加载更多
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 179310 "setEnableOverScrollDrag"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否启用越界拖动（仿苹果效果）
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 179438 "setEnableFooterFollowWhenLoadFinished"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否在全部加载结束之后Footer跟随内容
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 179566 "setEnableClipHeaderWhenFixedBehind"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否 当 Header FixedBehind 时候是否剪裁遮挡 Header
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 179694 "setEnableClipFooterWhenFixedBehind"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否 当 Footer FixedBehind 时候是否剪裁遮挡 Footer
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 179822 "setEnableNestedScroll"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "enabled" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是会否启用嵌套滚动功能（默认关闭+智能开启）
+@param enabled 是否启用
+@return RefreshLayout"
+      end
+
+      operation 179950 "setDisableContentWhenRefresh"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "disable" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否开启在刷新时候禁止操作内容视图
+@param disable 是否禁止
+@return RefreshLayout"
+      end
+
+      operation 180078 "setDisableContentWhenLoading"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "disable" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置是否开启在加载时候禁止操作内容视图
+@param disable 是否禁止
+@return RefreshLayout"
+      end
+
+      operation 180206 "setOnRefreshListener"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "listener" type class_ref 141422 // OnRefreshListener
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "单独设置刷新监听器
+@param listener 刷新监听器
+@return RefreshLayout"
+      end
+
+      operation 180334 "setOnLoadMoreListener"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "listener" type class_ref 141550 // OnLoadMoreListener
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "单独设置加载监听器
+@param listener 加载监听器
+@return RefreshLayout"
+      end
+
+      operation 180462 "setOnRefreshLoadMoreListener"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "listener" type class_ref 141678 // OnRefreshLoadMoreListener
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "同时设置刷新和加载监听器
+@param listener 刷新加载监听器
+@return RefreshLayout"
+      end
+
+      operation 180590 "setOnMultiPurposeListener"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "listener" type class_ref 141806 // OnMultiPurposeListener
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置多功能监听器
+@param listener 建议使用 {@link com.scwang.smartrefresh.layout.listener.SimpleMultiPurposeListener}
+@return RefreshLayout"
+      end
+
+      operation 180718 "setScrollBoundaryDecider"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "boundary" type class_ref 141934 // ScrollBoundaryDecider
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置滚动边界判断器
+@param boundary 建议使用 {@link com.scwang.smartrefresh.layout.impl.ScrollBoundaryDeciderAdapter}
+@return RefreshLayout"
+      end
+
+      operation 180846 "setPrimaryColors"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "" explicit_type "int...primaryColors"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置主题颜色
+@param primaryColors 主题颜色
+@return RefreshLayout"
+      end
+
+      operation 180974 "setPrimaryColorsId"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "" explicit_type "int...primaryColorId"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorRes ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置主题颜色
+@param primaryColorId 主题颜色ID
+@return RefreshLayout"
+      end
+
+      operation 181102 "finishRefresh"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "完成刷新
+@return RefreshLayout"
+      end
+
+      operation 181230 "finishRefresh"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "delayed" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "完成刷新
+@param delayed 开始延时
+@return RefreshLayout"
+      end
+
+      operation 181358 "finishRefresh"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "success" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "完成加载
+@param success 数据是否成功刷新 （会影响到上次更新时间的改变）
+@return RefreshLayout"
+      end
+
+      operation 181486 "finishRefresh"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 2
+	  param in name "delayed" explicit_type "int"
+	  param inout name "success" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "完成刷新
+@param delayed 开始延时
+@param success 数据是否成功刷新 （会影响到上次更新时间的改变）
+@return RefreshLayout"
+      end
+
+      operation 181614 "finishLoadMore"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "完成加载
+@return RefreshLayout"
+      end
+
+      operation 181742 "finishLoadMore"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param in name "delayed" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "完成加载
+@param delayed 开始延时
+@return RefreshLayout"
+      end
+
+      operation 181870 "finishLoadMore"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "success" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "完成加载
+@param success 数据是否成功
+@return RefreshLayout"
+      end
+
+      operation 181998 "finishLoadMore"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 3
+	  param in name "delayed" explicit_type "int"
+	  param inout name "success" explicit_type "boolean"
+	  param inout name "noMoreData" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "完成加载
+@param delayed 开始延时
+@param success 数据是否成功
+@param noMoreData 是否有更多数据
+@return RefreshLayout"
+      end
+
+      operation 182126 "finishLoadMoreWithNoMoreData"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "完成加载并标记没有更多数据
+@return RefreshLayout"
+      end
+
+      operation 182254 "setNoMoreData"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 1
+	  param inout name "noMoreData" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "恢复没有更多数据的原始状态
+@param noMoreData 是否有更多数据
+@return RefreshLayout"
+      end
+
+      operation 182382 "getRefreshHeader"
+	public return_type class_ref 132974 // RefreshHeader
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Nullable
+"
+	
+	
+	
+	comment "获取当前 Header
+@return RefreshLayout"
+      end
+
+      operation 182510 "getRefreshFooter"
+	public return_type class_ref 141294 // RefreshFooter
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Nullable
+"
+	
+	
+	
+	comment "获取当前 Footer
+@return RefreshLayout"
+      end
+
+      operation 182638 "getState"
+	public return_type class_ref 132590 // RefreshState
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "获取当前状态
+@return RefreshLayout"
+      end
+
+      operation 182766 "getLayout"
+	public explicit_return_type "ViewGroup"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "获取实体布局视图
+@return ViewGroup"
+      end
+
+      operation 182894 "autoRefresh"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "自动刷新
+@return 是否成功（状态不符合会失败）"
+      end
+
+      operation 183022 "autoRefresh"
+	public explicit_return_type "boolean"
+	nparams 3
+	  param in name "delayed" explicit_type "int"
+	  param in name "duration" explicit_type "int"
+	  param in name "dragRate" explicit_type "float"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * 自动刷新
+     * @param delayed 开始延时
+     * @return RefreshLayout
+     */
+    boolean autoRefresh(int delayed);
+
+自动刷新
+@param delayed 开始延时
+@param duration 拖拽动画持续时间
+@param dragRate 拉拽的高度比率（要求 ≥ 1 ）
+@return 是否成功（状态不符合会失败）"
+      end
+
+      operation 183150 "autoLoadMore"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "自动加载
+@return 是否成功（状态不符合会失败）"
+      end
+
+      operation 183278 "autoLoadMore"
+	public explicit_return_type "boolean"
+	nparams 3
+	  param in name "delayed" explicit_type "int"
+	  param in name "duration" explicit_type "int"
+	  param in name "dragRate" explicit_type "float"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * 自动加载
+     * @param delayed 开始延时
+     * @return RefreshLayout
+     */
+    boolean autoLoadMore(int delayed);
+
+自动加载
+@param delayed 开始延时
+@param duration 拖拽动画持续时间
+@param dragRate 拉拽的高度比率（要求 ≥ 1 ）
+@return 是否成功（状态不符合会失败）"
+      end
+
+      operation 183406 "isEnableRefresh"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "是否启用下拉刷新"
+      end
+
+      operation 183534 "isEnableLoadMore"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "是否启用加载更多"
+      end
+    end
+
+    class 132846 "RefreshKernel"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      java_annotation "@SuppressWarnings({\"unused\", \"UnusedReturnValue\", \"SameParameterValue\"})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新布局核心功能接口
+为功能复杂的 Header 或者 Footer 开放的接口
+Created by SCWANG on 2017/5/26."
+      operation 197742 "getRefreshLayout"
+	public return_type class_ref 132462 // RefreshLayout
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@NonNull
+"
+	
+	
+	
+      end
+
+      operation 197870 "getRefreshContent"
+	public return_type class_ref 134254 // RefreshContent
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@NonNull
+"
+	
+	
+	
+      end
+
+      operation 197998 "setState"
+	public return_type class_ref 132846 // RefreshKernel
+	nparams 1
+	  param inout name "state" type class_ref 132590 // RefreshState
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 198126 "startTwoLevel"
+	public return_type class_ref 132846 // RefreshKernel
+	nparams 1
+	  param inout name "open" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "<editor-fold desc=\"视图位移 Spinner\">
+
+开始执行二极刷新
+@param open 是否展开
+@return RefreshKernel"
+      end
+
+      operation 198254 "finishTwoLevel"
+	public return_type class_ref 132846 // RefreshKernel
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "结束关闭二极刷新
+@return RefreshKernel"
+      end
+
+      operation 198382 "moveSpinner"
+	public return_type class_ref 132846 // RefreshKernel
+	nparams 2
+	  param in name "spinner" explicit_type "int"
+	  param inout name "isDragging" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "移动视图到指定位置
+moveSpinner 的取名来自 谷歌官方的 {@link android.support.v4.widget.SwipeRefreshLayout}
+@param spinner 位置 (px)
+@param isDragging true 手指正在拖动 false 回弹动画执行
+@return RefreshKernel"
+      end
+
+      operation 198510 "animSpinner"
+	public explicit_return_type "ValueAnimator"
+	nparams 1
+	  param in name "endSpinner" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "执行动画使视图位移到指定的 位置
+moveSpinner 的取名来自 谷歌官方的 {@link android.support.v4.widget.SwipeRefreshLayout}
+@param endSpinner 指定的结束位置 (px)
+@return ValueAnimator 如果没有执行动画 null"
+      end
+
+      operation 198638 "requestDrawBackgroundFor"
+	public return_type class_ref 132846 // RefreshKernel
+	nparams 2
+	  param inout name "internal" type class_ref 132206 // RefreshInternal
+	  param in name "backgroundColor" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"请求事件\">
+
+指定在下拉时候为 Header 或 Footer 绘制背景
+
+@param backgroundColor 背景颜色
+@return RefreshKernel"
+      end
+
+      operation 198766 "requestNeedTouchEventFor"
+	public return_type class_ref 132846 // RefreshKernel
+	nparams 2
+	  param inout name "internal" type class_ref 132206 // RefreshInternal
+	  param inout name "request" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * 指定在下拉时候为 Header 绘制背景
+     * @param backgroundColor 背景颜色
+     * @return RefreshKernel
+     */
+    RefreshKernel requestDrawBackgroundForHeader(int backgroundColor);
+    /**
+     * 指定在下拉时候为 Footer 绘制背景
+     * @param backgroundColor 背景颜色
+     * @return RefreshKernel
+     */
+    RefreshKernel requestDrawBackgroundForFooter(int backgroundColor);
+
+请求事件
+@param request 请求
+@return RefreshKernel"
+      end
+
+      operation 198894 "requestDefaultTranslationContentFor"
+	public return_type class_ref 132846 // RefreshKernel
+	nparams 2
+	  param inout name "internal" type class_ref 132206 // RefreshInternal
+	  param inout name "translation" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * 请求事件
+     * @param request 请求
+     * @return RefreshKernel
+     */
+    RefreshKernel requestNeedTouchEventWhenRefreshing(boolean request);
+    /**
+     * 请求事件
+     * @param request 请求
+     * @return RefreshKernel
+     */
+    RefreshKernel requestNeedTouchEventWhenLoading(boolean request);
+
+请求设置默认内容滚动设置
+@param translation 移动
+@return RefreshKernel"
+      end
+
+      operation 199022 "requestRemeasureHeightFor"
+	public return_type class_ref 132846 // RefreshKernel
+	nparams 1
+	  param inout name "internal" type class_ref 132206 // RefreshInternal
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * 请求设置默认内容滚动设置
+     * @param translation 移动
+     * @return RefreshKernel
+     */
+    RefreshKernel requestDefaultHeaderTranslationContent(boolean translation);
+
+请求重新测量 headerHeight 或 footerHeight , 要求 height 高度为 WRAP_CONTENT
+@return RefreshKernel"
+      end
+
+      operation 199150 "requestFloorDuration"
+	public return_type class_ref 132846 // RefreshKernel
+	nparams 1
+	  param in name "duration" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    /**
+     * 请求重新测量 headerHeight , 要求 header 高度为 WRAP_CONTENT
+     * @return RefreshKernel
+     */
+    RefreshKernel requestRemeasureHeightForHeader();
+    /**
+     * 请求重新测量 footerHeight , 要求 footer 高度为 WRAP_CONTENT
+     * @return RefreshKernel
+     */
+    RefreshKernel requestRemeasureHeightForFooter();
+
+设置二楼回弹时长
+@param duration 二楼回弹时长
+@return RefreshKernel"
+      end
+    end
+
+    class 132974 "RefreshHeader"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      java_annotation "@RestrictTo({LIBRARY,LIBRARY_GROUP,SUBCLASSES})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新头部
+Created by SCWANG on 2017/5/26."
+      classrelation 128878 // <generalisation>
+	relation 128878 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 128878 // <generalisation>
+	  b parent class_ref 132206 // RefreshInternal
+      end
+    end
+
+    class 134254 "RefreshContent"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新内容组件
+Created by SCWANG on 2017/5/26."
+      operation 201454 "getView"
+	public explicit_return_type "View"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@NonNull
+"
+	
+	
+	
+      end
+
+      operation 201582 "getScrollableView"
+	public explicit_return_type "View"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@NonNull
+"
+	
+	
+	
+      end
+
+      operation 201710 "onActionDown"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "e" explicit_type "MotionEvent"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 201838 "setUpComponent"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "kernel" type class_ref 132846 // RefreshKernel
+	  param inout name "fixedHeader" explicit_type "View"
+	  param inout name "fixedFooter" explicit_type "View"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    void onActionUpOrCancel();"
+      end
+
+      operation 201966 "setScrollBoundaryDecider"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "boundary" type class_ref 141934 // ScrollBoundaryDecider
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "    void onInitialHeaderAndFooter(int headerHeight, int footerHeight);"
+      end
+
+      operation 202094 "setEnableLoadMoreWhenContentNotFull"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "enable" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 202222 "moveSpinner"
+	public explicit_return_type "void"
+	nparams 3
+	  param in name "spinner" explicit_type "int"
+	  param in name "headerTranslationViewId" explicit_type "int"
+	  param in name "footerTranslationViewId" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 202350 "canRefresh"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 202478 "canLoadMore"
+	public explicit_return_type "boolean"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 202606 "scrollContentWhenFinished"
+	public explicit_return_type "AnimatorUpdateListener"
+	nparams 1
+	  param in name "spinner" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 141294 "RefreshFooter"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      java_annotation "@RestrictTo({LIBRARY,LIBRARY_GROUP,SUBCLASSES})
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "刷新底部
+Created by SCWANG on 2017/5/26."
+      classrelation 140910 // <generalisation>
+	relation 140910 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 140910 // <generalisation>
+	  b parent class_ref 132206 // RefreshInternal
+      end
+
+      operation 202734 "setNoMoreData"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "noMoreData" explicit_type "boolean"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "设置数据全部加载完成，将不能再次触发加载功能
+@param noMoreData 是否有更多数据
+@return true 支持全部加载完成的状态显示 false 不支持"
+      end
+    end
+
+    class 141934 "ScrollBoundaryDecider"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "滚动边界
+Created by SCWANG on 2017/7/8."
+      operation 202862 "canRefresh"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "content" explicit_type "View"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "根据内容视图状态判断是否可以开始下拉刷新
+@param content 内容视图
+@return true 将会触发下拉刷新"
+      end
+
+      operation 202990 "canLoadMore"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "content" explicit_type "View"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "根据内容视图状态判断是否可以开始上拉加载
+@param content 内容视图
+@return true 将会触发加载更多"
+      end
+    end
+
+    class 142574 "DefaultRefreshFooterCreator"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "默认Footer创建器
+Created by SCWANG on 2018/1/26."
+      operation 201070 "createRefreshFooter"
+	public return_type class_ref 141294 // RefreshFooter
+	nparams 2
+	  param inout name "context" explicit_type "Context"
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@NonNull
+"
+	
+	
+	
+      end
+    end
+
+    class 142702 "DefaultRefreshHeaderCreator"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "默认Header创建器
+Created by SCWANG on 2018/1/26."
+      operation 201198 "createRefreshHeader"
+	public return_type class_ref 132974 // RefreshHeader
+	nparams 2
+	  param inout name "context" explicit_type "Context"
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@NonNull
+"
+	
+	
+	
+      end
+    end
+
+    class 143470 "OnTwoLevelListener"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "二级刷新监听器"
+      operation 201326 "onTwoLevel"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "二级刷新触发
+@param refreshLayout 刷新布局
+@return true 将会展开二楼状态 false 关闭刷新"
+      end
+    end
+  end
+
+  deploymentview 129646 "api"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 130414 "RefreshInternal"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.support.annotation.ColorInt;
+import android.support.annotation.NonNull;
+import android.support.annotation.RestrictTo;
+import android.view.View;
+import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
+import com.scwang.smartrefresh.layout.listener.OnStateChangedListener;
+${definition}"
+      associated_classes
+	class_ref 132206 // RefreshInternal
+      end
+    end
+
+    artifact 130670 "RefreshHeader"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.support.annotation.RestrictTo;
+import static android.support.annotation.RestrictTo.Scope.LIBRARY;
+import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
+import static android.support.annotation.RestrictTo.Scope.SUBCLASSES;
+${definition}"
+      associated_classes
+	class_ref 132974 // RefreshHeader
+      end
+    end
+
+    artifact 135278 "RefreshLayout"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.support.annotation.ColorInt;
+import android.support.annotation.ColorRes;
+import android.support.annotation.FloatRange;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.Interpolator;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
+import com.scwang.smartrefresh.layout.listener.OnMultiPurposeListener;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
+${definition}"
+      associated_classes
+	class_ref 132462 // RefreshLayout
+      end
+    end
+
+    artifact 135406 "RefreshKernel"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.animation.ValueAnimator;
+import android.support.annotation.NonNull;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+${definition}"
+      associated_classes
+	class_ref 132846 // RefreshKernel
+      end
+    end
+
+    artifact 135662 "DefaultRefreshFooterCreator"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.content.Context;
+import android.support.annotation.NonNull;
+${definition}"
+      associated_classes
+	class_ref 142574 // DefaultRefreshFooterCreator
+      end
+    end
+
+    artifact 135790 "DefaultRefreshHeaderCreator"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.content.Context;
+import android.support.annotation.NonNull;
+${definition}"
+      associated_classes
+	class_ref 142702 // DefaultRefreshHeaderCreator
+      end
+    end
+
+    artifact 135918 "OnTwoLevelListener"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.support.annotation.NonNull;
+${definition}"
+      associated_classes
+	class_ref 143470 // OnTwoLevelListener
+      end
+    end
+
+    artifact 136046 "RefreshContent"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.animation.ValueAnimator.AnimatorUpdateListener;
+import android.support.annotation.NonNull;
+import android.view.MotionEvent;
+import android.view.View;
+${definition}"
+      associated_classes
+	class_ref 134254 // RefreshContent
+      end
+    end
+
+    artifact 136174 "RefreshFooter"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.support.annotation.RestrictTo;
+import static android.support.annotation.RestrictTo.Scope.LIBRARY;
+import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
+import static android.support.annotation.RestrictTo.Scope.SUBCLASSES;
+${definition}"
+      associated_classes
+	class_ref 141294 // RefreshFooter
+      end
+    end
+
+    artifact 136302 "ScrollBoundaryDecider"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.view.View;
+${definition}"
+      associated_classes
+	class_ref 141934 // ScrollBoundaryDecider
+      end
+    end
+  end
+end

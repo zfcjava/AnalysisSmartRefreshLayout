@@ -1,0 +1,92 @@
+class Ring
+!!!163950.java!!!	Ring()
+            mPaint.setStrokeCap(Paint.Cap.SQUARE);
+            mPaint.setAntiAlias(true);
+            mPaint.setStyle(Style.STROKE);
+
+            mArrowPaint.setStyle(Style.FILL);
+            mArrowPaint.setAntiAlias(true);
+!!!164078.java!!!	draw(inout c : Canvas, inout bounds : Rect) : void
+            final RectF arcBounds = mTempBounds;
+            arcBounds.set(bounds);
+            arcBounds.inset(mStrokeInset, mStrokeInset);
+
+            final float startAngle = (mStartTrim + mRotation) * 360;
+            final float endAngle = (mEndTrim + mRotation) * 360;
+            float sweepAngle = endAngle - startAngle;
+
+            if (sweepAngle != 0) {
+                mPaint.setColor(mCurrentColor);
+                c.drawArc(arcBounds, startAngle, sweepAngle, false, mPaint);
+            }
+
+            drawTriangle(c, startAngle, sweepAngle, bounds);
+
+            if (mAlpha < 255) {
+                mCirclePaint.setColor(mBackgroundColor);
+                mCirclePaint.setAlpha(255 - mAlpha);
+                c.drawCircle(bounds.exactCenterX(), bounds.exactCenterY(), bounds.width() / 2,
+                        mCirclePaint);
+            }
+!!!164206.java!!!	drawTriangle(inout c : Canvas, in startAngle : float, in sweepAngle : float, inout bounds : Rect) : void
+            if (mShowArrow) {
+                if (mArrow == null) {
+                    mArrow = new Path();
+                    mArrow.setFillType(Path.FillType.EVEN_ODD);
+                } else {
+                    mArrow.reset();
+                }
+
+                // Adjust the position of the triangle so that it is inset as
+                // much as the arc, but also centered on the arc.
+                float inset = (int) mStrokeInset / 2 * mArrowScale;
+                float x = (float) (mRingCenterRadius * Math.cos(0) + bounds.exactCenterX());
+                float y = (float) (mRingCenterRadius * Math.sin(0) + bounds.exactCenterY());
+
+                // Update the path each time. This works around an issue in SKIA
+                // where concatenating a rotation matrix to a scale matrix
+                // ignored a starting negative rotation. This appears to have
+                // been fixed as of API 21.
+                mArrow.moveTo(0, 0);
+                mArrow.lineTo(mArrowWidth * mArrowScale, 0);
+                mArrow.lineTo((mArrowWidth * mArrowScale / 2), (mArrowHeight
+                        * mArrowScale));
+                mArrow.offset(x - inset, y);
+                mArrow.close();
+                // draw a triangle
+                mArrowPaint.setColor(mCurrentColor);
+                c.rotate(startAngle + sweepAngle - ARROW_OFFSET_ANGLE, bounds.exactCenterX(),
+                        bounds.exactCenterY());
+                c.drawPath(mArrow, mArrowPaint);
+            }
+!!!164334.java!!!	setColorIndex(in index : int) : void
+            mColorIndex = index;
+            mCurrentColor = mColors[mColorIndex];
+!!!164462.java!!!	getNextColor() : int
+            return mColors[getNextColorIndex()];
+!!!164590.java!!!	getNextColorIndex() : int
+            return (mColorIndex + 1) % (mColors.length);
+!!!164718.java!!!	goToNextColor() : void
+            setColorIndex(getNextColorIndex());
+!!!164846.java!!!	getStartingColor() : int
+            return mColors[mColorIndex];
+!!!164974.java!!!	setInsets(in width : int, in height : int) : void
+            final float minEdge = (float) Math.min(width, height);
+            float insets;
+            if (mRingCenterRadius <= 0 || minEdge < 0) {
+                insets = (float) Math.ceil(mStrokeWidth / 2.0f);
+            } else {
+                insets = (float) (minEdge / 2.0f - mRingCenterRadius);
+            }
+            mStrokeInset = insets;
+!!!165102.java!!!	storeOriginals() : void
+            mStartingStartTrim = mStartTrim;
+            mStartingEndTrim = mEndTrim;
+            mStartingRotation = mRotation;
+!!!165230.java!!!	resetOriginals() : void
+            mStartingStartTrim = 0;
+            mStartingEndTrim = 0;
+            mStartingRotation = 0;
+            mStartTrim = (0);
+            mEndTrim = (0);
+            mRotation = (0);

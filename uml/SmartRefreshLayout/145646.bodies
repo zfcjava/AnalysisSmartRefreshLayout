@@ -1,0 +1,23 @@
+class SimpleMultiPurposeListener
+!!!222702.java!!!	onHeaderMoving(inout header : RefreshHeader, inout isDragging : boolean, in percent : float, in offset : int, in headerHeight : int, in maxDragHeight : int) : void
+
+!!!222830.java!!!	onHeaderReleased(inout header : RefreshHeader, in headerHeight : int, in maxDragHeight : int) : void
+
+!!!222958.java!!!	onHeaderStartAnimator(inout header : RefreshHeader, in footerHeight : int, in maxDragHeight : int) : void
+
+!!!223086.java!!!	onHeaderFinish(inout header : RefreshHeader, inout success : boolean) : void
+
+!!!223214.java!!!	onFooterMoving(inout footer : RefreshFooter, inout isDragging : boolean, in percent : float, in offset : int, in footerHeight : int, in maxDragHeight : int) : void
+
+!!!223342.java!!!	onFooterReleased(inout footer : RefreshFooter, in footerHeight : int, in maxDragHeight : int) : void
+
+!!!223470.java!!!	onFooterStartAnimator(inout footer : RefreshFooter, in headerHeight : int, in maxDragHeight : int) : void
+
+!!!223598.java!!!	onFooterFinish(inout footer : RefreshFooter, inout success : boolean) : void
+
+!!!223726.java!!!	onRefresh(inout refreshLayout : RefreshLayout) : void
+
+!!!223854.java!!!	onLoadMore(inout refreshLayout : RefreshLayout) : void
+
+!!!223982.java!!!	onStateChanged(inout refreshLayout : RefreshLayout, inout oldState : RefreshState, inout newState : RefreshState) : void
+

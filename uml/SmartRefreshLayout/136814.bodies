@@ -1,0 +1,30 @@
+class PathsView
+!!!158318.java!!!	PathsView(inout context : Context)
+        this(context, null);
+!!!158446.java!!!	PathsView(inout context : Context, inout attrs : AttributeSet)
+        super(context, attrs);
+        mPathsDrawable = new PathsDrawable();
+!!!158574.java!!!	onFinishInflate() : void
+        super.onFinishInflate();
+        final View thisView = this;
+        if (thisView.getTag() instanceof String) {
+            parserPaths(thisView.getTag().toString());
+        }
+!!!158702.java!!!	onMeasure(in widthMeasureSpec : int, in heightMeasureSpec : int) : void
+        final View thisView = this;
+        final Drawable drawable = mPathsDrawable;
+        super.setMeasuredDimension(
+                View.resolveSize(drawable.getBounds().width()+thisView.getPaddingLeft()+thisView.getPaddingRight(), widthMeasureSpec),
+                View.resolveSize(drawable.getBounds().height()+thisView.getPaddingTop()+thisView.getPaddingBottom(), heightMeasureSpec));
+!!!158830.java!!!	onLayout(inout changed : boolean, in left : int, in top : int, in right : int, in bottom : int) : void
+        final View thisView = this;
+        super.onLayout(changed, left, top, right, bottom);
+        mPathsDrawable.setBounds(thisView.getPaddingLeft(), thisView.getPaddingTop(),
+                Math.max((right - left) - thisView.getPaddingRight(), thisView.getPaddingLeft()),
+                Math.max((bottom - top) - thisView.getPaddingTop(), thisView.getPaddingTop()));
+!!!158958.java!!!	onDraw(inout canvas : Canvas) : void
+        mPathsDrawable.draw(canvas);
+!!!159086.java!!!	parserPaths(inout  : String...paths) : void
+        mPathsDrawable.parserPaths(paths);
+!!!159214.java!!!	parserColors(inout  : int...colors) : void
+        mPathsDrawable.parserColors(colors);

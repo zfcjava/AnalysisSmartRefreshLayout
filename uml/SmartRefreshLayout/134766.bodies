@@ -1,0 +1,187 @@
+class PhoenixHeader
+!!!148206.java!!!	PhoenixHeader(inout context : Context)
+        this(context, null);
+!!!148334.java!!!	PhoenixHeader(inout context : Context, inout attrs : AttributeSet)
+        this(context, attrs, 0);
+!!!148462.java!!!	PhoenixHeader(inout context : Context, inout attrs : AttributeSet, in defStyleAttr : int)
+        super(context, attrs, defStyleAttr);
+
+        mMatrix = new Matrix();
+        DensityUtil density = new DensityUtil();
+        mSunSize = density.dip2px(40);
+        final View thisView = this;
+        thisView.setMinimumHeight(density.dip2px(100));
+
+        mSpinnerStyle = SpinnerStyle.Scale;
+
+
+        //<editor-fold desc="setupAnimation">
+        mAnimation = new Animation() {
+            @Override
+            public void applyTransformation(float interpolatedTime, Transformation t) {
+                final View thisView = PhoenixHeader.this;
+                mRotate = (interpolatedTime);
+                thisView.invalidate();
+            }
+        };
+        mAnimation.setRepeatCount(Animation.INFINITE);
+        mAnimation.setRepeatMode(Animation.RESTART);
+        mAnimation.setInterpolator(LINEAR_INTERPOLATOR);
+        mAnimation.setDuration(ANIMATION_DURATION);
+        //</editor-fold>
+
+        //<editor-fold desc="setupPathsDrawable">
+        int widthPixels = Resources.getSystem().getDisplayMetrics().widthPixels;
+        PathsDrawable townDrawable = new PathsDrawable();
+        townDrawable.parserPaths(townPaths);
+        townDrawable.parserColors(townColors);
+        mDrawableTown = townDrawable;
+        Rect bounds = mDrawableTown.getBounds();
+        mDrawableTown.setBounds(0, 0, widthPixels, widthPixels * bounds.height() / bounds.width());
+
+        PathsDrawable skyDrawable = new PathsDrawable();
+        skyDrawable.parserPaths(skyPaths);
+        skyDrawable.parserColors(skyColors);
+        mDrawableSky = skyDrawable;
+        bounds = mDrawableSky.getBounds();
+        mDrawableSky.setBounds(0, 0, widthPixels, widthPixels * bounds.height() / bounds.width());
+
+        PathsDrawable sunDrawable = new PathsDrawable();
+        sunDrawable.parserPaths(sunPaths);
+        sunDrawable.parserColors(sunColors);
+        mDrawableSun = sunDrawable;
+        mDrawableSun.setBounds(0, 0, mSunSize, mSunSize);
+
+        //</editor-fold>
+
+
+        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.PhoenixHeader);
+
+        int primaryColor = ta.getColor(R.styleable.PhoenixHeader_phPrimaryColor, 0);
+        int accentColor = ta.getColor(R.styleable.PhoenixHeader_phAccentColor, 0);
+        if (primaryColor != 0) {
+            thisView.setBackgroundColor(primaryColor);
+            if (accentColor != 0) {
+                skyDrawable.parserColors(primaryColor, accentColor);
+            } else {
+                skyDrawable.parserColors(primaryColor);
+            }
+        }
+
+        ta.recycle();
+!!!148590.java!!!	onMoving(inout isDragging : boolean, in percent : float, in offset : int, in height : int, in maxDragHeight : int) : void
+        mHeaderHeight = height;
+        mRotate = mPercent = 1f * offset / height;
+!!!148718.java!!!	onReleased(inout layout : RefreshLayout, in height : int, in maxDragHeight : int) : void
+        isRefreshing = true;
+        final View thisView = this;
+        thisView.startAnimation(mAnimation);
+!!!148846.java!!!	onFinish(inout layout : RefreshLayout, inout success : boolean) : int
+        final View thisView = this;
+        isRefreshing = false;
+        thisView.clearAnimation();
+        return 0;
+!!!148974.java!!!	setPrimaryColors(in colors : int) : void
+        if (mDrawableSky instanceof PathsDrawable) {
+            final View thisView = this;
+            if (colors.length > 1) {
+                thisView.setBackgroundColor(colors[0]);
+                ((PathsDrawable) mDrawableSky).parserColors(colors);
+            } else if (colors.length > 0) {
+                thisView.setBackgroundColor(colors[0]);
+                ((PathsDrawable) mDrawableSky).parserColors(colors[0], skyColors[1]);
+            }
+        }
+!!!149102.java!!!	dispatchDraw(inout canvas : Canvas) : void
+
+        final View thisView = this;
+        final int width = thisView.getWidth();
+        final int height = thisView.getHeight();
+        drawSky(canvas, width, height);
+        drawSun(canvas, width);
+        drawTown(canvas, width, height);
+
+        super.dispatchDraw(canvas);
+!!!149230.java!!!	drawSky(inout canvas : Canvas, in width : int, in height : int) : void
+        Matrix matrix = mMatrix;
+        matrix.reset();
+
+        int bWidth = mDrawableSky.getBounds().width();//mSky.getWidth();
+        int bHeight = mDrawableSky.getBounds().height();//mSky.getHeight();
+        float townScale = 1f * width / bWidth;
+        float offsetX = 0;
+        float offsetY = height / 2 - bHeight / 2;
+
+//        matrix.postScale(townScale, townScale);
+//        matrix.postTranslate(offsetX, offsetY);
+//
+//        canvas.drawBitmap(mSky, matrix, null);
+
+        final int saveCount = canvas.getSaveCount();
+        canvas.save();
+        canvas.translate(offsetX, offsetY);
+        matrix.postScale(townScale, townScale);
+        mDrawableSky.draw(canvas);
+        canvas.restoreToCount(saveCount);
+!!!149358.java!!!	drawTown(inout canvas : Canvas, in width : int, in height : int) : void
+        Matrix matrix = mMatrix;
+        matrix.reset();
+
+        int bWidth = mDrawableTown.getBounds().width();//mTown.getWidth();
+        int bHeight = mDrawableTown.getBounds().height();//mTown.getHeight();
+        float townScale = 1f * width / bWidth;
+        float amplification = (0.3f * Math.max(mPercent - 1, 0) + 1);
+        float offsetX = width / 2 - (int) (width * amplification) / 2;
+        float offsetY = mHeaderHeight * 0.1f * mPercent;
+        townScale = amplification * townScale;
+
+        if (offsetY + bHeight * townScale < height) {
+            offsetY = height - bHeight * townScale;
+        }
+
+//        matrix.postScale(townScale, townScale, mDrawableTown.getBounds().width() / 2, mDrawableTown.getBounds().height() / 2);
+//        matrix.postTranslate(offsetX, offsetY);
+//        canvas.drawBitmap(mTown, matrix, null);
+
+        final int saveCount = canvas.getSaveCount();
+        canvas.save();
+        canvas.translate(offsetX, offsetY);
+        canvas.scale(townScale, townScale);
+        mDrawableTown.draw(canvas);
+        canvas.restoreToCount(saveCount);
+!!!149486.java!!!	drawSun(inout canvas : Canvas, in width : int) : void
+        Matrix matrix = mMatrix;
+        matrix.reset();
+
+
+        float mSunLeftOffset = 0.3f * (float) width;
+        float mSunTopOffset = (mHeaderHeight * 0.1f);
+
+        float sunRadius = (float) mSunSize / 2.0f;
+        float offsetX = mSunLeftOffset + sunRadius;
+        float offsetY = mSunTopOffset + (mHeaderHeight / 2) * (1.0f - Math.min(mPercent, 1)); // Move the sun up
+
+        int bWidth = mDrawableSun.getBounds().width();
+        float sunScale = 1f * mSunSize / bWidth;
+
+        if (mPercent > 1) {
+            sunScale = sunScale * (1.0f - 0.5f * (mPercent - 1));
+            sunRadius = sunRadius * (1.0f - 0.5f * (mPercent - 1));
+        }
+
+        matrix.preScale(sunScale, sunScale);
+        matrix.postRotate((isRefreshing ? -360 : 360) * mRotate * (isRefreshing ? 1 : SUN_INITIAL_ROTATE_GROWTH),
+                sunRadius,
+                sunRadius);
+
+//        canvas.save();
+//        canvas.translate(offsetX, offsetY);
+//        canvas.drawBitmap(mSun, matrix, null);
+//        canvas.restore();
+
+        final int saveCount = canvas.getSaveCount();
+        canvas.save();
+        canvas.translate(offsetX, offsetY);
+        canvas.concat(matrix);
+        mDrawableSun.draw(canvas);
+        canvas.restoreToCount(saveCount);

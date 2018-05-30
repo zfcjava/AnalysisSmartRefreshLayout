@@ -1,0 +1,57 @@
+class FlingRunnable
+!!!186094.java!!!	FlingRunnable(in velocity : float)
+            mVelocity = velocity;
+            mOffset = mSpinner;
+!!!186222.java!!!	start() : Runnable
+            if (mState.isFinishing) {
+                return null;
+            }
+            if (mSpinner != 0 && (!(mState.isOpening || (mFooterNoMoreData && mEnableFooterFollowWhenLoadFinished && isEnableLoadMore()))
+                    || ((mState == RefreshState.Loading || (mFooterNoMoreData && mEnableFooterFollowWhenLoadFinished && isEnableLoadMore())) && mSpinner < -mFooterHeight)
+                    || (mState == RefreshState.Refreshing && mSpinner > mHeaderHeight))) {
+                int frame = 0;
+                int offset = mSpinner;
+                int spinner = mSpinner;
+                float velocity = mVelocity;
+                while (spinner * offset > 0) {
+                    velocity *= Math.pow(mDamping, (++frame) * mFrameDelay / 10);
+                    float velocityFrame = (velocity * (1f * mFrameDelay / 1000));
+                    if (Math.abs(velocityFrame) < 1) {
+                        if (!mState.isOpening
+                                || (mState == RefreshState.Refreshing && offset > mHeaderHeight)
+                                || (mState != RefreshState.Refreshing && offset < -mFooterHeight)) {
+                            return null;
+                        }
+                        break;
+                    }
+                    offset += velocityFrame;
+                }
+            }
+            mStartTime = AnimationUtils.currentAnimationTimeMillis();
+            postDelayed(this, mFrameDelay);
+            return this;
+!!!186350.java!!!	run() : void
+            if (animationRunnable == this && !mState.isFinishing) {
+//                mVelocity *= Math.pow(mDamping, ++mFrame);
+                long now = AnimationUtils.currentAnimationTimeMillis();
+                long span = now - mLastTime;
+                mVelocity *= Math.pow(mDamping, (now - mStartTime) / (1000 / mFrameDelay));
+                float velocity = (mVelocity * (1f * span / 1000));
+                if (Math.abs(velocity) > 1) {
+                    mLastTime = now;
+                    mOffset += velocity;
+                    if (mSpinner * mOffset > 0) {
+                        mKernel.moveSpinner(mOffset, true);
+                        postDelayed(this, mFrameDelay);
+                    } else {
+                        animationRunnable = null;
+                        mKernel.moveSpinner(0, true);
+                        fling(mRefreshContent.getScrollableView(), (int) -mVelocity);
+                        if (mFooterLocked && velocity > 0) {
+                            mFooterLocked = false;
+                        }
+                    }
+                } else {
+                    animationRunnable = null;
+                }
+            }

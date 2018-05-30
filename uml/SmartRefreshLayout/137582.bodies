@@ -1,0 +1,252 @@
+class PathParser
+!!!165358.java!!!	copyOfRange(inout original : float, in start : int, in end : int) : float
+//        if (start > end) {
+//            throw new IllegalArgumentException();
+//        }
+        int originalLength = original.length;
+//        if (start < 0 || start > originalLength) {
+//            throw new ArrayIndexOutOfBoundsException();
+//        }
+        int resultLength = end - start;
+        int copyLength = Math.min(resultLength, originalLength - start);
+        float[] result = new float[resultLength];
+        System.arraycopy(original, start, result, 0, copyLength);
+        return result;
+!!!165486.java!!!	transformScale(in ratioWidth : float, in ratioHeight : float, inout originPaths : List<Path>, inout orginSvgs : List<String>) : List<Path>
+        Matrix matrix = new Matrix();
+        matrix.setScale(ratioWidth, ratioHeight);
+        List<Path> paths = new ArrayList<>();
+        if (Build.VERSION.SDK_INT > 16) {
+            for (Path path : originPaths) {
+                Path nPath = new Path();
+                path.transform(matrix, nPath);
+                paths.add(nPath);
+            }
+        } else {
+            for (String svgPath : orginSvgs) {
+                Path path = new Path();
+                PathDataNode[] nodes = createNodesFromPathData(svgPath);
+                transformScaleNodes(ratioWidth, ratioHeight, nodes);
+                PathDataNode.nodesToPath(nodes, path);
+                paths.add(path);
+            }
+
+        }
+        return paths;
+!!!165614.java!!!	transformScaleNodes(in ratioWidth : float, in ratioHeight : float, inout node : PathParser::PathDataNode) : void
+        for (PathDataNode aNode : node) {
+            transformScaleCommand(ratioWidth, ratioHeight, aNode.type, aNode.params);
+        }
+!!!165742.java!!!	transformScaleCommand(in ratioWidth : float, in ratioHeight : float, in cmd : char, inout val : float) : void
+        int inc = 2;
+        switch (cmd) {
+            case 'z':
+            case 'Z':
+                break;
+            case 'm':
+            case 'M':
+            case 'l':
+            case 'L':
+            case 't':
+            case 'T':
+                inc = 2;
+                break;
+            case 'h':
+            case 'H':
+            case 'v':
+            case 'V':
+                inc = 1;
+                break;
+            case 'c':
+            case 'C':
+                inc = 6;
+                break;
+            case 's':
+            case 'S':
+            case 'q':
+            case 'Q':
+                inc = 4;
+                break;
+            case 'a':
+            case 'A':
+                inc = 7;
+                break;
+        }
+        for (int k = 0; k < val.length; k += inc) {
+            switch (cmd) {
+                case 'm': // moveTo - Start a new sub-path (relative)
+                case 'M': // moveTo - Start a new sub-path
+                case 'l': // lineTo - Draw a line from the current point (relative)
+                case 'L': // lineTo - Draw a line from the current point
+                case 't': // Draws a quadratic Bezier curve(reflective control point)(relative)
+                case 'T': // Draws a quadratic Bezier curve (reflective control point)
+                    val[k] *= ratioWidth;
+                    val[k + 1] *= ratioHeight;
+                    break;
+                case 'h': // horizontal lineTo - Draws a horizontal line (relative)
+                case 'H': // horizontal lineTo - Draws a horizontal line
+                    val[k] *= ratioWidth;
+                    break;
+                case 'v': // vertical lineTo - Draws a vertical line from the current point (r)
+                case 'V': // vertical lineTo - Draws a vertical line from the current point
+                    val[k] *= ratioHeight;
+                    break;
+                case 'c': // curveTo - Draws a cubic Bezier curve (relative)
+                case 'C': // curveTo - Draws a cubic Bezier curve
+                    val[k] *= ratioWidth;
+                    val[k + 1] *= ratioHeight;
+                    val[k + 2] *= ratioWidth;
+                    val[k + 3] *= ratioHeight;
+                    val[k + 4] *= ratioWidth;
+                    val[k + 5] *= ratioHeight;
+                    break;
+                case 's': // smooth curveTo - Draws a cubic Bezier curve (reflective cp)
+                case 'S': // shorthand/smooth curveTo Draws a cubic Bezier curve(reflective cp)
+                case 'q': // Draws a quadratic Bezier (relative)
+                case 'Q': // Draws a quadratic Bezier
+                    val[k] *= ratioWidth;
+                    val[k + 1] *= ratioHeight;
+                    val[k + 2] *= ratioWidth;
+                    val[k + 3] *= ratioHeight;
+                case 'a': // Draws an elliptical arc
+                case 'A': // Draws an elliptical arc
+                    val[k] *= ratioWidth;
+                    val[k + 1] *= ratioHeight;
+                    val[k + 5] *= ratioWidth;
+                    val[k + 6] *= ratioHeight;
+                    break;
+            }
+        }
+!!!165870.java!!!	createPathFromPathData(in pathData : String) : Path
+        Path path = new Path();
+        PathDataNode[] nodes = createNodesFromPathData(pathData);
+        if (nodes != null) {
+            try {
+                PathDataNode.nodesToPath(nodes, path);
+            } catch (RuntimeException e) {
+                throw new RuntimeException("Error in parsing " + pathData, e);
+            }
+            return path;
+        }
+        return null;
+!!!165998.java!!!	createNodesFromPathData(in pathData : String) : PathParser::PathDataNode
+        if (pathData == null) {
+            return null;
+        }
+        int start = 0;
+        int end = 1;
+
+        List<PathDataNode> list = new ArrayList<>();
+        while (end < pathData.length()) {
+            end = nextStart(pathData, end);
+            String s = pathData.substring(start, end).trim();
+            if (s.length() > 0) {
+                float[] val = getFloats(s);
+                addNode(list, s.charAt(0), val);
+            }
+
+            start = end;
+            end++;
+        }
+        if ((end - start) == 1 && start < pathData.length()) {
+            addNode(list, pathData.charAt(start), new float[0]);
+        }
+        return list.toArray(new PathDataNode[list.size()]);
+!!!166126.java!!!	nextStart(in s : String, in end : int) : int
+        char c;
+
+        while (end < s.length()) {
+            c = s.charAt(end);
+            // Note that 'e' or 'E' are not valid path commands, but could be
+            // used for floating point numbers' scientific notation.
+            // Therefore, when searching for next command, we should ignore 'e'
+            // and 'E'.
+            if ((((c - 'A') * (c - 'Z') <= 0) || ((c - 'a') * (c - 'z') <= 0))
+                    && c != 'e' && c != 'E') {
+                return end;
+            }
+            end++;
+        }
+        return end;
+!!!166254.java!!!	addNode(inout list : List<PathDataNode>, in cmd : char, inout val : float) : void
+        list.add(new PathDataNode(cmd, val));
+!!!166382.java!!!	getFloats(in s : String) : float
+        if (s.charAt(0) == 'z' | s.charAt(0) == 'Z') {
+            return new float[0];
+        }
+        try {
+            float[] results = new float[s.length()];
+            int count = 0;
+            int startPosition = 1;
+            int endPosition;
+
+            ExtractFloatResult result = new ExtractFloatResult();
+            int totalLength = s.length();
+
+            // The startPosition should always be the first character of the
+            // current number, and endPosition is the character after the current
+            // number.
+            while (startPosition < totalLength) {
+                extract(s, startPosition, result);
+                endPosition = result.mEndPosition;
+
+                if (startPosition < endPosition) {
+                    results[count++] = Float.parseFloat(
+                            s.substring(startPosition, endPosition));
+                }
+
+                if (result.mEndWithNegOrDot) {
+                    // Keep the '-' or '.' sign with next number.
+                    startPosition = endPosition;
+                } else {
+                    startPosition = endPosition + 1;
+                }
+            }
+            return copyOfRange(results, 0, count);
+        } catch (NumberFormatException e) {
+            throw new RuntimeException("error in parsing \"" + s + "\"", e);
+        }
+!!!166510.java!!!	extract(in s : String, in start : int, inout result : PathParser::ExtractFloatResult) : void
+        // Now looking for ' ', ',', '.' or '-' from the start.
+        int currentIndex = start;
+        boolean foundSeparator = false;
+        result.mEndWithNegOrDot = false;
+        boolean secondDot = false;
+        boolean isExponential = false;
+        for (; currentIndex < s.length(); currentIndex++) {
+            boolean isPrevExponential = isExponential;
+            isExponential = false;
+            char currentChar = s.charAt(currentIndex);
+            switch (currentChar) {
+                case ' ':
+                case ',':
+                    foundSeparator = true;
+                    break;
+                case '-':
+                    // The negative sign following a 'e' or 'E' is not a separator.
+                    if (currentIndex != start && !isPrevExponential) {
+                        foundSeparator = true;
+                        result.mEndWithNegOrDot = true;
+                    }
+                    break;
+                case '.':
+                    if (!secondDot) {
+                        secondDot = true;
+                    } else {
+                        // This is the second dot, and it is considered as a separator.
+                        foundSeparator = true;
+                        result.mEndWithNegOrDot = true;
+                    }
+                    break;
+                case 'e':
+                case 'E':
+                    isExponential = true;
+                    break;
+            }
+            if (foundSeparator) {
+                break;
+            }
+        }
+        // When there is nothing found, then we put the end position to the end
+        // of the string.
+        result.mEndPosition = currentIndex;

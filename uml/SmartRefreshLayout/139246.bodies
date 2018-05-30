@@ -1,0 +1,4 @@
+class ExampleUnitTest
+!!!175598.java!!!	addition_isCorrect() : void
+        System.out.println(new SimpleDateFormat("'Last update' M-d HH:mm", Locale.CHINA).format(new Date()));
+        assertEquals(4, 2 + 2);

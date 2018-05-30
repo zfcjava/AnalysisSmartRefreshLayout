@@ -1,0 +1,21 @@
+class AnimatorUpdater
+!!!213102.java!!!	AnimatorUpdater(in name : byte)
+            this.propertyName = name;
+!!!213230.java!!!	onAnimationUpdate(inout animation : ValueAnimator) : void
+            if (PROPERTY_RADAR_SCALE == propertyName) {
+                mRadarScale = (float) animation.getAnimatedValue();
+            } else if (PROPERTY_WAVE_HEIGHT == propertyName) {
+                if (mWavePulling) {
+                    animation.cancel();
+                    return;
+                }
+                mWaveHeight = (int) animation.getAnimatedValue() / 2;
+            } else if (PROPERTY_DOT_ALPHA == propertyName) {
+                mDotAlpha = (float) animation.getAnimatedValue();
+            } else if (PROPERTY_RIPPLE_RADIUS == propertyName) {
+                mRippleRadius = (float) animation.getAnimatedValue();
+            } else if (PROPERTY_RADAR_ANGLE == propertyName) {
+                mRadarAngle = (int) animation.getAnimatedValue();
+            }
+            final View thisView = BezierRadarHeader.this;
+            thisView.invalidate();

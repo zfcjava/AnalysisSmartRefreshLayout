@@ -1,0 +1,15 @@
+class DelayedRunnable
+!!!224110.java!!!	DelayedRunnable(inout runnable : Runnable, in delayMillis : long)
+        this.runnable = runnable;
+        this.delayMillis = delayMillis;
+!!!224238.java!!!	run() : void
+        try {
+            if (runnable != null) {
+                runnable.run();
+                runnable = null;
+            }
+        } catch (Throwable e) {
+            if (!(e instanceof NoClassDefFoundError)) {
+                e.printStackTrace();
+            }
+        }

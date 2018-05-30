@@ -1,0 +1,115 @@
+class FunGameBase
+!!!139374.java!!!	FunGameBase(inout context : Context, inout attrs : AttributeSet, in defStyleAttr : int)
+        super(context, attrs, defStyleAttr);
+        final View thisView = this;
+        thisView.setMinimumHeight(DensityUtil.dp2px(100));
+        mScreenHeightPixels = thisView.getResources().getDisplayMetrics().heightPixels;
+        mSpinnerStyle = SpinnerStyle.MatchLayout;
+!!!139502.java!!!	onInterceptTouchEvent(inout ev : MotionEvent) : boolean
+        return mState == RefreshState.Refreshing || super.onInterceptTouchEvent(ev);
+!!!139630.java!!!	onTouchEvent(inout event : MotionEvent) : boolean
+        if (mState == RefreshState.Refreshing || mState == RefreshState.RefreshFinish) {
+            if (!mManualOperation) {
+                onManualOperationStart();
+            }
+            switch (event.getAction() & ACTION_MASK) {
+                case MotionEvent.ACTION_DOWN:
+                    mTouchY = event.getRawY();
+                    mRefreshKernel.moveSpinner(0, true);
+                    break;
+                case MotionEvent.ACTION_MOVE:
+                    float dy = event.getRawY() - mTouchY;
+                    if (dy >= 0) {
+                        final double M = mHeaderHeight * 2;
+                        final double H = mScreenHeightPixels * 2 / 3;
+                        final double x = Math.max(0, dy * 0.5);
+                        final double y = Math.min(M * (1 - Math.pow(100, -x / H)), x);// 公式 y = M(1-40^(-x/H))
+                        mRefreshKernel.moveSpinner((int) y, false);
+                    } else {
+                        final double M = mHeaderHeight * 2;
+                        final double H = mScreenHeightPixels * 2 / 3;
+                        final double x = -Math.min(0, dy * 0.5);
+                        final double y = -Math.min(M * (1 - Math.pow(100, -x / H)), x);// 公式 y = M(1-40^(-x/H))
+                        mRefreshKernel.moveSpinner((int) y, false);
+                    }
+                    break;
+                case MotionEvent.ACTION_UP:
+                case MotionEvent.ACTION_CANCEL:
+                    onManualOperationRelease();
+                    mTouchY = -1;
+                    if (mIsFinish) {
+                        mRefreshKernel.moveSpinner(mHeaderHeight, true);
+                    }
+                    break;
+            }
+            return true;
+        }
+        return super.onTouchEvent(event);
+!!!139758.java!!!	onManualOperationStart() : void
+        if (!mManualOperation) {
+            mManualOperation = true;
+            mRefreshContent = mRefreshKernel.getRefreshContent();
+            enableLoadMore = mRefreshKernel.getRefreshLayout().isEnableLoadMore();
+            mRefreshKernel.getRefreshLayout().setEnableLoadMore(false);
+            View contentView = mRefreshContent.getView();
+            MarginLayoutParams params = (MarginLayoutParams)contentView.getLayoutParams();
+            params.topMargin += mHeaderHeight;
+            contentView.setLayoutParams(params);
+        }
+!!!140014.java!!!	onManualOperationRelease() : void
+        if (mIsFinish) {
+            mManualOperation = false;
+            mRefreshKernel.getRefreshLayout().setEnableLoadMore(enableLoadMore);
+            if (mTouchY != -1) {//还没松手
+                onFinish(mRefreshKernel.getRefreshLayout(), mLastFinish);
+//                mRefreshKernel.setStateRefreshingFinish();
+                mRefreshKernel.setState(RefreshState.RefreshFinish);
+                mRefreshKernel.animSpinner(0);
+//                mRefreshKernel.getRefreshLayout().finishRefresh(0);
+            } else {
+                mRefreshKernel.moveSpinner(mHeaderHeight, true);
+            }
+            View contentView = mRefreshContent.getView();
+            MarginLayoutParams params = (MarginLayoutParams)contentView.getLayoutParams();
+            params.topMargin -= mHeaderHeight;
+            contentView.setLayoutParams(params);
+        } else {
+            mRefreshKernel.moveSpinner(0, true);
+        }
+!!!140142.java!!!	onMoving(inout isDragging : boolean, in percent : float, in offset : int, in height : int, in maxDragHeight : int) : void
+        if (mManualOperation) onManualOperationMove(percent, offset, height, maxDragHeight);
+        else {
+            mOffset = offset;
+            final View thisView = this;
+            thisView.setTranslationY(mOffset - mHeaderHeight);
+        }
+!!!140270.java!!!	onStartAnimator(inout refreshLayout : RefreshLayout, in height : int, in maxDragHeight : int) : void
+        mIsFinish = false;
+        final View thisView = this;
+        thisView.setTranslationY(0);
+!!!140398.java!!!	onStateChanged(inout refreshLayout : RefreshLayout, inout oldState : RefreshState, inout newState : RefreshState) : void
+        mState = newState;
+
+!!!140526.java!!!	onInitialized(inout kernel : RefreshKernel, in height : int, in maxDragHeight : int) : void
+        mRefreshKernel = kernel;
+        mHeaderHeight = height;
+        final View thisView = this;
+        if (!thisView.isInEditMode()) {
+            thisView.setTranslationY(mOffset - mHeaderHeight);
+            kernel.requestNeedTouchEventFor(this, true);
+//            kernel.requestNeedTouchEventWhenRefreshing(true);
+        }
+!!!140654.java!!!	onFinish(inout layout : RefreshLayout, inout success : boolean) : int
+        mLastFinish = success;
+        if (!mIsFinish) {
+            mIsFinish = true;
+            if (mManualOperation) {
+                if (mTouchY == -1) {//已经放手
+                    onManualOperationRelease();
+                    onFinish(layout, success);
+                    return 0;
+                }
+                return Integer.MAX_VALUE;
+            }
+        }
+        return 0;

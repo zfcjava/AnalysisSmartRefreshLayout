@@ -1,0 +1,12 @@
+class BoxBody
+!!!137070.java!!!	measure(in width : int, in height : int, in sideLength : int, in margin : int) : DropBoxHeader::BoxBody
+            boxSideLength = sideLength;
+            boxCenterX = width / 2;
+            boxBottom = height - margin;
+            boxTop = boxBottom - 2 * sideLength;
+            boxLeft = boxCenterX - (int) (sideLength * Math.sin(Math.PI / 3));
+            boxCenterTop = boxTop + sideLength / 2;
+            boxCenterBottom = boxBottom - sideLength / 2;
+            boxRight = width - boxLeft;
+            boxCenterY = boxBottom - sideLength;
+            return this;

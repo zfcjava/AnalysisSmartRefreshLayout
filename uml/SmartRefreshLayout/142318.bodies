@@ -1,0 +1,21 @@
+class DimensionStatus
+!!!203118.java!!!	DimensionStatus(inout notified : boolean)
+        this.notified = notified;
+!!!203246.java!!!	unNotify() : DimensionStatus
+        if (notified) {
+            DimensionStatus prev = values()[ordinal() - 1];
+            if (!prev.notified) {
+                return prev;
+            }
+            return DefaultUnNotify;
+        }
+        return this;
+!!!203374.java!!!	notified() : DimensionStatus
+        if (!notified) {
+            return values()[ordinal() + 1];
+        }
+        return this;
+!!!203502.java!!!	canReplaceWith(inout status : DimensionStatus) : boolean
+        return ordinal() < status.ordinal() || ((!notified || CodeExact == this) && ordinal() == status.ordinal());
+!!!203630.java!!!	gteReplaceWith(inout status : DimensionStatus) : boolean
+        return ordinal() >= status.ordinal();

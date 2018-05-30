@@ -1,0 +1,1022 @@
+format 76
+"fungame" // source::refresh-footer::build::generated::source::buildConfig::androidTest::debug::com::scwang::smartrefresh::header::fungame
+  revision 1
+  modified_by 110 "Administrator"
+  // class settings
+  //class diagram settings
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  //use case diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default class_drawing_mode default shadow default show_stereotype_properties default
+  //sequence diagram settings
+  show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+  //collaboration diagram settings
+  show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+  //object diagram settings
+   write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+  //component diagram settings
+  package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //deployment diagram settings
+  package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+  draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+  //state diagram settings
+  package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+  show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+  //activity diagram settings
+  package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+  show_infonote default drawing_language default show_stereotype_properties default
+  
+  java_dir "e:/android20182/analysisSmartLayout/source/refresh-header/src/main/java/com/scwang/smartrefresh/header/fungame/"
+  java_package "com.scwang.smartrefresh.header.fungame"
+  classview 130414 "fungame"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    class 133998 "FunGameView"
+      abstract visibility public 
+      nformals 2
+      formal name "T" type "" explicit_default_value ""
+        explicit_extends ""
+      formal name "T" type "" explicit_default_value ""
+        explicit_extends ""
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressWarnings(\"unused\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "Created by Hitomis on 2016/3/9.
+email:196425254@qq.com
+https://github.com/Hitomis/FunGameRefresh"
+      classrelation 131694 // <generalisation>
+	relation 131694 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 131694 // <generalisation>
+	  b parent class_ref 134126 // FunGameBase
+      end
+
+      attribute 162286 "DIVIDING_LINE_SIZE"
+	protected explicit_type "float"
+	init_value " 1.f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "<editor-fold desc=\"Field - Curtain\">
+
+分割线默认宽度大小
+"
+      end
+
+      attribute 162414 "mShadowView"
+	protected explicit_type "View"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 162542 "mMaskViewTop"
+	protected explicit_type "TextView"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 162670 "mMaskViewBottom"
+	protected explicit_type "TextView"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 162798 "mMaskTextBottom"
+	public explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 162926 "mMaskTextTopPull"
+	public explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 163054 "mMaskTextTopRelease"
+	public explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 163182 "mHalfHeaderHeight"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 163310 "STATUS_GAME_PREPARE"
+	class_attribute const_attribute protected explicit_type "int"
+	init_value " 0"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "</editor-fold>
+<editor-fold desc=\"Field - Arena\">"
+      end
+
+      attribute 163438 "STATUS_GAME_PLAY"
+	class_attribute const_attribute protected explicit_type "int"
+	init_value " 1"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 163566 "STATUS_GAME_OVER"
+	class_attribute const_attribute protected explicit_type "int"
+	init_value " 2"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 163694 "STATUS_GAME_FINISHED"
+	class_attribute const_attribute protected explicit_type "int"
+	init_value " 3"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 163822 "STATUS_GAME_FAIL"
+	class_attribute const_attribute protected explicit_type "int"
+	init_value " 4"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 163950 "VIEW_HEIGHT_RATIO"
+	class_attribute const_attribute protected explicit_type "float"
+	init_value " .161f"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "控件高度占屏幕高度比率
+"
+      end
+
+      attribute 164078 "mTextGameOver"
+	public explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 164206 "mTextLoading"
+	public explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 164334 "mTextLoadingFinish"
+	public explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 164462 "mTextLoadingFailed"
+	public explicit_type "String"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 164590 "mPaint"
+	protected explicit_type "Paint"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 164718 "mPaintText"
+	protected explicit_type "Paint"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 164846 "controllerPosition"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 164974 "controllerSize"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 165102 "status"
+	protected explicit_type "int"
+	init_value " STATUS_GAME_PREPARE"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 165230 "lModelColor"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 165358 "rModelColor"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 165486 "mModelColor"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 165614 "mBackColor"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 165742 "mBoundaryColor"
+	protected explicit_type "int"
+	init_value " 0xff606060"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 140782 "FunGameView"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	  param in name "defStyleAttr" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "</editor-fold>"
+      end
+
+      operation 140910 "createMaskView"
+	protected explicit_return_type "TextView"
+	nparams 4
+	  param inout name "context" explicit_type "Context"
+	  param in name "text" explicit_type "String"
+	  param in name "textSize" explicit_type "int"
+	  param in name "gravity" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 141038 "drawGame"
+	abstract protected explicit_return_type "void"
+	nparams 3
+	  param inout name "canvas" explicit_type "Canvas"
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "<editor-fold desc=\"绘制方法\">"
+      end
+
+      operation 141166 "dispatchDraw"
+	protected explicit_return_type "void"
+	nparams 1
+	  param inout name "canvas" explicit_type "Canvas"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 141294 "drawBoundary"
+	private explicit_return_type "void"
+	nparams 3
+	  param inout name "canvas" explicit_type "Canvas"
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "绘制分割线
+@param canvas 默认画布"
+      end
+
+      operation 141422 "drawText"
+	private explicit_return_type "void"
+	nparams 3
+	  param inout name "canvas" explicit_type "Canvas"
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "绘制文字内容
+@param canvas 默认画布"
+      end
+
+      operation 141550 "promptText"
+	private explicit_return_type "void"
+	nparams 4
+	  param inout name "canvas" explicit_type "Canvas"
+	  param in name "text" explicit_type "String"
+	  param in name "width" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "提示文字信息
+@param canvas 默认画布
+@param text 相关文字字符串"
+      end
+
+      operation 141678 "resetConfigParams"
+	abstract protected explicit_return_type "void"
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"控制方法\">"
+      end
+
+      operation 141806 "postStatus"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "status" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "更新当前控件状态
+@param status 状态码"
+      end
+
+      operation 141934 "onManualOperationMove"
+	protected explicit_return_type "void"
+	nparams 4
+	  param in name "percent" explicit_type "float"
+	  param in name "offset" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "移动控制器（控制器对象为具体控件中的右边图像模型）"
+      end
+
+      operation 142062 "onInitialized"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "kernel" type class_ref 132846 // RefreshKernel
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"生命周期\">"
+      end
+
+      operation 142190 "setPrimaryColors"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "colors" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@ColorInt ${t0} ... ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override@Deprecated
+"
+	
+	
+	
+      end
+
+      operation 142318 "onStateChanged"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param inout name "oldState" type class_ref 132590 // RefreshState
+	  param inout name "newState" type class_ref 132590 // RefreshState
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}, @NonNull ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 142446 "onStartAnimator"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 142574 "onFinish"
+	public explicit_return_type "int"
+	nparams 2
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	  param inout name "success" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+
+    class 134126 "FunGameBase"
+      abstract visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      java_annotation "@SuppressLint(\"RestrictedApi\")
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      comment "游戏 header
+Created by SCWANG on 2017/6/17."
+      classrelation 131054 // <generalisation>
+	relation 131054 ---|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 131054 // <generalisation>
+	  b parent class_ref 131950 // InternalAbstract
+      end
+
+      classrelation 131182 // <realization>
+	relation 131182 -_-|>
+	  a public
+	    java "${type}"
+	    classrelation_ref 131182 // <realization>
+	  b parent class_ref 132974 // RefreshHeader
+      end
+
+      attribute 161262 "mOffset"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "<editor-fold desc=\"Field\">"
+      end
+
+      attribute 161390 "mHeaderHeight"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 161518 "mScreenHeightPixels"
+	protected explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 161646 "mTouchY"
+	protected explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 161774 "mIsFinish"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 161902 "mLastFinish"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 162030 "mManualOperation"
+	protected explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      classrelation 131310 // mState (<unidirectional association>)
+	relation 131310 --->
+	  a role_name "mState" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 131310 // mState (<unidirectional association>)
+	  b parent class_ref 132590 // RefreshState
+      end
+
+      classrelation 131438 // mRefreshKernel (<unidirectional association>)
+	relation 131438 --->
+	  a role_name "mRefreshKernel" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 131438 // mRefreshKernel (<unidirectional association>)
+	  b parent class_ref 132846 // RefreshKernel
+      end
+
+      classrelation 131566 // mRefreshContent (<unidirectional association>)
+	relation 131566 --->
+	  a role_name "mRefreshContent" protected
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 131566 // mRefreshContent (<unidirectional association>)
+	  b parent class_ref 134254 // RefreshContent
+      end
+
+      operation 139374 "FunGameBase"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "context" explicit_type "Context"
+	  param inout name "attrs" explicit_type "AttributeSet"
+	  param in name "defStyleAttr" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, @Nullable ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"View\">"
+      end
+
+      operation 139502 "onInterceptTouchEvent"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "ev" explicit_type "MotionEvent"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 139630 "onTouchEvent"
+	public explicit_return_type "boolean"
+	nparams 1
+	  param inout name "event" explicit_type "MotionEvent"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      attribute 162158 "enableLoadMore"
+	package explicit_type "boolean"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "</editor-fold>
+<editor-fold desc=\"abstract\">"
+      end
+
+      operation 139758 "onManualOperationStart"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 139886 "onManualOperationMove"
+	abstract protected explicit_return_type "void"
+	nparams 4
+	  param in name "percent" explicit_type "float"
+	  param in name "offset" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 140014 "onManualOperationRelease"
+	protected explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 140142 "onMoving"
+	public explicit_return_type "void"
+	nparams 5
+	  param inout name "isDragging" explicit_type "boolean"
+	  param in name "percent" explicit_type "float"
+	  param in name "offset" explicit_type "int"
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "</editor-fold>
+<editor-fold desc=\"RefreshHeader\">"
+      end
+
+      operation 140270 "onStartAnimator"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+	comment "    @Override
+    public void onPulling(float percent, int offset, int height, int maxDragHeight) {
+        if (mManualOperation) onManualOperationMove(percent, offset, height, maxDragHeight);
+        else {
+            mOffset = offset;
+            setTranslationY(mOffset - mHeaderHeight);
+        }
+    }
+
+    @Override
+    public void onReleasing(float percent, int offset, int height, int maxDragHeight) {
+        onPulling(percent, offset, height, maxDragHeight);
+    }"
+      end
+
+      operation 140398 "onStateChanged"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "refreshLayout" type class_ref 132462 // RefreshLayout
+	  param inout name "oldState" type class_ref 132590 // RefreshState
+	  param inout name "newState" type class_ref 132590 // RefreshState
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, @NonNull ${t1} ${p1}, @NonNull ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 140526 "onInitialized"
+	public explicit_return_type "void"
+	nparams 3
+	  param inout name "kernel" type class_ref 132846 // RefreshKernel
+	  param in name "height" explicit_type "int"
+	  param in name "maxDragHeight" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+
+      operation 140654 "onFinish"
+	public explicit_return_type "int"
+	nparams 2
+	  param inout name "layout" type class_ref 132462 // RefreshLayout
+	  param inout name "success" explicit_type "boolean"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}@NonNull ${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	java_annotation "@Override
+"
+	
+	
+	
+      end
+    end
+  end
+
+  deploymentview 130030 "fungame"
+    //deployment diagram settings
+    package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
+    draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
+    artifact 131438 "FunGameBase"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.view.View;
+import com.scwang.smartrefresh.layout.api.RefreshContent;
+import com.scwang.smartrefresh.layout.api.RefreshHeader;
+import com.scwang.smartrefresh.layout.api.RefreshKernel;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
+import com.scwang.smartrefresh.layout.internal.InternalAbstract;
+import com.scwang.smartrefresh.layout.util.DensityUtil;
+import static android.view.MotionEvent.ACTION_MASK;
+${definition}"
+      associated_classes
+	class_ref 134126 // FunGameBase
+      end
+    end
+
+    artifact 131566 "FunGameView"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.support.annotation.ColorInt;
+import android.support.annotation.NonNull;
+import android.support.v4.graphics.ColorUtils;
+import android.text.TextPaint;
+import android.util.AttributeSet;
+import android.util.DisplayMetrics;
+import android.util.TypedValue;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import com.scwang.smartrefresh.header.R;
+import com.scwang.smartrefresh.layout.api.RefreshKernel;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.RefreshState;
+import com.scwang.smartrefresh.layout.util.DensityUtil;
+import static android.view.MotionEvent.ACTION_MASK;
+${definition}"
+      associated_classes
+	class_ref 133998 // FunGameView
+      end
+    end
+  end
+end

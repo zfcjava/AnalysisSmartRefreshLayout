@@ -1,0 +1,212 @@
+class ClassicsHeader
+!!!213358.java!!!	ClassicsHeader(inout context : Context)
+        this(context, null);
+!!!213486.java!!!	ClassicsHeader(inout context : Context, inout attrs : AttributeSet)
+        this(context, attrs, 0);
+!!!213614.java!!!	ClassicsHeader(inout context : Context, inout attrs : AttributeSet, in defStyleAttr : int)
+        super(context, attrs, defStyleAttr);
+
+        if (REFRESH_HEADER_PULLING == null) {
+            REFRESH_HEADER_PULLING = context.getString(R.string.srl_header_pulling);
+        }
+        if (REFRESH_HEADER_REFRESHING == null) {
+            REFRESH_HEADER_REFRESHING = context.getString(R.string.srl_header_refreshing);
+        }
+        if (REFRESH_HEADER_LOADING == null) {
+            REFRESH_HEADER_LOADING = context.getString(R.string.srl_header_loading);
+        }
+        if (REFRESH_HEADER_RELEASE == null) {
+            REFRESH_HEADER_RELEASE = context.getString(R.string.srl_header_release);
+        }
+        if (REFRESH_HEADER_FINISH == null) {
+            REFRESH_HEADER_FINISH = context.getString(R.string.srl_header_finish);
+        }
+        if (REFRESH_HEADER_FAILED == null) {
+            REFRESH_HEADER_FAILED = context.getString(R.string.srl_header_failed);
+        }
+        if (REFRESH_HEADER_UPDATE == null) {
+            REFRESH_HEADER_UPDATE = context.getString(R.string.srl_header_update);
+        }
+        if (REFRESH_HEADER_SECONDARY == null) {
+            REFRESH_HEADER_SECONDARY = context.getString(R.string.srl_header_secondary);
+        }
+
+        mLastUpdateText = new TextView(context);
+        mLastUpdateText.setTextColor(0xff7c7c7c);
+        mLastUpdateFormat = new SimpleDateFormat(REFRESH_HEADER_UPDATE, Locale.getDefault());
+
+        final View thisView = this;
+        final View arrowView = mArrowView;
+        final View updateView = mLastUpdateText;
+        final View progressView = mProgressView;
+        final ViewGroup centerLayout = mCenterLayout;
+        final DensityUtil density = new DensityUtil();
+
+        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.ClassicsHeader);
+
+        LayoutParams lpArrow = (LayoutParams) arrowView.getLayoutParams();
+        LayoutParams lpProgress = (LayoutParams) progressView.getLayoutParams();
+        LinearLayout.LayoutParams lpUpdateText = new LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT);
+        lpUpdateText.topMargin = ta.getDimensionPixelSize(R.styleable.ClassicsHeader_srlTextTimeMarginTop, density.dip2px(0));
+        lpProgress.rightMargin = ta.getDimensionPixelSize(R.styleable.ClassicsFooter_srlDrawableMarginRight, density.dip2px(20));
+        lpArrow.rightMargin = lpProgress.rightMargin;
+
+        lpArrow.width = ta.getLayoutDimension(R.styleable.ClassicsHeader_srlDrawableArrowSize, lpArrow.width);
+        lpArrow.height = ta.getLayoutDimension(R.styleable.ClassicsHeader_srlDrawableArrowSize, lpArrow.height);
+        lpProgress.width = ta.getLayoutDimension(R.styleable.ClassicsHeader_srlDrawableProgressSize, lpProgress.width);
+        lpProgress.height = ta.getLayoutDimension(R.styleable.ClassicsHeader_srlDrawableProgressSize, lpProgress.height);
+
+        lpArrow.width = ta.getLayoutDimension(R.styleable.ClassicsHeader_srlDrawableSize, lpArrow.width);
+        lpArrow.height = ta.getLayoutDimension(R.styleable.ClassicsHeader_srlDrawableSize, lpArrow.height);
+        lpProgress.width = ta.getLayoutDimension(R.styleable.ClassicsHeader_srlDrawableSize, lpProgress.width);
+        lpProgress.height = ta.getLayoutDimension(R.styleable.ClassicsHeader_srlDrawableSize, lpProgress.height);
+
+        mFinishDuration = ta.getInt(R.styleable.ClassicsHeader_srlFinishDuration, mFinishDuration);
+        mEnableLastTime = ta.getBoolean(R.styleable.ClassicsHeader_srlEnableLastTime, mEnableLastTime);
+        mSpinnerStyle = SpinnerStyle.values()[ta.getInt(R.styleable.ClassicsHeader_srlClassicsSpinnerStyle,mSpinnerStyle.ordinal())];
+
+        if (ta.hasValue(R.styleable.ClassicsHeader_srlDrawableArrow)) {
+            mArrowView.setImageDrawable(ta.getDrawable(R.styleable.ClassicsHeader_srlDrawableArrow));
+        } else {
+            mArrowDrawable = new ArrowDrawable();
+            mArrowDrawable.setColor(0xff666666);
+            mArrowView.setImageDrawable(mArrowDrawable);
+        }
+
+        if (ta.hasValue(R.styleable.ClassicsHeader_srlDrawableProgress)) {
+            mProgressView.setImageDrawable(ta.getDrawable(R.styleable.ClassicsHeader_srlDrawableProgress));
+        } else {
+            mProgressDrawable = new ProgressDrawable();
+            mProgressDrawable.setColor(0xff666666);
+            mProgressView.setImageDrawable(mProgressDrawable);
+        }
+
+        if (ta.hasValue(R.styleable.ClassicsHeader_srlTextSizeTitle)) {
+            mTitleText.setTextSize(TypedValue.COMPLEX_UNIT_PX, ta.getDimensionPixelSize(R.styleable.ClassicsHeader_srlTextSizeTitle, DensityUtil.dp2px(16)));
+        } else {
+            mTitleText.setTextSize(16);
+        }
+
+        if (ta.hasValue(R.styleable.ClassicsHeader_srlTextSizeTime)) {
+            mLastUpdateText.setTextSize(TypedValue.COMPLEX_UNIT_PX, ta.getDimensionPixelSize(R.styleable.ClassicsHeader_srlTextSizeTime, DensityUtil.dp2px(12)));
+        } else {
+            mLastUpdateText.setTextSize(12);
+        }
+
+        if (ta.hasValue(R.styleable.ClassicsHeader_srlPrimaryColor)) {
+            setPrimaryColor(ta.getColor(R.styleable.ClassicsHeader_srlPrimaryColor, 0));
+        }
+        if (ta.hasValue(R.styleable.ClassicsHeader_srlAccentColor)) {
+            setAccentColor(ta.getColor(R.styleable.ClassicsHeader_srlAccentColor, 0));
+        }
+
+        ta.recycle();
+
+        updateView.setId(ID_TEXT_UPDATE);
+        updateView.setVisibility(mEnableLastTime ? VISIBLE : GONE);
+        centerLayout.addView(updateView, lpUpdateText);
+        mTitleText.setText(thisView.isInEditMode() ? REFRESH_HEADER_REFRESHING : REFRESH_HEADER_PULLING);
+
+        try {//try 不能删除-否则会出现兼容性问题
+            if (context instanceof FragmentActivity) {
+                FragmentManager manager = ((FragmentActivity) context).getSupportFragmentManager();
+                if (manager != null) {
+                    @SuppressLint("RestrictedApi")
+                    List<Fragment> fragments = manager.getFragments();
+                    if (fragments != null && fragments.size() > 0) {
+                        setLastUpdateTime(new Date());
+                        return;
+                    }
+                }
+            }
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
+
+        KEY_LAST_UPDATE_TIME += context.getClass().getName();
+        mShared = context.getSharedPreferences("ClassicsHeader", Context.MODE_PRIVATE);
+        setLastUpdateTime(new Date(mShared.getLong(KEY_LAST_UPDATE_TIME, System.currentTimeMillis())));
+
+!!!213742.java!!!	onFinish(inout layout : RefreshLayout, inout success : boolean) : int
+        if (success) {
+            mTitleText.setText(REFRESH_HEADER_FINISH);
+            if (mLastTime != null) {
+                setLastUpdateTime(new Date());
+            }
+        } else {
+            mTitleText.setText(REFRESH_HEADER_FAILED);
+        }
+        return super.onFinish(layout, success);//延迟500毫秒之后再弹回
+!!!213870.java!!!	onStateChanged(inout refreshLayout : RefreshLayout, inout oldState : RefreshState, inout newState : RefreshState) : void
+        final View arrowView = mArrowView;
+        final View updateView = mLastUpdateText;
+        switch (newState) {
+            case None:
+                updateView.setVisibility(mEnableLastTime ? VISIBLE : GONE);
+            case PullDownToRefresh:
+                mTitleText.setText(REFRESH_HEADER_PULLING);
+                arrowView.setVisibility(VISIBLE);
+                arrowView.animate().rotation(0);
+                break;
+            case Refreshing:
+            case RefreshReleased:
+                mTitleText.setText(REFRESH_HEADER_REFRESHING);
+                arrowView.setVisibility(GONE);
+                break;
+            case ReleaseToRefresh:
+                mTitleText.setText(REFRESH_HEADER_RELEASE);
+                arrowView.animate().rotation(180);
+                break;
+            case ReleaseToTwoLevel:
+                mTitleText.setText(REFRESH_HEADER_SECONDARY);
+                arrowView.animate().rotation(0);
+                break;
+            case Loading:
+                arrowView.setVisibility(GONE);
+                updateView.setVisibility(mEnableLastTime ? INVISIBLE : GONE);
+                mTitleText.setText(REFRESH_HEADER_LOADING);
+                break;
+        }
+!!!213998.java!!!	setLastUpdateTime(inout time : Date) : ClassicsHeader
+        final View thisView = this;
+        mLastTime = time;
+        mLastUpdateText.setText(mLastUpdateFormat.format(time));
+        if (mShared != null && !thisView.isInEditMode()) {
+            mShared.edit().putLong(KEY_LAST_UPDATE_TIME, time.getTime()).apply();
+        }
+        return this;
+!!!214126.java!!!	setTimeFormat(inout format : DateFormat) : ClassicsHeader
+        mLastUpdateFormat = format;
+        if (mLastTime != null) {
+            mLastUpdateText.setText(mLastUpdateFormat.format(mLastTime));
+        }
+        return this;
+!!!214254.java!!!	setLastUpdateText(inout text : CharSequence) : ClassicsHeader
+        mLastTime = null;
+        mLastUpdateText.setText(text);
+        return this;
+!!!214382.java!!!	setAccentColor(in accentColor : int) : ClassicsHeader
+        mLastUpdateText.setTextColor(accentColor&0x00ffffff|0xcc000000);
+        return super.setAccentColor(accentColor);
+!!!214510.java!!!	setEnableLastTime(inout enable : boolean) : ClassicsHeader
+        final View updateView = mLastUpdateText;
+        mEnableLastTime = enable;
+        updateView.setVisibility(enable ? VISIBLE : GONE);
+        if (mRefreshKernel != null) {
+            mRefreshKernel.requestRemeasureHeightFor(this);
+//            mRefreshKernel.requestRemeasureHeightForHeader();
+        }
+        return this;
+!!!214638.java!!!	setTextSizeTime(in size : float) : ClassicsHeader
+        mLastUpdateText.setTextSize(size);
+        if (mRefreshKernel != null) {
+            mRefreshKernel.requestRemeasureHeightFor(this);
+//            mRefreshKernel.requestRemeasureHeightForHeader();
+        }
+        return this;
+!!!214766.java!!!	setTextTimeMarginTop(in dp : float) : ClassicsHeader
+        final View updateView = mLastUpdateText;
+        MarginLayoutParams lp = (MarginLayoutParams)updateView.getLayoutParams();
+        lp.topMargin = DensityUtil.dp2px(dp);
+        updateView.setLayoutParams(lp);
+        return this;

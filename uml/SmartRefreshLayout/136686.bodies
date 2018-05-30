@@ -1,0 +1,9 @@
+class FlyView
+!!!159342.java!!!	FlyView(inout context : Context)
+        this(context, null);
+!!!159470.java!!!	FlyView(inout context : Context, inout attrs : AttributeSet)
+        super(context, attrs);
+        super.parserColors(0xffffffff);
+        super.parserPaths("M2.01,21L23,12 2.01,3 2,10l15,2 -15,2z");
+        int side = DensityUtil.dp2px(25);
+        mPathsDrawable.setBounds(0, 0, side, side);
